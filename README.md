@@ -22,17 +22,19 @@ An interactive web application for Good Agricultural Practices (GAP) training in
 ## Local Development
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/yourusername/gap-brinjal.git
    cd gap-brinjal
    ```
 
 2. Start a local server:
+
    ```bash
    python -m http.server 8000
    ```
 
-3. Open http://localhost:8000 in your browser
+3. Open <http://localhost:8000> in your browser
 
 ## Deployment
 
@@ -47,13 +49,14 @@ The app is static and will deploy directly to Vercel without build steps.
 ### Other Platforms
 
 The app can be deployed to any static hosting service like:
+
 - Netlify
 - GitHub Pages
 - Firebase Hosting
 
 ## Project Structure
 
-```
+```text
 gap-brinjal/
 ├── index.html          # Main HTML file
 ├── style.css           # Stylesheets
