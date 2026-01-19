@@ -19,7 +19,7 @@ An interactive web application for Good Agricultural Practices (GAP) training in
 - **Fonts**: Google Fonts (Plus Jakarta Sans, Hind Siliguri)
 - **Styling**: Custom CSS with responsive design
 
-## Local Development
+### Local Development
 
 1. Clone the repository:
 
@@ -31,10 +31,14 @@ An interactive web application for Good Agricultural Practices (GAP) training in
 2. Start a local server:
 
    ```bash
+   # Using npm (recommended)
+   npm start
+
+   # OR using Python
    python -m http.server 8000
    ```
 
-3. Open <http://localhost:8000> in your browser
+3. Open [http://localhost:8000](http://localhost:8000) in your browser
 
 ## Deployment
 
