@@ -785,6 +785,36 @@ i[data-lucide="graduation-cap"] {
   margin-top: auto;
 }
 
+.auth-section {
+  margin-top: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.auth-modal-content {
+  max-width: 400px;
+}
+
+.auth-toggle {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.auth-toggle a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.auth-toggle a:hover {
+  text-decoration: underline;
+}
+
 .version-info {
   margin-top: 1.5rem;
   font-size: 0.75rem;
@@ -988,7 +1018,6 @@ i[data-lucide="graduation-cap"] {
   overflow-x: auto;
   padding-bottom: 0.5rem;
   -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .quick-faq-chips::-webkit-scrollbar {
@@ -1066,7 +1095,7 @@ i[data-lucide="copy"] {
   color: var(--text-muted);
 }
 
-.resource-item > div:first-child {
+.resource-item>div:first-child {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -1076,11 +1105,11 @@ i[data-lucide="copy"] {
   color: var(--secondary);
 }
 
-.resource-item > div > div > div:first-child {
+.resource-item>div>div>div:first-child {
   font-weight: 700;
 }
 
-.resource-item > div > div > div:nth-child(2) {
+.resource-item>div>div>div:nth-child(2) {
   font-size: 0.8rem;
   color: var(--text-muted);
 }

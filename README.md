@@ -11,13 +11,39 @@ An interactive web application for Good Agricultural Practices (GAP) training in
 - **Cultivation Timeline**: Scheduled farming activities
 - **Resource Downloads**: Access to official GAP documents
 - **Bilingual Support**: English and Bengali (বাংলা) interface
+- **User Authentication**: Login/Signup with Supabase
+- **Cloud Data Storage**: User progress and records stored in Supabase
 
 ## Technologies Used
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Backend**: Supabase (Authentication & Database)
 - **Icons**: Lucide Icons
 - **Fonts**: Google Fonts (Plus Jakarta Sans, Hind Siliguri)
 - **Styling**: Custom CSS with responsive design
+
+## Supabase Setup
+
+1. Create a new project at [supabase.com](https://supabase.com)
+2. Go to Project Settings > API to get your Project URL and Anon Key
+3. Update `supabase.js` with your credentials:
+   const SUPABASE_URL = 'YOUR_SUPABASE_URL';
+   const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+4. Create the following tables in your Supabase dashboard:
+
+   **completed_lessons**:
+   - `user_id` (uuid, references auth.users.id) - Primary Key: auto-generated
+   - `lesson_id` (text)
+   - `completed_at` (timestamp with time zone) - Default: now()
+
+   **farm_records**:
+   - `id` (bigint, auto-increment) - Primary Key
+   - `user_id` (uuid, references auth.users.id)
+   - `date` (date)
+   - `category` (text)
+   - `description` (text)
+
+   Enable Row Level Security (RLS) and create policies to allow users to access only their own data.
 
 ### Local Development
 
@@ -65,11 +91,13 @@ gap-brinjal/
 ├── index.html          # Main HTML file
 ├── style.css           # Stylesheets
 ├── app.js              # Main application logic
+├── auth.js             # Authentication handling
+├── supabase.js         # Supabase configuration and database functions
 ├── data.js             # Lesson and quiz data
 ├── extracted_assets/   # Images and branding
 │   ├── branding/       # Logo and cover images
 │   └── images/         # Lesson images
-├── Brinjal .pdf        # Official GAP document
+├── Brinjal.pdf         # Official GAP document
 └── README.md           # This file
 ```
 

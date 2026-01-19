@@ -2,8 +2,8 @@
 // Main Application Logic
 
 let allLessons = [];
-let completedLessons = JSON.parse(localStorage.getItem('brinjal_completed_new')) || [];
-let farmRecords = JSON.parse(localStorage.getItem('brinjal_records')) || [];
+let completedLessons = [];
+let farmRecords = [];
 
 // Constants
 const CATEGORIES = {
@@ -519,16 +519,22 @@ closeModal.onclick = () => {
 };
 window.onclick = (e) => { if (e.target == modal) modal.classList.remove('active'); };
 
-markCompleteBtn.onclick = () => {
+markCompleteBtn.onclick = async () => {
     if (!currentlyOpenLessonId) return;
+
+    if (!currentUser) {
+        showToast('Please login to save progress');
+        return;
+    }
 
     if (completedLessons.includes(currentlyOpenLessonId)) {
         completedLessons = completedLessons.filter(id => id !== currentlyOpenLessonId);
+        await db.removeCompletedLesson(currentlyOpenLessonId);
     } else {
         completedLessons.push(currentlyOpenLessonId);
+        await db.saveCompletedLesson(currentlyOpenLessonId);
     }
 
-    localStorage.setItem('brinjal_completed_new', JSON.stringify(completedLessons));
     updateProgressBar();
     updateDashboardStats();
     renderModules();
@@ -625,16 +631,21 @@ function renderSchedule() {
 const recordForm = document.getElementById('record-form');
 const logsList = document.getElementById('logs-list');
 
-recordForm.addEventListener('submit', (e) => {
+recordForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    if (!currentUser) {
+        showToast('Please login to save records');
+        return;
+    }
+
     const newRecord = {
-        id: Date.now(),
         date: document.getElementById('log-date').value,
         category: document.getElementById('log-category').value,
         desc: document.getElementById('log-desc').value
     };
-    farmRecords.unshift(newRecord);
-    localStorage.setItem('brinjal_records', JSON.stringify(farmRecords));
+    farmRecords.unshift({ id: Date.now(), ...newRecord });
+    await db.saveFarmRecord(newRecord);
     renderLogs();
     updateDashboardStats();
     recordForm.reset();
