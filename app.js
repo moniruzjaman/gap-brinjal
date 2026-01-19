@@ -1,0 +1,938 @@
+// GAP Brinjal - Interactive Learning Portal
+// Main Application Logic
+
+let allLessons = [];
+let completedLessons = JSON.parse(localStorage.getItem('brinjal_completed_new')) || [];
+let farmRecords = JSON.parse(localStorage.getItem('brinjal_records')) || [];
+
+// Constants
+const CATEGORIES = {
+    "1": { bn: "ভূমিকা (Introduction)", en: "Introduction" },
+    "2": { bn: "পদ্ধতি (Procedure)", en: "Procedure" },
+    "3": { bn: "অনুমোদিত পদ্ধতি (Recommended)", en: "Recommended" },
+    "4": { bn: "উপসংহার (Conclusion)", en: "Conclusion" },
+    "5": { bn: "তথ্যসূত্র (References)", en: "References" },
+    "6": { bn: "পরিশিষ্ট (Annex)", en: "Annex" }
+};
+
+const TRANSLATIONS = {
+    bn: {
+        dashboard: "ড্যাশবোর্ড",
+        modules: "মডিউল",
+        plan: "চাষাবাদ পরিকল্পনা",
+        logs: "ফার্ম লগ",
+        assessment: "মূল্যায়ন",
+        resources: "রিসোর্স",
+        gallery: "গ্যালারি",
+        welcome: "বেগুন চাষের উত্তম কৃষি চর্চা (GAP) পোর্টালে স্বাগতম",
+        total_lessons: "মোট পাঠ",
+        completed: "সম্পন্ন",
+        records: "রেকর্ড",
+        overall_progress: "সামগ্রিক অগ্রগতি",
+        all: "সব",
+        search_placeholder: "পাঠ খুঁজুন...",
+        add_log: "ফার্ম লগ যুক্ত করুন",
+        log_history: "লগ ইতিহাস",
+        export: "এক্সপোর্ট",
+        try_again: "আবার চেষ্টা করুন",
+        start_quiz: "কুইজ শুরু করুন",
+        mark_as_completed: "সম্পন্ন হিসেবে চিহ্নিত করুন",
+        prev: "পূর্ববর্তী",
+        next: "পরবর্তী",
+        quiz_title: "GAP জ্ঞান যাচাই",
+        quiz_description: "বেগুন চাষের উত্তম কৃষি চর্চা সম্পর্কে আপনার জ্ঞান যাচাই করুন।",
+        hero_title: "বেগুন চাষের উত্তম কৃষি চর্চা (GAP)",
+        hero_desc: "বেগুন উৎপাদনের প্রতিটি ধাপে বাংলাদেশ GAP প্রোটোকল অনুসরণ নিশ্চিত করুন এবং উন্নত মানসম্পন্ন উৎপাদন শিখুন।",
+        quick_access: "দ্রুত অ্যাক্সেস",
+        start_learning: "পড়া শুরু করুন",
+        log_activity: "কার্যকলাপ লিখুন",
+        date: "তারিখ",
+        category: "বিভাগ",
+        description: "বিবরণ",
+        save_record: "রেকর্ড সংরক্ষণ করুন",
+        official_docs: "অফিসিয়াল GAP ডকুমেন্টস",
+        docs_desc: "বাংলাদেশের উত্তম কৃষি চর্চার অফিসিয়াল গাইডলাইন ও ডকুমেন্টস দেখুন এবং ডাউনলোড করুন।",
+        search_hint: "পাঠ খুঁজুন (যেমন: পোকাসমূহ, Fertilizer, Harvesting)...",
+        learn_title: "আপনি যা শিখবেন",
+        guide_title: "ব্যবহারকারী নির্দেশিকা",
+        learn_items: [
+            "বাংলাদেশ GAP প্রোটোকলের মূল নীতিসমূহ",
+            "বেগুনের উন্নত জাত ও চারা উৎপাদন প্রযুক্তি",
+            "সঠিক সার ব্যবস্থাপনা ও সেচ পদ্ধতি",
+            "সমন্বিত বালাই ব্যবস্থাপনা (IPM) কৌশল",
+            "ফসল সংগ্রহোত্তর সঠিক যত্ন ও রেকর্ড সংরক্ষণ"
+        ],
+        guide_items: [
+            "মডিউল বিভাগ থেকে আপনার পছন্দের পাঠ নির্বাচন করুন",
+            "পাঠ শেষে 'সম্পন্ন' হিসেবে চিহ্নিত করে অগ্রগতি যাচাই করুন",
+            "ফার্ম লগ বিভাগে আপনার প্রাত্যহিক কার্যকলাপ লিখে রাখুন",
+            "কুইজ বিভাগে অংশগ্রহণ করে নিজের জ্ঞান যাচাই করুন"
+        ]
+    },
+    en: {
+        dashboard: "Dashboard",
+        modules: "Modules",
+        plan: "Cultivation Plan",
+        logs: "Farm Logs",
+        assessment: "Assessment",
+        resources: "Resources",
+        gallery: "Visual Library",
+        welcome: "Welcome to GAP Brinjal Training Portal!",
+        total_lessons: "Total Lessons",
+        completed: "Completed",
+        records: "Farm Records",
+        overall_progress: "Overall Progress",
+        all: "All",
+        search_placeholder: "Search lessons...",
+        add_log: "Add Farm Log",
+        log_history: "Log History",
+        export: "Export Summary",
+        try_again: "Try Again",
+        start_quiz: "Start Quiz",
+        mark_as_completed: "Mark as Completed",
+        prev: "Previous",
+        next: "Next",
+        quiz_title: "GAP Knowledge Check",
+        quiz_description: "Test your understanding of the Bangladesh Good Agricultural Practices for Brinjal.",
+        hero_title: "GAP Brinjal Portal",
+        hero_desc: "Master the Bangladesh GAP protocol for premium yield and export quality brinjal through interactive training.",
+        quick_access: "Quick Access",
+        start_learning: "Start Learning",
+        log_activity: "Log Activity",
+        date: "Date",
+        category: "Category",
+        description: "Description",
+        save_record: "Save Record",
+        official_docs: "Official GAP Documents",
+        docs_desc: "Access and download official protocols and manuals for Good Agricultural Practices in Bangladesh.",
+        search_hint: "Search lessons (e.g. Pest management, Fertilizer, Harvesting)...",
+        learn_title: "What you will learn",
+        guide_title: "User Guide",
+        learn_items: [
+            "Core principles of Bangladesh GAP protocol",
+            "Advanced brinjal varieties and seedling tech",
+            "Balanced fertilizer & irrigation management",
+            "Integrated Pest Management (IPM) tactics",
+            "Post-harvest handling & record keeping"
+        ],
+        guide_items: [
+            "Select lessons from the Modules section",
+            "Mark lessons as 'Completed' to track progress",
+            "Record daily activities in the Farm Logs section",
+            "Take quizzes to validate your GAP knowledge"
+        ]
+    }
+};
+
+let currentLanguage = localStorage.getItem('gap_lang') || 'bn';
+
+// UI Elements
+const moduleContainer = document.getElementById('module-container');
+const categoryTabs = document.getElementById('category-tabs');
+const searchInput = document.getElementById('lesson-search');
+const modal = document.getElementById('lesson-modal');
+const modalBody = document.getElementById('modal-body');
+const modalTitle = document.getElementById('modal-title');
+const closeModal = document.getElementById('close-modal');
+const markCompleteBtn = document.getElementById('mark-complete-btn');
+
+let currentActiveCategory = 'All';
+let currentSearchQuery = '';
+
+const BN_TO_EN = { '১': '1', '২': '2', '৩': '3', '৪': '4', '৫': '5', '৬': '6', '৭': '7', '৮': '8', '৯': '9', '০': '0' };
+
+// Helper to clean and split text
+function splitMultilingual(text) {
+    if (!text) return { bn: "", en: "" };
+
+    // Regex matches "Bangla Part (English Part)"
+    const match = text.match(/^(.*?)\s*\(([^()]*)\)\s*$/);
+    if (match) {
+        return {
+            bn: match[1].trim(),
+            en: match[2].trim()
+        };
+    }
+    return { bn: text.trim(), en: text.trim() };
+}
+
+// Load Data
+async function init() {
+    try {
+        const rawLessons = typeof LESSONS_DATA !== 'undefined' ? LESSONS_DATA : [];
+
+        allLessons = rawLessons
+            .filter(l => l.body && l.body.trim().length > 3)
+            .map((l, i) => {
+                let titles = splitMultilingual(l.title);
+                let bodies = splitMultilingual(l.body);
+
+                // Handle cases where English spilled into body
+                if (titles.bn === l.title && bodies.bn.startsWith('and ') && bodies.bn.includes(')')) {
+                    const extraMatch = bodies.bn.match(/^(.*?)\)\s*(.*?)$/);
+                    if (extraMatch) {
+                        titles.en = (titles.en + " " + extraMatch[1]).trim();
+                        bodies.bn = extraMatch[2].trim();
+                        bodies.en = extraMatch[2].trim(); // Fallback for body
+                    }
+                }
+
+                let catId = titles.bn.split('.')[0].trim();
+                let mappedCat = catId.replace(/[১-৬]/g, d => BN_TO_EN[d] || d);
+
+                return {
+                    id: l.id || `lesson-${i}`,
+                    title: titles,
+                    body: bodies,
+                    category: mappedCat
+                };
+            });
+
+        renderTabs();
+        renderModules();
+        renderSchedule();
+        renderLogs();
+        renderQuiz();
+        renderGallery();
+        renderDashboardExtras();
+        updateDashboardStats();
+        updateProgressBar();
+        renderFaqChips();
+        translateUI();
+
+        // Mobile Toggle Logic
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        if (mobileToggle) {
+            mobileToggle.onclick = () => sidebar.classList.toggle('active');
+        }
+
+        // Close sidebar on nav click (mobile)
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 992) sidebar.classList.remove('active');
+            });
+        });
+
+        showToast(TRANSLATIONS[currentLanguage].welcome);
+        lucide.createIcons();
+    } catch (err) {
+        console.error("Failed to process lessons:", err);
+    }
+}
+
+function translateUI() {
+    const t = TRANSLATIONS[currentLanguage];
+
+    // Sidebar
+    document.querySelector('[data-section="dashboard"] span').textContent = t.dashboard;
+    document.querySelector('[data-section="training"] span').textContent = t.modules;
+    document.querySelector('[data-section="schedule"] span').textContent = t.plan;
+    document.querySelector('[data-section="records"] span').textContent = t.logs;
+    document.querySelector('[data-section="quiz"] span').textContent = t.assessment;
+    document.querySelector('[data-section="resources"] span').textContent = t.resources;
+    document.querySelector('[data-section="gallery"] span').textContent = t.gallery;
+
+    // Headings & Text Content
+    const heroTitle = document.getElementById('hero-title');
+    const heroDesc = document.getElementById('hero-desc');
+    const quickTitle = document.getElementById('quick-access-title');
+    const startLearning = document.getElementById('start-learning-btn');
+    const logActivity = document.getElementById('log-activity-btn');
+    const addLogTitle = document.getElementById('add-log-title');
+    const logHistoryTitle = document.getElementById('log-history-title');
+    const labelDate = document.getElementById('label-date');
+    const labelCat = document.getElementById('label-category');
+    const labelDesc = document.getElementById('label-desc');
+    const saveBtn = document.getElementById('save-record-btn');
+    const quizTitle = document.getElementById('quiz-title');
+    const quizDesc = document.getElementById('quiz-desc');
+    const startQuizBtn = document.getElementById('start-quiz-btn');
+    const resTitle = document.getElementById('resources-title');
+    const resDesc = document.getElementById('resources-desc');
+    const pageTitleEl = document.getElementById('page-title');
+
+    if (heroTitle) heroTitle.textContent = t.hero_title;
+    if (heroDesc) heroDesc.textContent = t.hero_desc;
+    if (quickTitle) quickTitle.textContent = t.quick_access;
+    if (startLearning) startLearning.textContent = t.start_learning;
+    if (logActivity) logActivity.textContent = t.log_activity;
+    if (addLogTitle) addLogTitle.textContent = t.add_log;
+    if (logHistoryTitle) logHistoryTitle.textContent = t.log_history;
+    if (labelDate) labelDate.textContent = t.date;
+    if (labelCat) labelCat.textContent = t.category;
+    if (labelDesc) labelDesc.textContent = t.description;
+    if (saveBtn) saveBtn.textContent = t.save_record;
+    if (quizTitle) quizTitle.textContent = t.quiz_title;
+    if (quizDesc) quizDesc.textContent = t.quiz_description;
+    if (startQuizBtn) startQuizBtn.textContent = t.start_quiz;
+    if (resTitle) resTitle.textContent = t.official_docs;
+    if (resDesc) resDesc.textContent = t.docs_desc;
+
+    // Update Progress Sidebar
+    const progLabel = document.querySelector('.progress-header span');
+    if (progLabel) progLabel.textContent = t.overall_progress;
+
+    // Stats labels
+    const statLabels = document.querySelectorAll('.stat-card .stat-label');
+    if (statLabels[0]) statLabels[0].textContent = t.total_lessons;
+    if (statLabels[1]) statLabels[1].textContent = t.completed;
+    if (statLabels[2]) statLabels[2].textContent = t.records;
+
+    // Search
+    searchInput.placeholder = t.search_hint;
+
+    // Buttons
+    document.getElementById('lang-text').textContent = currentLanguage === 'bn' ? 'English' : 'বাংলা';
+
+    // Page Title
+    const activeNav = document.querySelector('.nav-item.active span');
+    if (activeNav && pageTitleEl) pageTitleEl.textContent = activeNav.textContent;
+
+    document.getElementById('learn-title').textContent = t.learn_title;
+    document.getElementById('guide-title').textContent = t.guide_title;
+    renderDashboardExtras();
+
+    renderFaqChips();
+}
+
+document.getElementById('lang-toggle').onclick = () => {
+    currentLanguage = currentLanguage === 'bn' ? 'en' : 'bn';
+    localStorage.setItem('gap_lang', currentLanguage);
+    translateUI();
+    renderTabs();
+    renderModules();
+    updateDashboardStats(); // Refresh stats titles if needed
+    if (currentlyOpenLessonId) {
+        openLesson(currentlyOpenLessonId); // Refresh modal content if open
+    }
+};
+
+function showToast(message) {
+    const container = document.getElementById('toast-container');
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.innerHTML = `
+        <i data-lucide="bell" style="width: 18px"></i>
+        <span>${message}</span>
+    `;
+    container.appendChild(toast);
+    lucide.createIcons();
+
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+    }, 4000);
+}
+
+// Render Category Tabs
+function renderTabs() {
+    const cats = ['All', ...Object.keys(CATEGORIES)];
+    categoryTabs.innerHTML = cats.map(c => `
+    <div class="tab ${currentActiveCategory === c ? 'active' : ''}" onclick="setCategory('${c}')">
+      ${c === 'All' ? TRANSLATIONS[currentLanguage].all : CATEGORIES[c][currentLanguage]}
+    </div>
+  `).join('');
+}
+
+function setCategory(cat) {
+    currentActiveCategory = cat;
+    currentSearchQuery = '';
+    searchInput.value = '';
+    renderTabs();
+    renderModules();
+}
+
+// Search Logic
+searchInput.addEventListener('input', (e) => {
+    currentSearchQuery = e.target.value.toLowerCase();
+    if (currentSearchQuery) {
+        activeFaqIndex = null;
+        document.getElementById('faq-display').style.display = 'none';
+        renderFaqChips();
+    }
+    renderModules();
+});
+
+// Render Modules
+// Render Modules
+function renderModules() {
+    let filtered = allLessons;
+
+    if (currentActiveCategory !== 'All') {
+        filtered = filtered.filter(l => l.category === currentActiveCategory);
+    }
+
+    if (currentSearchQuery) {
+        filtered = filtered.filter(l =>
+            l.title[currentLanguage].toLowerCase().includes(currentSearchQuery.toLowerCase()) ||
+            l.body[currentLanguage].toLowerCase().includes(currentSearchQuery.toLowerCase())
+        );
+    }
+
+    // Grouping Logic for Section Navigation
+    const groups = {};
+    filtered.forEach(l => {
+        const catObj = CATEGORIES[l.category];
+        const catName = catObj ? catObj[currentLanguage] : `Section ${l.category}`;
+        if (!groups[catName]) groups[catName] = [];
+        groups[catName].push(l);
+    });
+
+    let html = '';
+    for (const [section, lessons] of Object.entries(groups)) {
+        html += `
+            <div class="module-section">
+                <div class="section-header">${section}</div>
+                <div class="module-group-grid">
+                    ${lessons.map(l => `
+                        <div class="card module-card ${completedLessons.includes(l.id) ? 'completed' : ''}" onclick="openLesson('${l.id}')">
+                          <div class="card-title"><i data-lucide="book" style="width:18px"></i> ${l.title[currentLanguage]}</div>
+                          <p style="font-size: 0.85rem; color: var(--text-muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" class="Bengali-text">
+                            ${l.body[currentLanguage]}
+                          </p>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    }
+
+    moduleContainer.innerHTML = html || `<p style="text-align:center; padding: 2rem; color: var(--text-muted);">${currentLanguage === 'bn' ? 'আপনার অনুসন্ধানের সাথে মেলে এমন কোনো পাঠ পাওয়া যায়নি।' : 'No lessons found matching your criteria.'}</p>`;
+    lucide.createIcons();
+}
+
+// Modal Logic
+let currentlyOpenLessonId = null;
+
+function openLesson(id) {
+    const lesson = allLessons.find(l => l.id === id);
+    if (!lesson) return;
+
+    // Stop TTS if moving to a different lesson
+    window.speechSynthesis.cancel();
+
+    currentlyOpenLessonId = id;
+    modalTitle.textContent = lesson.title[currentLanguage];
+
+    modalBody.innerHTML = lesson.body[currentLanguage].split('\n')
+        .filter(p => p.trim())
+        .map(p => `<p style="margin-bottom: 1rem;">${p.trim()}</p>`)
+        .join('');
+
+    modal.classList.add('active');
+
+    // Update button states
+    const t = TRANSLATIONS[currentLanguage];
+    if (completedLessons.includes(id)) {
+        markCompleteBtn.textContent = (currentLanguage === 'bn' ? 'সম্পন্ন' : 'Completed');
+        markCompleteBtn.classList.remove('btn-primary');
+        markCompleteBtn.classList.add('btn-secondary');
+    } else {
+        markCompleteBtn.textContent = t.mark_as_completed;
+        markCompleteBtn.classList.add('btn-primary');
+        markCompleteBtn.classList.remove('btn-secondary');
+    }
+
+    // Update Navigation Buttons Visibility/State
+    const currentIndex = allLessons.findIndex(l => l.id === id);
+    const prevBtn = document.getElementById('prev-lesson-btn');
+    const nextBtn = document.getElementById('next-lesson-btn');
+    const speakBtn = document.getElementById('speak-btn');
+
+    const navContainer = document.querySelector('.modal-nav');
+    if (navContainer) navContainer.style.display = 'flex';
+
+    if (prevBtn) {
+        prevBtn.disabled = currentIndex === 0;
+        prevBtn.onclick = () => openLesson(allLessons[currentIndex - 1].id);
+    }
+    if (nextBtn) {
+        nextBtn.disabled = currentIndex === allLessons.length - 1;
+        nextBtn.onclick = () => openLesson(allLessons[currentIndex + 1].id);
+    }
+
+    // Read Aloud Logic (Proper Bangla Body Only)
+    if (speakBtn) {
+        speakBtn.onclick = () => {
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+                speakBtn.innerHTML = '<i data-lucide="volume-2"></i>';
+                lucide.createIcons();
+                return;
+            }
+
+            // Using the current language body text for reading
+            const bodyToRead = lesson.body[currentLanguage];
+            const utterance = new SpeechSynthesisUtterance(bodyToRead);
+
+            // Enhanced Voice Selection logic
+            const voices = window.speechSynthesis.getVoices();
+
+            if (currentLanguage === 'bn') {
+                // Priority list for Bengali voices
+                const bnVoice = voices.find(v => v.lang.startsWith('bn-') || v.lang === 'bn' || v.name.toLowerCase().includes('bengali') || v.name.toLowerCase().includes('bangla'));
+                if (bnVoice) {
+                    utterance.voice = bnVoice;
+                    utterance.lang = bnVoice.lang;
+                } else {
+                    utterance.lang = 'bn-BD';
+                }
+            } else {
+                // For English, find English voice
+                const enVoice = voices.find(v => v.lang.startsWith('en-') || v.lang === 'en');
+                if (enVoice) {
+                    utterance.voice = enVoice;
+                    utterance.lang = enVoice.lang;
+                } else {
+                    utterance.lang = 'en-US';
+                }
+            }
+
+            utterance.rate = 0.85; // Slightly slower for better clarity
+            utterance.pitch = 1.0;
+
+            utterance.onstart = () => {
+                speakBtn.innerHTML = '<i data-lucide="volume-x"></i>';
+                lucide.createIcons();
+            };
+
+            utterance.onend = () => {
+                speakBtn.innerHTML = '<i data-lucide="volume-2"></i>';
+                lucide.createIcons();
+            };
+
+            utterance.onerror = (e) => {
+                console.error("TTS Error:", e);
+                speakBtn.innerHTML = '<i data-lucide="volume-2"></i>';
+                lucide.createIcons();
+            };
+
+            window.speechSynthesis.speak(utterance);
+        };
+    }
+}
+
+closeModal.onclick = () => {
+    modal.classList.remove('active');
+    window.speechSynthesis.cancel();
+};
+window.onclick = (e) => { if (e.target == modal) modal.classList.remove('active'); };
+
+markCompleteBtn.onclick = () => {
+    if (!currentlyOpenLessonId) return;
+
+    if (completedLessons.includes(currentlyOpenLessonId)) {
+        completedLessons = completedLessons.filter(id => id !== currentlyOpenLessonId);
+    } else {
+        completedLessons.push(currentlyOpenLessonId);
+    }
+
+    localStorage.setItem('brinjal_completed_new', JSON.stringify(completedLessons));
+    updateProgressBar();
+    updateDashboardStats();
+    renderModules();
+    modal.classList.remove('active');
+};
+
+// Navigation
+const navItems = document.querySelectorAll('.nav-item');
+const sections = document.querySelectorAll('.section');
+const pageTitle = document.getElementById('page-title');
+
+function navigate(sectionId) {
+    sections.forEach(s => s.classList.remove('active'));
+    navItems.forEach(n => n.classList.remove('active'));
+
+    const targetSection = document.getElementById(sectionId);
+    const targetNav = document.querySelector(`[data-section="${sectionId}"]`);
+
+    targetSection.classList.add('active');
+    targetNav.classList.add('active');
+    pageTitle.textContent = targetNav.querySelector('span').textContent;
+}
+
+navItems.forEach(item => {
+    item.addEventListener('click', () => navigate(item.dataset.section));
+});
+
+// Stats & Progress
+function updateDashboardStats() {
+    document.getElementById('total-lessons-count').textContent = allLessons.length;
+    document.getElementById('completed-lessons-count').textContent = completedLessons.length;
+    document.getElementById('total-records-count').textContent = farmRecords.length;
+}
+
+function updateProgressBar() {
+    if (allLessons.length === 0) return;
+    const percent = Math.round((completedLessons.length / allLessons.length) * 100);
+    document.getElementById('progress-bar').style.width = percent + '%';
+    document.getElementById('progress-percent').textContent = percent + '%';
+}
+
+// Schedule (Enhanced from official GAP doc)
+const scheduleData = [
+    {
+        day: { bn: "দিন -৭", en: "Day -7" },
+        activity: { bn: "জমি তৈরি: শুকনো গোবর (১০০০ কেজি/হেক্টর) এবং বেস সার (TSP, জিপসাম, বোরিক অ্যাসিড) প্রয়োগ", en: "Land Prep: Applying cowdung (1000kg/ha) & base fertilizers (TSP, Gypsum, Boric Acid)" }
+    },
+    {
+        day: { bn: "দিন ০", en: "Day 0" },
+        activity: { bn: "সুস্থ চারা নির্বাচন (২৫-৩০ দিন বয়স, ৪-৫টি পাতা)", en: "Selection of Healthy Seedlings (25-30 days old, 4-5 leaves)" }
+    },
+    {
+        day: { bn: "দিন ০", en: "Day 0" },
+        activity: { bn: "চারা রোপণ: ১০০ সেমি x ৭০ সেমি দূরত্ব। বিকাল বেলা রোপণ করা উত্তম।", en: "Planting: 100cm x 70cm distance. Evening planting recommended." }
+    },
+    {
+        day: { bn: "দিন ৩-৪", en: "Day 3-4" },
+        activity: { bn: "হালকা সেচ এবং গ্যাপ ফিলিং (মরা চারার জায়গায় নতুন চারা)।", en: "Light irrigation and gap filling." }
+    },
+    {
+        day: { bn: "দিন ২১", en: "Day 21" },
+        activity: { bn: "প্রথম কিস্তির ইউরিয়া ও MoP সার উপরি প্রয়োগ এবং এবং বাঁশের খুঁটি দেওয়া।", en: "First Urea/MoP top dressing & Staking with bamboo sticks." }
+    },
+    {
+        day: { bn: "দিন ৩০", en: "Day 30" },
+        activity: { bn: "ডগা ও ফল ছিদ্রকারী পোকা দমনে সেক্স ফেরোমন ফাঁদ স্থাপন।", en: "Installing Pheromone Traps for Fruit & Shoot Borer." }
+    },
+    {
+        day: { bn: "দিন ৪৫", en: "Day 45" },
+        activity: { bn: "দ্বিতীয় কিস্তির সার প্রয়োগ এবং ব্যাকটেরিয়াল উইল্ট (X‡j cov) পর্যবেক্ষণ।", en: "Second Urea/MoP top dressing. Inspect for bacterial wilt." }
+    },
+    {
+        day: { bn: "দিন ৬০", en: "Day 60" },
+        activity: { bn: "জেসিড, সাদা মাছি ও জাব পোকা পর্যবেক্ষণ। প্রয়োজনে জৈবিক বালাইনাশক প্রয়োগ।", en: "Monitoring for Jassids, Whitefly & Aphids. Apply organic bio-pesticides if needed." }
+    },
+    {
+        day: { bn: "দিন ৭৫+", en: "Day 75+" },
+        activity: { bn: "ফসল সংগ্রহ শুরু। প্রতি ২-৩ দিন অন্তর ধারালো ছুরি ব্যবহার করে সংগ্রহ করুন।", en: "Harvesting begins. Every 2-3 days using sharp knives." }
+    }
+];
+
+function renderSchedule() {
+    const container = document.getElementById('timeline-container');
+    container.innerHTML = scheduleData.map(s => `
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div style="font-weight: 800; color: var(--secondary); font-size: 0.8rem;">${s.day[currentLanguage]}</div>
+      <div style="font-weight: 600; margin-top: 0.2rem;">${s.activity[currentLanguage]}</div>
+    </div>
+  `).join('');
+}
+
+// Records
+const recordForm = document.getElementById('record-form');
+const logsList = document.getElementById('logs-list');
+
+recordForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const newRecord = {
+        id: Date.now(),
+        date: document.getElementById('log-date').value,
+        category: document.getElementById('log-category').value,
+        desc: document.getElementById('log-desc').value
+    };
+    farmRecords.unshift(newRecord);
+    localStorage.setItem('brinjal_records', JSON.stringify(farmRecords));
+    renderLogs();
+    updateDashboardStats();
+    recordForm.reset();
+});
+
+function renderLogs() {
+    if (farmRecords.length === 0) {
+        logsList.innerHTML = `<p style="color: var(--text-muted); text-align: center; padding: 2rem;">${currentLanguage === 'bn' ? 'এখনো কোনো লগ রেকর্ড করা হয়নি।' : 'No logs recorded yet.'}</p>`;
+        return;
+    }
+    logsList.innerHTML = farmRecords.map(r => `
+    <div style="background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 12px; margin-bottom: 0.75rem; border-left: 3px solid var(--primary);">
+      <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.25rem;">
+        <span style="color: var(--text-muted)">${r.date}</span>
+        <span style="font-weight: 700; color: var(--secondary)">${r.category}</span>
+      </div>
+      <p style="font-size: 0.9rem;">${r.desc}</p>
+    </div>
+  `).join('');
+}
+
+document.getElementById('export-btn').onclick = () => {
+    const dataStr = JSON.stringify(farmRecords, null, 2);
+    const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
+    const exportFileDefaultName = 'farm_records_brinjal.json';
+    const linkElement = document.createElement('a');
+    linkElement.setAttribute('href', dataUri);
+    linkElement.setAttribute('download', exportFileDefaultName);
+    linkElement.click();
+};
+
+// FAQ Data
+const FAQ_DATA = [
+    {
+        q: { bn: "মাটির পিএইচ (pH)", en: "Soil pH" },
+        full_q: { bn: "বেগুন চাষের জন্য মাটির পিএইচ (pH) কত হওয়া উচিত?", en: "What is the optimum soil pH for brinjal cultivation?" },
+        a: { bn: "বেগুন চাষের জন্য মাটির পিএইচ ৬.০ - ৭.০ হওয়া উচিত। মাটির পিএইচ ৬-এর নিচে হলে গাছ প্রয়োজনীয় পুষ্টি পায় না।", en: "The optimum soil pH for brinjal is 6.0 - 7.0. If pH is below 6, plants cannot absorb nutrients effectively." }
+    },
+    {
+        q: { bn: "গোবর সার", en: "Cowdung" },
+        full_q: { bn: "হেক্টর প্রতি কী পরিমাণ গোবর সার প্রয়োগ করতে হয়?", en: "How much cowdung is required per hectare?" },
+        a: { bn: "হেক্টর প্রতি অন্তত ১০০০ কেজি শুকনো গোবর সার অথবা ২০০০ কেজি ভার্মিকম্পোস্ট জমি তৈরির সময় প্রয়োগ করা উচিত।", en: "At least 1000 kg dry cowdung or 2000 kg vermicompost should be applied per hectare during land preparation." }
+    },
+    {
+        q: { bn: "রোপণের দূরত্ব", en: "Spacing" },
+        full_q: { bn: "চারা রোপণের সঠিক দূরত্ব কত?", en: "What is the correct spacing for planting?" },
+        a: { bn: "সারি থেকে সারির দূরত্ব ১০০ সেমি এবং চারা থেকে চারার দূরত্ব ৭০ সেমি রাখা উত্তম। এটি পোকা দমনেও সাহায্য করে।", en: "Ideal spacing is 100 cm row-to-row and 70 cm plant-to-plant. This also helps in pest management." }
+    },
+    {
+        q: { bn: "ফল ছিদ্রকারী পোকা", en: "Fruit Borer" },
+        full_q: { bn: "বেগুনের ডগা ও ফল ছিদ্রকারী পোকা দমনে প্রধান উপায় কী?", en: "What is the primary way to control Fruit & Shoot Borer?" },
+        a: { bn: "সেক্স ফেরোমন ফাঁদ ব্যবহার করা সবচেয়ে কার্যকরী উপায়। আক্রান্ত ডগা ও ফল সংগ্রহ করে ধ্বংস (মাটির নিচে পুঁতে রাখা) করতে হবে।", en: "Using Sex Pheromone traps is the most effective way. Also, collect and bury infected shoots and fruits deep underground." }
+    },
+    {
+        q: { bn: "চারা রোপণ সময়", en: "Planting Time" },
+        full_q: { bn: "চারা রোপণের জন্য দিনের কোন সময়টি সবচেয়ে ভালো?", en: "What is the best time of day for planting?" },
+        a: { bn: "বিকাল বেলা চারা রোপণ করা সবচেয়ে ভালো। এতে চারার ট্রান্সপ্লান্টিং শক কম হয় এবং চারা সহজে টিকে যায়।", en: "Evening is the best time for planting. It minimizes transplanting shock and ensures higher seedling survival rate." }
+    },
+    {
+        q: { bn: "বাক্টেরিয়ার উইল্ট", en: "Bacterial Wilt" },
+        full_q: { bn: "বেগুন গাছ পাতা সবুজ থাকতেই হঠাৎ ঝিমিয়ে পড়লে কী করতে হবে?", en: "What to do if brinjal plants suddenly wilt while leaves are still green?" },
+        a: { bn: "এটি ব্যাকটেরিয়াল উইল্ট (X‡j cov) হতে পারে। আক্রান্ত গাছ শিকড়সহ উপড়ে পুড়িয়ে ফেলুন এবং সেখানে ব্লিচিং পাউডার প্রয়োগ করুন।", en: "This might be Bacterial Wilt. Uproot and burn the infected plant, and apply bleaching powder to the infected spot." }
+    }
+];
+
+let activeFaqIndex = null;
+
+function renderFaqChips() {
+    const container = document.getElementById('quick-faq');
+    if (!container) return;
+
+    container.innerHTML = FAQ_DATA.map((faq, i) => `
+        <div class="faq-chip ${activeFaqIndex === i ? 'active' : ''}" onclick="toggleFaq(${i})">
+            ${faq.q[currentLanguage]}
+        </div>
+    `).join('');
+}
+
+function toggleFaq(index) {
+    const display = document.getElementById('faq-display');
+    const qEl = document.getElementById('faq-item-q');
+    const aEl = document.getElementById('faq-item-a');
+
+    if (activeFaqIndex === index) {
+        activeFaqIndex = null;
+        display.style.display = 'none';
+    } else {
+        activeFaqIndex = index;
+        const faq = FAQ_DATA[index];
+        qEl.textContent = faq.full_q[currentLanguage];
+        aEl.textContent = faq.a[currentLanguage];
+        display.style.display = 'block';
+    }
+    renderFaqChips();
+}
+
+function copyFaq() {
+    if (activeFaqIndex === null) return;
+    const faq = FAQ_DATA[activeFaqIndex];
+    const label = currentLanguage === 'bn' ? 'উত্তর' : 'Answer';
+    const textToCopy = `${faq.full_q[currentLanguage]}\n\n${label}: ${faq.a[currentLanguage]}`;
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        showToast(currentLanguage === 'bn' ? 'উত্তর কপি করা হয়েছে!' : 'Answer copied to clipboard!');
+    });
+}
+
+// Quiz Logic
+const quizQuestions = [
+    {
+        q: { bn: "বেগুন চাষের জন্য মাটির সর্বোত্তম পিএইচ (pH) কত হওয়া উচিত?", en: "What is the optimum soil pH for brinjal cultivation?" },
+        options: {
+            bn: ["৪-৫", "৫-৬", "৬-৭", "৮-৯"],
+            en: ["4-5", "5-6", "6-7", "8-9"]
+        },
+        correct: 2
+    },
+    {
+        q: { bn: "বেগুন চারা রোপণের সঠিক দূরত্ব কত?", en: "What is the correct spacing for brinjal planting?" },
+        options: {
+            bn: ["৫০x৫০ সেমি", "১০০x৭০ সেমি", "৬০x৪০ সেমি", "৩০x৩০ সেমি"],
+            en: ["50x50 cm", "100x70 cm", "60x40 cm", "30x30 cm"]
+        },
+        correct: 1
+    },
+    {
+        q: { bn: "বেগুনের ডগা ও ফল ছিদ্রকারী পোকা দমনে কোনটি কার্যকর?", en: "Which one is effective in controlling Brinjal Fruit & Shoot Borer?" },
+        options: {
+            bn: ["ইউরিয়া সার", "সেক্স ফেরোমন ফাঁদ", "বেশি পানি সেচ", "মালচ পেপার"],
+            en: ["Urea Fertilizer", "Sex Pheromone Trap", "Excess Irrigation", "Mulch Paper"]
+        },
+        correct: 1
+    },
+    {
+        q: { bn: "চারা রোপণের কত দিন আগে গর্তে গোবর সার প্রয়োগ করা উচিত?", en: "How many days before planting should cowdung be applied?" },
+        options: {
+            bn: ["১ দিন", "৩ দিন", "৭ দিন", "১৫ দিন"],
+            en: ["1 day", "3 days", "7 days", "15 days"]
+        },
+        correct: 2
+    },
+    {
+        q: { bn: "বীজতলার চারা সাদা ঘন নেট দিয়ে ঢেকে রাখার প্রধান উদ্দেশ্য কি?", en: "What is the main purpose of covering seedlings with white net?" },
+        options: {
+            bn: ["রোদ থেকে সুরক্ষা", "বৃষ্টি থেকে সুরক্ষা", "পোকামাকড় প্রবেশ রোধ", "সৌন্দর্য বর্ধন"],
+            en: ["Protection from sun", "Protection from rain", "Insects prevention", "Aesthetic value"]
+        },
+        correct: 2
+    }
+];
+
+let currentQuestionIndex = 0;
+let quizScore = 0;
+
+function startQuiz() {
+    currentQuestionIndex = 0;
+    quizScore = 0;
+    document.getElementById('quiz-start-view').style.display = 'none';
+    document.getElementById('quiz-result-view').style.display = 'none';
+    document.getElementById('quiz-question-view').style.display = 'block';
+    showQuestion();
+}
+
+function showQuestion() {
+    const question = quizQuestions[currentQuestionIndex];
+    const t = TRANSLATIONS[currentLanguage];
+    document.getElementById('quiz-progress').textContent = currentLanguage === 'bn' ? `প্রশ্ন ${currentQuestionIndex + 1} (${quizQuestions.length}-এর মধ্যে)` : `Question ${currentQuestionIndex + 1} of ${quizQuestions.length}`;
+    document.getElementById('question-text').textContent = question.q[currentLanguage];
+
+    const optionsContainer = document.getElementById('options-container');
+    optionsContainer.innerHTML = question.options[currentLanguage].map((opt, i) => `
+        <button class="option-btn" onclick="checkAnswer(${i})">${opt}</button>
+    `).join('');
+}
+
+function checkAnswer(selectedIndex) {
+    const question = quizQuestions[currentQuestionIndex];
+    const buttons = document.querySelectorAll('.option-btn');
+
+    buttons.forEach(btn => btn.disabled = true);
+
+    if (selectedIndex === question.correct) {
+        buttons[selectedIndex].classList.add('correct');
+        quizScore++;
+    } else {
+        buttons[selectedIndex].classList.add('wrong');
+        buttons[question.correct].classList.add('correct');
+    }
+
+    setTimeout(() => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < quizQuestions.length) {
+            showQuestion();
+        } else {
+            showResult();
+        }
+    }, 1500);
+}
+
+function showResult() {
+    document.getElementById('quiz-question-view').style.display = 'none';
+    document.getElementById('quiz-result-view').style.display = 'block';
+    document.getElementById('result-score').textContent = `${quizScore}/${quizQuestions.length}`;
+
+    let message = "";
+    if (currentLanguage === 'bn') {
+        if (quizScore === quizQuestions.length) message = "চমৎকার! আপনি একজন GAP মাস্টার।";
+        else if (quizScore >= quizQuestions.length / 2) message = "ভালো কাজ করেছেন! শিখতে থাকুন।";
+        else message = "আপনার স্কোর উন্নত করতে মডিউলগুলো আরও অধ্যয়ণ করুন।";
+    } else {
+        if (quizScore === quizQuestions.length) message = "Excellent! You are a GAP Master.";
+        else if (quizScore >= quizQuestions.length / 2) message = "Good job! Keep learning.";
+        else message = "Keep studying the modules to improve your score.";
+    }
+
+    document.getElementById('result-text').textContent = message;
+}
+
+function resetQuiz() {
+    document.getElementById('quiz-result-view').style.display = 'none';
+    document.getElementById('quiz-start-view').style.display = 'block';
+}
+
+function renderQuiz() {
+    // Already handled by startQuiz, but placeholder for any init logic
+}
+
+function renderDashboardExtras() {
+    const t = TRANSLATIONS[currentLanguage];
+    const learnContainer = document.getElementById('learn-container');
+    const guideContainer = document.getElementById('guide-container');
+
+    if (learnContainer) {
+        learnContainer.innerHTML = t.learn_items.map((item, i) => `
+            <div class="guide-step">
+                <div class="step-num">${i + 1}</div>
+                <p>${item}</p>
+            </div>
+        `).join('');
+    }
+
+    if (guideContainer) {
+        guideContainer.innerHTML = t.guide_items.map((item, i) => `
+            <div class="guide-step">
+                <div class="step-num">${String.fromCharCode(65 + i)}</div>
+                <p>${item}</p>
+            </div>
+        `).join('');
+    }
+}
+
+const GALLERY_LABELS = {
+    "page_17_img_0.jpeg": { bn: "ডগা ও ফল ছিদ্রকারী পোকা", en: "Fruit & Shoot Borer" },
+    "page_17_img_1.jpeg": { bn: "জেসিড", en: "Jassids" },
+    "page_18_img_0.jpeg": { bn: "সাদা মাছি", en: "Whitefly" },
+    "page_18_img_1.jpeg": { bn: "জাব পোকা", en: "Aphids" },
+    "page_19_img_0.jpeg": { bn: "থ্রিপস", en: "Thrips" },
+    "page_19_img_3.jpeg": { bn: "লাল মাকড়", en: "Red Spider Mite" },
+    "page_20_img_0.jpeg": { bn: "এপিলাকনা বিটল", en: "Epilachna Beetle" },
+    "page_21_img_0.jpeg": { bn: "ব্যাকটেরিয়াল উইল্ট", en: "Bacterial Wilt" },
+    "page_22_img_0.jpeg": { bn: "ফোমোপসিস ব্লাইট", en: "Phomopsis Blight" },
+    "page_23_img_0.jpeg": { bn: "ক্ষুদ্রাকৃতি পাতা রোগ", en: "Little Leaf" },
+    "page_24_img_0.jpeg": { bn: "শিকড় গিটঁ রোগ", en: "Root Knot Nematode" },
+    "page_25_img_0.jpeg": { bn: "গোড়া পঁচা রোগ", en: "Dumping Off" },
+    "page_26_img_0.jpeg": { bn: "মোজাইক ভাইরাস", en: "Mosaic Virus" },
+    "page_27_img_0.jpeg": { bn: "সারকোস্পোরা পাতার দাগ", en: "Cercospora Leaf Spot" },
+    "page_28_img_0.jpeg": { bn: "সমন্বিত বালাই ব্যবস্থাপনা", en: "Integrated Pest Management (IPM)" }
+};
+
+function renderGallery() {
+    const galleryContainer = document.getElementById('image-gallery');
+    const imageFiles = Object.keys(GALLERY_LABELS);
+
+    galleryContainer.innerHTML = imageFiles.map(img => `
+        <div class="gallery-item" onclick="viewImage('extracted_assets/images/${img}')" title="${GALLERY_LABELS[img][currentLanguage]}">
+            <img src="extracted_assets/images/${img}" alt="GAP Visual Aid">
+            <div class="gallery-caption">${GALLERY_LABELS[img][currentLanguage]}</div>
+        </div>
+    `).join('');
+}
+
+function viewImage(src) {
+    modalTitle.textContent = currentLanguage === 'bn' ? "ভিজ্যুয়াল রেফারেন্স" : "Visual Reference";
+    modalBody.innerHTML = `<img src="${src}" style="width:100%; border-radius:12px; margin-bottom:1rem;">`;
+    modal.classList.add('active');
+    markCompleteBtn.style.display = 'none';
+
+    // Hide nav in image view
+    const navContainer = document.querySelector('.modal-nav');
+    if (navContainer) navContainer.style.display = 'none';
+}
+
+// Reset markCompleteBtn display on normal lesson open
+const originalOpenLesson = openLesson;
+openLesson = function (id) {
+    markCompleteBtn.style.display = 'block';
+    originalOpenLesson(id);
+};
+
+// Initialize
+init();

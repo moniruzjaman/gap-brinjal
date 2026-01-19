@@ -1,0 +1,1198 @@
+[
+    {
+        "title": "1.0| f‚wgKv (Introduction)",
+        "body": "1"
+    },
+    {
+        "title": "2.0| GAP †cªv‡UvKj cªYqb I e¨envi c×wZ (Procedure of GAP protocol development",
+        "body": "and practices) 2"
+    },
+    {
+        "title": "3.0| GAP †cªv‡UvK‡ji Av‡jv‡K †e¸b Drcv`‡bi Aby‡gvw`Z c×wZ (Recommended",
+        "body": "procedures of production of brinjal based on GAP Protocol) 3"
+    },
+    {
+        "title": "3.1|  ¯’v‡bi BwZnvm Ges e¨e¯’vcbv (Site history and management)",
+        "body": "3"
+    },
+    {
+        "title": "3.2|  esk we¯Ív‡ii Dcv`vb: ecb/†ivcY mvgMªx (Propagation/planting material)",
+        "body": "3"
+    },
+    {
+        "title": "3.3| †e¸b Drcv`‡b ¸iæZ¡c~Y© K…wlZvwË¡K welqmg~n (Important agronomic practices",
+        "body": "for brinjal production) 4"
+    },
+    {
+        "title": "3.3.1 Rwgi wbe©vPb (Site selection)",
+        "body": "4"
+    },
+    {
+        "title": "3.3.2 Rjevqy I gvwU (Climate and soil)",
+        "body": "4"
+    },
+    {
+        "title": "3.3.3 RvZ wbe©vPb (Selection of variety)",
+        "body": "4"
+    },
+    {
+        "title": "3.3.4 ex‡Ri nvi (Seed rate)",
+        "body": "4"
+    },
+    {
+        "title": "3.3.5 exR †kvab (Seed treatment)",
+        "body": "4"
+    },
+    {
+        "title": "3.3.6 exRZjvq exR ec‡bi Dchy³ mgq (Optimum time of seeding)",
+        "body": "4"
+    },
+    {
+        "title": "3.3.7 Pviv Drcv`b (Seedling raising)",
+        "body": "5"
+    },
+    {
+        "title": "3.3.8 Pvivi eqm (Seedling age)",
+        "body": "5"
+    },
+    {
+        "title": "3.3.9 Rwg ˆZwi I Pviv †ivcY (Land preparation and planting)",
+        "body": "5"
+    },
+    {
+        "title": "3.3.10 LyuwU †`qv (Staking)",
+        "body": "5"
+    },
+    {
+        "title": "3.3.11 gvjP †ccvi e¨envi (Use of mulch paper)",
+        "body": "6"
+    },
+    {
+        "title": "3.3.12 AvMvQv `gb (Weed management)",
+        "body": "6"
+    },
+    {
+        "title": "3.3.13 we‡kl cwiPh©v (Special management)",
+        "body": "6"
+    },
+    {
+        "title": "3.3.14 †bU †`Iqv (Netting)",
+        "body": "6"
+    },
+    {
+        "title": "3.3.15 djb (Production)",
+        "body": "6"
+    },
+    {
+        "title": "3.4|  †KŠwjZvwË¡Kfv‡e iƒcvšÍwiZ Rxe (Genetically Modified Organisms)",
+        "body": "6"
+    },
+    {
+        "title": "3.5|  mvi Ges gvwUi cywó e¨e¯’vcbv (Fertilizers plant nutrient management)",
+        "body": "7"
+    },
+    {
+        "title": "3.5.16 mvi cª‡qvM c×wZ (Method of fertilizer application)",
+        "body": "8"
+    },
+    {
+        "title": "3.6|  cvwbi ¸Yv¸Y I †mP (Water quality and irrigation)",
+        "body": "8"
+    },
+    {
+        "title": "3.6.7 †m‡Pi mgqm~wP (Schedule of irrigation)",
+        "body": "9"
+    },
+    {
+        "title": "3.7|  ivmvqwbK `ª‡e¨i (Dw™¢` msi¶Y Dcv`vb A_ev K…wlR I AK…wlR ivmvqwbK) e¨envi",
+        "body": "(Chemical uses: Plant protection products or other agro and non-agrochemicals) 9"
+    },
+    {
+        "title": "3.8| †e¸‡bi ¶wZKi †cvKvmg~n I `gb e¨e¯’vcbv (Harmful insects of brinjal and its",
+        "body": "management) 12"
+    },
+    {
+        "title": "3.8.1 †e¸‡bi WMv I dj wQ`ªKvix †cvKv: Leucinodes orbonalis (Lepidoptera:",
+        "body": "Pyralidae) 12"
+    },
+    {
+        "title": "3.8.2 †e¸‡bi †kvlK †cvKvmg~n: R¨vwmW, mv`v gvwQ, w_ªcm, GwdW, wgwjevM BZ¨vw` 13",
+        "body": "iv"
+    },
+    {
+        "title": "3.8.2.1 R¨vwmW: Amrasca biguttula (Ishida) ( Homoptera: jassidae)  13",
+        "body": ""
+    },
+    {
+        "title": "3.8.2.2 mv`v gvwQ Bemisia tabaci (Hemiptera: Aleyrodidae)",
+        "body": "13"
+    },
+    {
+        "title": "3.8.2.3 GwdW: Aphis craccivora (Homoptera: Aphididae)",
+        "body": "14"
+    },
+    {
+        "title": "3.8.2.4 w_ªcm: Thrips palmi (Thysanoptera: Thripidae)",
+        "body": "14"
+    },
+    {
+        "title": "3.8.2.5 wgwjevM: Coccidohystrix insolita (Hemiptera: Pseudococcidae)  15",
+        "body": ""
+    },
+    {
+        "title": "3.8.3 KuvUv‡j †cvKv ev Bwcj¨vKbv weUj: Epilachna sp. (Coleoptera:",
+        "body": "Coccinellidae) 16"
+    },
+    {
+        "title": "3.8.4 jvj gvKo: Tetranychus urticae (Acarina: Tetranychidae)",
+        "body": "16"
+    },
+    {
+        "title": "3.9| †e¸‡bi cªavb †ivMmg~n I `gb e¨e¯’vcbv (Major diseases of brinjal and its",
+        "body": "management) 17"
+    },
+    {
+        "title": "3.9.1 W¨vw¤ús Ad/Pviv MvQ X‡j cov/†bwZ‡q cov",
+        "body": "17"
+    },
+    {
+        "title": "3.9.2 †e¸‡bi e¨vK‡Uwiqv X‡j cov (Bacterial wilt of brinjal) †ivM",
+        "body": "18"
+    },
+    {
+        "title": "3.9.3 †e¸‡bi wkKo wMU (Root knot of brinjal) †ivM",
+        "body": "19"
+    },
+    {
+        "title": "3.9.4 †e¸‡bi †Mvov cPv/wdDRvwiqvg X‡j cov (Fusarium wilt of brinjal) †ivM  20",
+        "body": ""
+    },
+    {
+        "title": "3.9.5 †e¸‡bi †dv‡gvcwmm eøvBU/dj I KvÛ cPv (Phomopsis blight/fruit and",
+        "body": "stem rot of brinjal) 21"
+    },
+    {
+        "title": "3.9.6 †e¸‡bi cvZvi `vM (Leaf spot of brinjal) †ivM",
+        "body": "21"
+    },
+    {
+        "title": "3.9.7 †e¸‡bi ¶y`ª cvZv/¸”Q cvZv/Zzjwm jvMv †ivM (Little leaf of brinjal)",
+        "body": "23"
+    },
+    {
+        "title": "3.10| †e¸b msMªn Ges msMªn cieZ©x e¨e¯’vcbv (Harvesting and postharvest management)",
+        "body": "23"
+    },
+    {
+        "title": "3.10.1 †e¸b msMªn cieZ©x e¨e¯’vcbvi Ab¨vb¨ welqmg~n (Other postharvest",
+        "body": "management) 25"
+    },
+    {
+        "title": "3.11|  mÜvb‡hvM¨Zv I cY¨ cªZ¨vnvi Kiv (Traceability and recall)",
+        "body": "26"
+    },
+    {
+        "title": "3.12| Kg© cwi‡ek I e¨w³MZ ¯^v¯’¨wewa (Working environment and personal hygiene)",
+        "body": "26"
+    },
+    {
+        "title": "3.13| kªwgK Kj¨vY (Worker welfare)",
+        "body": "27"
+    },
+    {
+        "title": "3.14| cªwk¶Y (Training)",
+        "body": "27"
+    },
+    {
+        "title": "3.15| WKz‡g›Um Ges †iKW©m (Documents and records)",
+        "body": "27"
+    },
+    {
+        "title": "3.16| eR©¨ e¨e¯’vcbv (Waste management)",
+        "body": "27"
+    },
+    {
+        "title": "3.17| kw³i `¶Zv (Energy efficiency)",
+        "body": "27"
+    },
+    {
+        "title": "3.18| Rxe ˆewPÎ¨ (Biodiversity)",
+        "body": "28"
+    },
+    {
+        "title": "3.19| evZvm/kã (Air/noise)",
+        "body": "28"
+    },
+    {
+        "title": "3.20| PP©vi ch©v‡jvPbv (Review of practices)",
+        "body": "28"
+    },
+    {
+        "title": "3.21| cY¨gvb cwiKíbv (Produce quality plan)",
+        "body": "28"
+    },
+    {
+        "title": "3.22| GAP †cÖv‡UvKj Abymi‡Y `jMZfv‡e †e¸b Drcv`‡b we‡eP¨ welqmg~n (Points to be",
+        "body": "considered in the GAP Protocol for group production/certification of brinjal)  28"
+    },
+    {
+        "title": "4.0| Dcmsnvi (Conclusion)",
+        "body": "31"
+    },
+    {
+        "title": "5.0| Z_¨m~Î (References)",
+        "body": "31"
+    },
+    {
+        "title": "6.0| cwiwkó ÔKÕ: evsjv‡`k DËg K…wl PP©v (GAP) ev¯Íevq‡b gvwU I cvwb we‡køl‡Yi wbwgË",
+        "body": "c¨vivwgUvimg~‡ni gvbgvÎv wba©viY 32 1"
+    },
+    {
+        "title": "1.0| f‚wgKv (Introduction)",
+        "body": "evsjv‡`k AvR Dbœq‡bi †ivj g‡Wj wn‡m‡e wek¦e¨vwc cwiwPZ| Af‚Zc~e© G Dbœq‡bi Ab¨Zg g~jwfwË n‡jv K…wl| †`‡ki Lv`¨ wbivcËv wbwðZKiY, Kg©ms¯’vb m„wó, mg„w×, K…wó I ms¯‹…wZi aviK I evnK  n‡”Q K…wl| Dbœq‡bi avivevwnKZvq AvaywbK cªhyw³ wbf©i Drcv`b e¨e¯’v Mªn‡Yi gva¨‡g G †`‡ki K…wl RxweKv wbe©v‡ni K…wl †_‡K evwYwR¨K K…wl‡Z iƒcvšÍwiZ n‡”Q| my¯’ Rxe‡bi Rb¨ wbivc` Lv‡`¨i †Kv‡bv weKí †bB| Lv`¨-k„•L‡ji †h‡Kv‡bv ch©v‡q ¶wZKi Dcv`v‡bi MªnY‡hvM¨ gvÎvi AwaK Aewkóvsk, AYyRxexq msµgY, ¶wZKi fvix avZe e¯Íymn Ab¨vb¨ ¶wZKi e¯Íyi Dcw¯’wZ Øviv wecwË NU‡Z cv‡i| Lvgvi ch©vq n‡Z ïiæ K‡i †fv³v ch©v‡q wbivc` I gvbm¤úbœ Lv`¨ wbwðZ Ki‡Z Lvgv‡i Drcv`b Ges msMª‡nvËi cªwµqvq DËg K…wl PP©v (Good Agricultural Practices-GAP) ev¯Íevqb AZ¨šÍ ¸iæZ¡c~Y©| DËg K…wl PP©v (GAP) wbivc` I ¯^v¯’¨Ki Lv`¨ Drcv`bmn †UKmB A_©‰bwZK, mvgvwRK Ges cwi‡ekMZ Dbœqb wbwðZ K‡i| wbivc` Lv`¨ Drcv`b‡K m‡e©v”P ¸iæZ¡ w`‡q miKvi Ôevsjv‡`k DËg K…wl PP©v bxwZgvjv-2020Õ cªYqb K‡i| evsjv‡`‡k GAP ev¯Íevq‡bi j‡¶¨ K…wl gš¿Yvjq KZ©…K evsjv‡`k K…wl M‡elYv KvDwÝj (weGAviwm) cwiKí ¯^Z¡vwaKvix (w¯‹gIbvi) Ges K…wl m¤úªmviY Awa`ßi (wWGB) mvwU©wd‡Kkb ewW (Bangladesh Agricultural Certification Body-BACB) wn‡m‡e `vwqZ¡ cªvß nq| GAP Kvh©µg cwiPvjbvi Rb¨ wewfbœ AskxRb mgš^‡q (w÷qvwis, †UKwbK¨vj I mvwU©wd‡Kkb) KwgwU MVb Kiv nq| D³ bxwZgvjv ev¯Íevq‡b mgqve× Kg©cwiKíbv cªYqb Kiv nq| GAP ev¯Íevq‡bi Dc‡hvMx gvb`Ð (standards) cªwZôv Ki‡Z 246wU Abykxjb PP©v m¤^wjZ wbivc` Lv`¨ gwWDj; cwi‡ekMZ e¨e¯’vcbv gwWDj; Kg©xi ¯^v¯’¨, wbivcËv I Kj¨vY gwWDj; cY¨gvb gwWDj Ges mvaviY cª‡qvRbxqZv gwWDjmn †gvU 5wU gwWDj cª¯ÍyZ Kiv n‡q‡Q, hv gvVc©hv‡q GAP ev¯Íevqb wbwðZ Ki‡e| GAP gvb`‡Ûi ¸iæZ¡ we‡ePbvq Abykxjbmg~n‡K (Control point) ÒAwZ ¸iæZ¡c~Y©Ó (Major must)-100% AbymiY eva¨Zvg~jK, Ò¸iæZ¡c~Y©Ó (Minor must)-90% AbymiY eva¨Zvg~jK Ges ÒmvaviYÓ (General)-50% AbymiY eva¨Zvg~jK G wZb †kªwY‡Z †kªwYweb¨vm Kiv n‡q‡Q| gvV ch©v‡q GAP ev¯Íevq‡bi Rb¨ AvaywbK Drcv`b †KŠk‡ji m‡½ evsjv‡`k GAP gvb`‡Ði mgš^q NwU‡q GAP †cªv‡UvKj cª¯ÍyZ Kiv n‡q‡Q| cªv_wgK ch©v‡q Program on Agricultural and Rural Transformation for Nutrition, Entrepreneurship, and Resilience in Bangladesh (PARTNER) cªK‡íi AvIZvq 15wU dmj (10wU mewR I 5wU dj) GAP ev¯Íevq‡bi Rb¨ wbe©vPb Kiv n‡q‡Q| evsjv‡`k K…wl M‡elYv Bbw÷wUD‡Ui weÁvbxe„›` KZ…©K K…wl m¤úªmviY Awa`ß‡ii mn‡hvwMZvq gvV ch©v‡q G mg¯Í dm‡ji †cÖv‡UvKjmg~‡ni f¨vwj‡Wkb Uªvqvj ev¯ÍevwqZ nq| GAP †cªv‡UvKj ev¯Íevq‡bi cªv_wgK ¯Í‡i K…lK, K…wl D‡`¨v³v I gvV ch©v‡qi K…wl m¤úªmviY Awa`ßi (wWGB) Gi Kg©KZ©vMY‡K e¨vcK cªwk¶‡Yi AvIZvq Avb‡Z n‡e| †Kv‡bv dmj we‡`‡k ißvwb Ki‡Z n‡j AvšÍR©vwZK ¯^xK…wZ AR©b GKvšÍ cª‡qvRb| wbivc` Lv`¨ wbwðZ Kivi Rb¨ dmj Drcv`b n‡Z ïiæ K‡i cªwµqvRvZKiY, mieivn I wecYb cªwZwU ch©v‡qB GAP gvb`Ð AbymiY Riæwi| D‡jøL¨, evsjv‡`k G¨vwµwW‡Ukb †evW© (BAB) ¯^xK…wZ cª`vbKvix ms¯’v wn‡m‡e GAP Kvh©µg/ev¯Íevq‡bi ¯^xK…wZ cª`vb Ki‡e| 2 †e¸b (Solanum melongena L.) Solanaceae cwievify³ mewR hv evsjv‡`‡ki me©vwaK Rbwcªq mewR| Pvlvaxb Rwgi ciwgvY I †gvU Drcv`‡bi w`K †_‡K mewRmg~‡ni g‡a¨ †e¸b Ab¨Zg| †e¸‡bi RbwcªqZvi Kvi‡Y mviveQiB evRv‡i cvIqv hvq| RvZ Abyhvqx d‡ji AvKvi I AvK…wZi g‡a¨ ˆewPÎZv A‡bK| K…lKiv mvaviYZ †fv³v‡`i Pvwn`vi Ici wbf©i K‡i wbw`ó Rv‡Zi †e¸b Pvl K‡i _v‡K| d‡ji AvK…wZ wewfbœ AvKv‡ii n‡q _v‡K †hgb: †MvjvKvi, wW¤^vKvi, †ejybvKvi, bjvKvi ev j¤^v AvK…wZi| †e¸‡bi i‡Oi g‡a¨ wekvj ˆewPÎ¨ †`L‡Z cvIqv hvq †hgb: †e¸wb, †e¸wb Kv‡jv, Kv‡jv, mv`v, meyR, nvév meyR, Mvp meyR Ges GKiOv I wgkªY n‡q _v‡K| mv`v †Wvivmn †e¸wb ai‡bi, nvjKv meyR/mv`v †Wviv, †dvUvmn meyR, GgbwK wZbwU i‡Oi mgš^‡q †e¸b †`L‡Z cvIqv hvq| c„w_exi wewfbœ †`k DËg K…wl PP©v AbymiY K‡i DrK…ó †e¸b Drcv`b Ki‡Q| evsjv‡`‡k DËg K…wl PP©v †KejgvÎ ïiæ n‡q‡Q| wek¦evRv‡i ißvwb‡hvM¨ Ae¯’vb mywbwðZKi‡Y Avgv‡`i †`‡kI †e¸b Drcv`b I wecY‡b DËg K…wl PP©v Abym„Z nIqv cÖ‡qvRb| evsjv‡`k DËg K…wl PP©v gvb`‡Ði Av‡jv‡K †e¸‡bi GAP †cÖv‡UvKj 19wU Dcv`v‡bi wfwË‡Z MwVZ Ges Gi cÖ‡Z¨KwU Dcv`vbB GAP Gi cÖ‡qvRbxqZv‡K e¨vL¨v K‡i|"
+    },
+    {
+        "title": "2.0| GAP †cªv‡UvKj cªYqb I e¨envi c×wZ (Procedure of GAP protocol development",
+        "body": "and practices) evsjv‡`k GAP gvb`Û 5wU gwWD‡j we¯Í…Z n‡jI GAP †cªv‡UvKj cªYq‡bi †¶‡Î mKj Abykxjb PP©v GwKf‚Z K‡i †gvU 19wU Dcv`v‡bi mgš^‡q cªwZwU dm‡ji Rb¨ c„_K c„_K GAP †cªv‡UvKj cªYqb Kiv n‡q‡Q| G j‡¶¨  evsjv‡`k K…wl M‡elYv Bbw÷wUDU n‡Z dmj wfwËK weÁvbx g‡bvbqb Kiv  n‡q‡Q| GQvov, †ivM I †cvKvgvKo e¨e¯’vcbvi Rb¨ †ivMZË¡we` I KxUZË¡we` AišÍ©fy³ wQj| GAP BDwbU, weGAviwm KZ©…K weÁvbx I cªvwZôvwbK †dvKvj c‡q›U mgš^‡q MwVZ KvwiMwi KwgwUi GKvwaK mfv Av‡qvR‡bi gva¨‡g GAP †cªv‡UvK‡ji Lmov cªYqb Kiv nq| AZtci GAP †÷K‡nvìvi Kg©kvjv mswkøó mKj AskxRb mgš^‡q Av‡qvRb Kiv nq| †÷K‡nvìvi Kg©kvjvi mycvwi‡ki Av‡jv‡K c~btch©v‡jvPbv KwgwUi mycvwi‡ki wfwË‡Z Lmov GAP †cªv‡UvKj P~ovšÍ Kiv nq| GAP †cªv‡UvK‡ji m‡½ gvwU I cvwbi bgybvi Aby‡gvw`Z c¨vivwgUvimg~n mshy³ Kiv n‡q‡Q (cwiwkó ÔKÕ)| DËg K…wl PP©v (GAP) g~jZ GKwU ÷¨vÛv‡W©i gva¨‡g ev¯ÍevwqZ n‡q _v‡K| GAP cÖZ¨q‡bi Rb¨ Drcv`b GjvKv/Lvgv‡ii Dc‡hvwMZv D³ ÷¨vÛv‡W©i Av‡jv‡K g~j¨vqb Ki‡Z n‡e| dm‡ji GAP †cÖv‡UvKj ev¯Íevq‡bi Rb¨ Lvgv‡i GKwU mywbw`©ó cwiKíbv (farm management plan) _vK‡Z n‡e| hv‡Z Lvgv‡ii ¯’v‡bi we¯ÍvwiZ weeiYmn g¨vc _vK‡Z n‡e| D³ Lvgvi e¨e¯’vcbvi Rb¨ SzuwK we‡kølY, wbiƒcY, gvwU I cvwb Ae¯’v, Kg©xi ¯^v¯’¨wewa, cwi‡ek eR©¨ e¨e¯’vcbv, mÜ¨vb‡hvM¨Zv I cY¨ cÖZ¨vnvimn mKj cwiKíbv AšÍfz©³ _vK‡e| Lvgvi e¨e¯’vcbv cwiKíbvq cÖwZwU dm‡ji Drcv`‡bi hveZxq mgqKvj (†ivcY/ecb, mvi/cywó/†mP e¨e¯’vcbv, AvšÍtcwiPh©v, dmj msMÖn I msMÖ‡nvËi e¨e¯’v) D‡jøL _vK‡e| †ivM I †cvKvi wbqš¿‡Y †Kvb ai‡Yi cÖwZ‡ivag~jK e¨e¯’v MÖnY A_ev KxUbvkK e¨eüZ n‡j Gi msMÖn c~e© weiwZ (Pre-harvest Interval-PHI)-Gi Z_¨ †iK‡W© AšÍf©z³ Ki‡Z n‡e Ges Gi Aewkóvs‡ki gvÎv wbY©‡qi Rb¨ ¯^xK…Z G¨vwµ‡W‡UU j¨ve n‡Z cix¶v Ki‡Z n‡e| GZ`m‡½ Kg©xi ¯^v¯’¨, ivmvqwbK cÖ‡qvMmn mKj Kvh©µ‡gi Ici kÖwgK‡K cÖwk¶Y cÖ`vbmn eY©xZ gvb`Ð I †cÖv‡UvKj Abyhvqx PP©vi ch©v‡jvPbv Ki‡Z n‡e| G‡¶‡Î evsjv‡`k GwMÖKvjPvivj mvwU©wd‡Kkb ewW (BACB) KZ©…K 3 Drcv`K †iwRÖ÷vi I gvb g¨vbyqvj‡K AbymiY Ki‡Z n‡e| †h Lvgv‡ii cwiKíbv hZ †ewk my¯úó †mB Lvgvi cwiPvjbv I mvwU©wd‡KU cÖvwßi cÖwµqv AwaKZi mnR n‡e| cÖYxZ †cÖv‡UvKj h_vh_ ev¯Íevqb I Abymi‡Yi gva¨‡g Drcv`K/Drcv`K `‡ji mvwU©wd‡KU MÖnY Kiv AwaKZi mnR n‡e|"
+    },
+    {
+        "title": "3.0| GAP †cªv‡UvK‡ji Av‡jv‡K †e¸b Drcv`‡bi Aby‡gvw`Z c×wZ (Recommended",
+        "body": "procedures of production of brinjal based on GAP Protocol)"
+    },
+    {
+        "title": "3.1| ¯’v‡bi BwZnvm Ges e¨e¯’vcbv (Site history and management)",
+        "body": ""
+    },
+    {
+        "title": "3.1.1 †e¸b Drcv`‡bi Rb¨ wbe©vwPZ ¯’vb Ges cvk¦©eZ©x Rwgi BwZnvm I gvwUi bgybv",
+        "body": "we‡kølYc~e©K D³ ¯’v‡b B‡Zvc~‡e© Drcvw`Z dm‡j cª‡qvMK…Z ivmvqwbK/RxevYy mvi, evjvBbvkK I ˆRweK `~lY wbiƒcY I eZ©gvb dm‡j msµg‡Yi SyuwK kbv³ n‡j Zv SyuwKgy³/ms‡kvabg~jK e¨e¯’v MªnY e¨ZxZ Pvlvev` eÜ ivL‡Z n‡e Ges gwbUwis Kvh©µ‡gi gva¨‡g Drcvw`Z †e¸‡b †Kvbiƒc msµgY N‡Uwb GZ`&msµvšÍ Z_¨vw` msi¶Y Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.1.2 †e¸b Drcv`‡bi Rb¨ e¨eüZ Rwg wbe©vP‡bi †¶‡Î DuPy ¯’vb wKsev Lvov Xv‡j †`‡ki",
+        "body": "cªPwjZ wbqg-bxwZ/wewawb‡la cvjb Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.1.3 bZyb ¯’vb wbe©vP‡bi †¶‡Î Av‡kcv‡ki cwi‡ekMZ ¶wZi KviY msµvšÍ SyuwK wbY©q I",
+        "body": "wPwýZ n¨vRv‡W©i †iKW© msi¶Y Ki‡Z n‡e| G‡¶‡Î mywbw`©ó SyuwK kbv³ n‡j Giƒc ¯’vb Drcv`b Ges dmj msMª‡nvËi e¨e¯’vcbvi Rb¨ e¨envi bv Kiv A_ev SyuwK nªvm/cªwZ‡iv‡ai Rb¨ cª‡qvRbxq e¨e¯’v MªnY Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.1.4 †e¸b Drcv`‡bi †¶‡Î AwaK ¶wqòy GjvKv hv‡Z AviI Ae¶wqZ bv nq †mRb¨",
+        "body": "cª‡qvRbxq e¨e¯’v MªnY Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.1.5 Lvgv‡ii GKwU buKkv _vK‡Z n‡e hv‡Z Pvlvev‡`i Rwg, cwi‡ekMZ ms‡e`bkxjZv",
+        "body": "A_ev ¶wqòz GjvKv ivmvqwbK `ª‡e¨i msi¶Y I wgkªY¯’vb, cvwb msi¶Y, cªevn I wb®‹vkb bvjv, iv¯ÍvNvU Ges Ab¨vb¨ AeKvVv‡gv mywbw`©ófv‡e cª`k©b Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.2| esk we¯Ív‡ii Dcv`vb: ecb/‡ivcY mvgMªx (Propagation/planting material)",
+        "body": ""
+    },
+    {
+        "title": "3.2.1 †e¸b dm‡ji Pviv Drcv`‡bi †¶‡Î mvi, Ab¨vb¨ ivmvqwbK evjvBbvkK cª‡qv‡Mi",
+        "body": "KviYmn e¨env‡ii ZvwiL, †UªW bvg, Kvh©Kix Dcv`vb, cª‡qvMKvixi bvg, cª‡qvM c×wZ, cwigvYmn mKj weeiY wjwce× Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.2.2 Pviv/Kj‡gi ¸YMZgvb m¤úwK©Z hveZxq Z_¨vw` †hgb: Rv‡Zi weï×Zv, Rv‡Zi bvg,",
+        "body": "e¨vP b¤^i (cª‡hvR¨ †¶‡Î) I Pviv/Kjg we‡µZvi bvg, wVKvbv I µ‡qi ZvwiL msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.2.3 Pviv/Kjg, iæU ÷K ev mvqb wbewÜZ bvm©vwi (miKvwi/K…wl ms¯’v/¯^xK…wZcªvß",
+        "body": "wUmy¨KvjPvi j¨ve) n‡Z msMªn Ki‡Z n‡e hv‡Z Pviv/Kj‡g †cvKv ev †iv‡Mi wPý `„k¨gvb bv _v‡K| ¸iæZ¡c~Y© 4"
+    },
+    {
+        "title": "3.3| †e¸b Drcv`‡b ¸iæZ¡c~Y© K…wlZvwË¡K welqmg~n (Important agronomic practices for",
+        "body": "brinjal production)"
+    },
+    {
+        "title": "3.3.1 Rwg wbe©vPb (Site selection)",
+        "body": "†e¸b Pv‡li Rb¨ DuPy, cvwb wb®‹vk‡b mye¨e¯’v Av‡Q Ggb Rwg wbe©vPb Ki‡Z n‡e| GQvov RwgwU Aek¨B gnvmoK ev evm PjvPj K‡i Ggb moK n‡Z Kgc‡¶ 60 wgUvi `y‡i n‡Z n‡e, Z‡e wbqwš¿Z cwi‡e‡k Pvlvev‡`i mgq †m `yiZ¡ bv gvb‡jI Pj‡e| Avevi KjKviLvbv eR©¨ wb®‹vk‡bi c_ †_‡K wbivc` `yiZ¡ eRvq ivL‡Z n‡e|"
+    },
+    {
+        "title": "3.3.2 Rjevqy I gvwU (Climate and soil)",
+        "body": "†e¸b GKwU Dò †gŠmy‡gi mewR Ges Zxeª kx‡Zi Rb¨ ms‡e`bkxj| ZvcgvÎv 17 wWMªx †mjwmqvm Gi wb‡P nªvm †c‡j dm‡ji e„w× gvivZ¥Kfv‡e ¶wZMª¯Í nq| Rjevqy Ae¯’v we‡kl K‡i wbgœ ZvcgvÎvq dz‡ji wW¤^vk‡qi A¯^vfvweK weKvk N‡U d‡j Mv‡Q weK…Z dj cwijw¶Z nq| d‡ji e„w×i Rb¨ m‡e©vËg ZvcgvÎv n‡jv 20-30 wWMªx †mjwmqvm| Z‡e ivZ-w`b Gi ZvcgvÎvi cv_©K¨ 22-25 wWMªx †mjwmqvm †_‡K 33-35 wWMªx †mjwmqvm Gi †ewk n‡j dj aviY, d‡ji e„w× Ges djb D‡jøL‡hvM¨fv‡e nªvm cvq| Z‡e Mªx®§Kvjxb RvZ¸‡jv el©vKv‡j Ges Mªx®§Kv‡j mdjfv‡e Pvl Kiv hvq| nvjKv †e‡j †_‡K fvix Kv`vgvwU ch©šÍ me gvwU‡ZB †e¸b R‡b¥v‡bv hvq| ˆRe c`v_© mg„× nvjKv gvwU, †`v-Avuk Ges cwj-†`v-Avuk mg„× Kv`vgvwU‡Z †e¸‡bi D”P djb m¤¢e| mvaviYZ cwj †`v-Avuk I Gu‡Uj †`v-Avuk gvwU †e¸b Pv‡li Rb¨ me‡P‡q Dc‡hvMx| gvwU Mfxi, De©i Ges mywb®‹vwkZ nIqv DwPZ| †e¸‡bi fvj e„w× Ges weKv‡ki Rb¨ gvwUi wcGBP 6-7 Gi †ewk nIqv DwPZ bq|"
+    },
+    {
+        "title": "3.3.3 RvZ wbe©vPb (Selection of variety)",
+        "body": "evsjv‡`k K…wl M‡elYv Bbw÷wUDU (weGAviAvB) I wewfbœ †emiKvwi cªwZôvb KZ©…K D™¢vweZ AvaywbK RvZ wbe©vPb Kiv| Z‡e K…lKiv †`kxq ev AvšÍR©vwZK evRv‡ii Pvwn`v Av‡Q Ggb RvZI Pvl Ki‡Z cv‡ib| †m‡¶‡Î mswkøó Rv‡Zi ˆewkó¨mg~n h_vh_ cªwµqvq Z_¨ve× K‡i wb‡Z n‡e| Ab¨ †Kvb Aby‡gvw`Z Drm n‡Z D™¢vweZ Rv‡Zi †¶‡ÎI G †cªv‡UvKj GKBfv‡e AbymiY‡hvM¨ n‡e|"
+    },
+    {
+        "title": "3.3.4 ex‡Ri nvi (Seed rate)",
+        "body": "GK Mªv‡g cªvq 250wU exR _v‡K, †mB wnmv‡e cªwZ †n±‡i 170 Mªvg Ges cªwZ kZ‡K 0.7 Mªvg ex‡Ri cª‡qvRb nq| Pvivi msL¨v A‡bKvs‡kB Rwg‡Z Pvivi †ivcY `~i‡Z¡i Ici wbf©i K‡i| Avevi †ivcY `~iZ¡ wbf©i K‡i RvZ I gvwUi De©iZvi Ici|"
+    },
+    {
+        "title": "3.3.5 exR †kvab (Seed treatment)",
+        "body": "QÎvK evwnZ †ivM †_‡K gy³ _vKvi Rb¨ exR ec‡bi c~‡e© QÎvKbvkK w`‡q †kvab Kiv DwPZ| exR †kva‡bi Rb¨ eûj e¨eüZ QÎvKbvkK nj †cªv‡f· hv cªwZ †KwR ex‡Ri Rb¨ 2-3 Mªvg cª‡qvRb nq| GQvov Kv‡e©ÛvwRg Mªæ‡ci QÎvKbvkKI e¨envi Kiv hvq|"
+    },
+    {
+        "title": "3.3.6 exRZjvq exR ec‡bi Dchy³ mgq (Optimum time of seeding)",
+        "body": "†m‡Þ¤^i (kxZKvwjb), †deªæqvwi-gvP© (Mªx®§Kvwjb) 5"
+    },
+    {
+        "title": "3.3.7 Pviv Drcv`b (Seedling raising)",
+        "body": "• mywb®‹vwkZ DuPy exRZjvq gvwU wgwn K‡i 1-2 †mwg `~‡i exR ecb K‡i nvjKv fv‡e gvwU w`‡q †X‡K w`‡Z n‡e| • exRZjvq cª‡qvRbvbymv‡i gvSvwi †_‡K nvjKv fv‡e †mP w`‡Z n‡e| • exR MRv‡Z 3-4 w`b mgq jv‡M| exR ec‡bi 7-10 w`b ci Pviv 3-4 cvZv wewkó n‡j 9-12 †mwg AvKv‡ii cwje¨M ev cwjcU G ¯’vbvšÍi Ki‡Z n‡e| GQvov cwUs †Uª e¨envi Kiv †h‡Z cv‡i| • cwUs wgwWqv‡Z 1:1 Abycv‡Z h_vµ‡g gvwU Ges K‡¤úv÷ wgkv‡Z n‡e| cwUs wgwWqvq AvRKvj †Kv‡KvwcU e¨envi Ki‡j Pvivi gvb fvj nq| • c‡i cwje¨vM ev cwjcU Qvqvhy³ ¯’v‡b ¯’vbvšÍi Ki‡Z n‡e, hv‡Z cªLi m~h©v‡jv‡K Ges So e„wó AvNvZ n‡Z i¶v cvq| • cvwb, m~h©v‡jvK I Qvqv cª‡qvRb gvwdK wbwðZ Ki‡Z n‡e| • Pviv mv`v Nb †bU w`‡q memgq †X‡K ivL‡Z n‡e hv‡Z †Kvb ai‡bi †cvKv-gvKo cª‡ek Ki‡Z bv cv‡i| • QÎvKbvkK (A‡Uvw÷b) I KxUbvkK (BwgUvd) Gi †¯úª 7-10 w`b AšÍi AšÍi cª‡qvM Ki‡Z n‡e| "
+    },
+    {
+        "title": "3.3.8 Pvivi eqm (Seedling age)",
+        "body": "Pvivi eqm 25-30 w`b A_ev 4-5 cvZv wewkó n‡j Rwg‡Z †ivcY Ki‡Z n‡e| cªwZ wc‡U GKwU my¯’ mej Pviv †ivcY Ki‡Z n‡e| Pviv †ivc‡Yi ci †Kvb Pviv gviv †M‡j Zv cybivq †mB Rv‡Zi Pviv w`‡q cªwZ¯’vcb Ki‡Z n‡e| GRb¨ AwZwi³ Pviv msi¶Y Ki‡Z n‡e|"
+    },
+    {
+        "title": "3.3.9 Rwg ˆZwi I Pviv †ivcY (Land preparation and planting)",
+        "body": "• fvj fv‡e Pvl I gB w`‡q Rwg ˆZwi Ki‡Z n‡e hv‡Z Rwg‡Z eo eo wXjv Ges AvMvQv bv _v‡K| • Pvivi †ivcY `~iZ¡ RvZ †f‡` wfbœ nq| • mvaviYZ 30 w`b eq‡mi Pviv 100×70 †mwg `~i‡Z¡ †ivcY Kiv nq| • Rwgi bKkv Abyhvqx, gv‡V Pviv jvMv‡bvi Rb¨ †eW ˆZwi Ki‡Z n‡e| bKkvq cªwZwU †eW cª‡¯’ 70 †mwg Ges j¤^vq 1 mvwi‡Z 15wU Pviv msKzj‡bi Rb¨ 10.5 wgUvi n‡Z n‡e| `ywU mvwii gvSLv‡b 30 †mwg †Wªb Ki‡Z n‡e| • Pviv we‡Kj †ejv †ivcY Kiv DIg| Pviv †ivc‡Yi ci ciB Mv‡Qi †Mvovq cvwb w`‡Z n‡e|"
+    },
+    {
+        "title": "3.3.10 LyuwU †`qv (Staking)",
+        "body": "†e¸b Mv‡Qi fvj I ¸YMZ djb cvIqvi Rb¨ LyuwU w`‡Z nq hv‡Z MvQ d‡ji fv‡i †n‡j bv c‡i| evu‡ki LywU Kgc‡¶ 1 wgUvi n‡e| cv‡Ui myZwj w`‡q MvQ LyuwUi mv‡_ †e‡a w`‡Z nq| G‡Z MvQ †n‡j c‡i bv, MvQ I dj‡K bvbvb ai‡bi †ivM †_‡K i¶v K‡i| 6"
+    },
+    {
+        "title": "3.3.11 gvjP †ccvi e¨envi (Use of mulch paper)",
+        "body": "AvMvQv `gb, Mv‡Qi mwVK e„w× I gvwUi cvwbi mwVK e¨venvi Kivi Rb¨ gvjP †ccvi e¨envi Kiv nq| GwU e¨envi Ki‡j AvMvQv `gb LiP K‡g hvq Ges djb e„w× cvq| evRv‡i GLb 1.2 wgUvi I 1 wgUvi cª¯’ Ges 500-600 wgUvi j¤^vi gvjP †ccvi cvIqv hvq| †e¸b Pv‡l G¸‡jv LyeB DcKvix, Z‡e gvjP †ccvi w`‡q Pvl Ki‡j Pviv Rwg‡Z †j‡M †M‡j ZviciB Pvivi `~iZ¡ Abymv‡i wQ`ª K‡i gvjP †ccvi ¯’vcb KivB DËg, KviY Pviv †ivc‡Yi c~‡e© gvjP †ccvi emv‡j m~‡h©i AwZwi³ Zv‡c Pviv gviv hvq|"
+    },
+    {
+        "title": "3.3.12 AvMvQv `gb (Weed management)",
+        "body": "wbovbx ev †Kv`vj w`‡q cª‡qvRbxq AvMvQv `gb Ki‡Z nq, Z‡e gvjP †ccvi e¨envi K‡i AvMvQv wbqš¿Y Ki‡j †Wª‡bi AvMvQv †Kv`vj w`‡q `gb Kiv `iKvi| gvjP †ccvi Qvov Pvl Ki‡j wbovwb, AvuPov ev †Kv`vj w`‡q AvMvQv `gb Kiv fvj| AvMvQv `g‡b AvMvQv bvkK e¨envi bv KivB DËg|"
+    },
+    {
+        "title": "3.3.13 we‡kl cwiPh©v (Special management)",
+        "body": "cª_g dz‡ji †MvQvi wVK bx‡Pi KzwkwU Qvov me cvk¦© Kzwk QuvUvB Ki‡Z n‡e| mvaviYZ GKwU Kzwk‡Z cvZvmn GKwU dj ivL‡j dj üócyó nq, djb ch©vß cvIqv hvq|"
+    },
+    {
+        "title": "3.3.14 †bU †`Iqv (Netting)",
+        "body": "cvwL †_‡K †e¸b‡K i¶v Kivi Rb¨ djevb Mv‡Qi Dc‡i cª‡qvR‡b †bU w`‡Z n‡e| Rwgi Pvwiw`K †bU Øviv wN‡i w`‡Z n‡e|"
+    },
+    {
+        "title": "3.3.15 djb (Production)",
+        "body": "• Pviv jvMv‡bvi 2.5-3 gvm ciB dmj KvUvi mgq nq| 2-3 w`b cici MvQ †_‡K avivj Qywii mvnv‡h¨ †e¸b msMªn Ki‡Z nq| • DbœZ c×wZ‡Z Pvlvev` Ki‡j RvZ †f‡` kxZKv‡j 40-60 Ub/‡n±i Ges Mªx®§Kv‡j 35-40 Ub/‡n±i djb cvIqv hvq|"
+    },
+    {
+        "title": "3.4| †KŠwjZvwË¡Kfv‡e iƒcvšÍwiZ Rxe (Genetically Modified Organisms)",
+        "body": ""
+    },
+    {
+        "title": "3.4.1 GMO †e¸b Pvlvev`/Uªvqv‡ji †¶‡Î †`‡k we`¨gvb mKj AvBb/bxwZgvjv AbymiY",
+        "body": " Ki‡Z n‡e| AwZ ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.4.2 GMO †e¸b Drcv`b Kivi †¶‡Î mKj Z_¨vejx wjwce× ivL‡Z n‡e| AwZ ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.4.3 GMO †e¸b/exR Drcv`bKvix KZ©…K †µZv‡K c‡Y¨i GMO m¤úwK©Z Z_¨vw`",
+        "body": "AewnZ Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.4.4 GMO †e¸b e¨e¯’vcbvq wjwLZ cwiKíbv _vKv; msµgY cªwZ‡iv‡a AvKw¯§Kfv‡e",
+        "body": "Non-GM dm‡ji m‡½ wgkªY cªwZ‡iva Kiv I GM c‡Y¨i ¯^KxqZv eRvq ivLv Ges G msµvšÍ Z_¨vw` msi¶Y Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.4.5 GMO †e¸b Avjv`vfv‡e msi¶Y Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©",
+        "body": "7"
+    },
+    {
+        "title": "3.5| mvi Ges gvwUi cywó e¨e¯’vcbv (Fertilizers and soil nutrient management)",
+        "body": ""
+    },
+    {
+        "title": "3.5.1 †e¸b Avev‡`i †¶‡Î Ges gvwUi Dc‡hv‡Mi mv‡_ m¤úwK©Z ivmvqwbK I ˆRweK SyuwK",
+        "body": "wba©viY Kiv Ges †Kvb ¸iæZ¡c~Y© n¨vRvW© wPwýZ n‡j Zvi Z_¨vw` msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.5.2 hw` n¨vRvW© wPwýZ nq †m‡¶‡Î SyuwK msµgY wbim‡b cªwZ‡iva/cªwZKv‡ii Rb¨",
+        "body": "cª‡qvRbxq e¨e¯’v MªnY Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.5.3 gvwU we‡køl‡Yi djvd‡ji wfwË‡Z dm‡ji wewfbœ ch©vq Abyhvqx mvi Ges gvwUi gvwUi",
+        "body": "Dc‡hvM (additives) cª‡qvM Ggbfv‡e Ki‡Z n‡e, hv‡Z cªevn (run off) A_ev wjwPs-Gi gva¨‡g cywói AcPq †iva Kiv m¤¢e nq| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.5.4 †e¸b Drcv`‡b fvix avZe (heavy metal) c`v‡_©i `~lY Kgv‡bvi Rb¨ Dchy³ mvi",
+        "body": "I gvwUi Dc‡hvM wba©viY Ges cª‡qvM Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.5.5 †e¸b dmj‡K `~wlZ Ki‡Z cv‡i Ggb Acwi‡kvwaZ eR© Ges c`v_© cª‡qvM Kiv hv‡e",
+        "body": " bv| Lvgv‡i Drcvw`Z ˆRe c`v_© e¨envi Kivi †¶‡Î cª‡qvM c×wZ, ZvwiL Ges cwi‡kvab Z_¨vw` msi¶Y Ki‡Z n‡e| evwn‡ii †Kvb ¯’vb †_‡K ˆRe c`v_© msMª‡ni †¶‡Î SyuwK kbv³ welqK Z_¨vw` we‡µZvi KvQ †_‡K msMªn Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.5.6 mvi/gvwUi Dc‡hvM msi¶Y, wgkªY I K‡¤úv÷ ˆZwii Rb¨ wbw`©ó ¯’vb wba©viY I",
+        "body": "Dchy³ ¯’vcbv ˆZwi K‡i Drcv`b ¯’vb Ges cvwbi Drm msµwgZ nIqvi m¤¢vebv n«vm Ki‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.5.7 mvi Ges gvwUi Dc‡hvM msµvšÍ we¯ÍvwiZ Z_¨ msi¶Y Kiv †hgb: Drm, c‡Y¨i bvg,",
+        "body": "ZvwiL, cwigvY D‡jøLmn we¯ÍvwiZ cª‡qvM c×wZ Ges cª‡qvMKvixi weeiY D‡jøL Ki‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.5.8 Drcvw`Z †e¸b †_‡K A‰Re I ˆRe mvi c„_Kfv‡e gRy` ivL‡Z n‡e|  ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.5.9 mvi Ges gvwUi Dc‡hvM cª‡qvM hš¿cvwZ fvjfv‡e msi¶Y Ges eQ‡i AšÍZ GKevi",
+        "body": "KvwiMwi `¶Zvm¤úbœ e¨w³ Øviv cix¶v Ki‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.5.10 mvi I gvwUi Dc‡hvM cª‡qv‡Mi we¯ÍvwiZ †iKW© (bvg, ¯’vb, ZvwiL, gvÎv), cª‡qvM",
+        "body": "c×wZ I cª‡qvMKvixi bvg D‡jøLmn msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.5.11 gvwUi aiY Abyhvqx Drcv`b c×wZ wbe©vPb Kiv hv‡Z gvwUi MVb, msi¶Y I `„pZv",
+        "body": "e„w× cvq Ges m‡e©vcwi gvwUi ¶q †iva nq| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.5.12 Rwgi Ee©iv kw³ e„w×i j‡¶¨ km¨ AveZ©b (crop rotation) AbymiY K‡i Lvgv‡ii",
+        "body": "cwiKíbv MªnY Ki‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.5.13 cª‡hvR¨‡¶‡Î gvwU‡K RxevYygy³ (sterilize) Ki‡Z e¨eüZ ivmvqwbK `ª‡e¨i bvg,",
+        "body": "¯’vb, cY¨, cª‡qvM mgq, gvÎv, c×wZ I cª‡qvMKvixi bvgmn we¯ÍvwiZ †iKW© msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.4.14 K‡¤úv÷ e¨e¯’vcbv Ggbfv‡e Ki‡Z n‡e hv‡Z dm‡j †Kvbfv‡eB cvi¯úwiK `~lY bv",
+        "body": " nq| mvi ev ms‡hvRb `Öe¨ cÖ‡qvM msµvšÍ †iKW© we¯ÍvwiZfv‡e (cwigvY, cÖ‡qvM ZvwiL, cÖ‡qvMKvix I mieivnKvixi bvg BZ¨vw`) msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y© 8 mviwY-1: †e¸b Pv‡l mv‡ii cwigvY I cª‡qvM (†KwR/‡n±i)| *mvi cª‡qv‡Mi †¶‡Î gvwU we‡køl‡Yi djvdj Gi wfwË‡Z Fertilizer Recommendation Guide-2024, BARC AbymiY Ki‡Z n‡e|"
+    },
+    {
+        "title": "3.5.16 mvi cª‡qvM c×wZ (Method of fertilizer application)",
+        "body": "• †e¸b Ggb GKwU dmj hv mvi cª‡qvM e¨ZxZ m‡šÍvlRbK Drcv`b Avkv Kiv hvq bv| • e„w×i cªv_wgK ch©v‡q Lv‡`¨i Afve n‡j MvQ `ªæZ ev‡o bv, cieZ©x ch©v‡q Lv‡`¨i ¯^íZv dj‡bi Ici weiƒc cªwZwµqv m„wó K‡i| • †e¸b Pv‡l †n±i cªwZ †Mvei mvi 1000 †KwR (fvwg©K‡¤úvó 2000 †KwR), BDwiqv 300 †KwR, wUGmwc 300 †KwR, GgIwc 250 †KwR, wRcmvg 100 †KwR, †evwiK GwmW 5 †KwR, wRsK mvj‡dU 5 †KwR Ges g¨vM‡bwmqvg A·vBW 5 †KwR cª‡qvM Ki‡Z n‡e| • Rwg ˆZwii mgq A_©vr †ivc‡Yi 7 w`b c~‡e© M‡Z© m¤ú~Y© †Mvei mvi I fvwg©K‡¤úvó mvi, wUGmwc, wRcmvg, †evwiK GwmW, wRsK mvj‡dU Ges g¨vM‡bwmqvg A·vBW Ges 1/4 fvM GgIwc cª‡qvM Ki‡Z n‡e| • Pviv †ivc‡Yi ci D‡jøwLZ nv‡i BDwiqv I GgIwc mvi Dcwi cª‡qvM Ki‡Z n‡e|"
+    },
+    {
+        "title": "3.6| cvwbi ¸Yv¸Y I †mP (Water quality and irrigation)",
+        "body": ""
+    },
+    {
+        "title": "3.6.1 †mPKv‡R© e¨eüZ cvwb ¶wZKi msµgY ev `~lYgy³ n‡Z n‡e| ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.6.2 msµg‡Yi SyuwK wbY©‡q wbqwgZ weiwZ‡Z AÂj ev dmjwfwËK cvwb cix¶v K‡i",
+        "body": "mieivn wbwðZ Kiv Ges Z_¨vw` msi¶Y Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.6.3 D‡jøL‡hvM¨ SyuwK kbv³ n‡j weKí wbivc` Drm n‡Z cvwb e¨envi Kiv ev e¨env‡ii",
+        "body": "c~‡e© cvwb †kvab Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.6.4 AbvKvw•ÿZ †Kvb Drm †hgb: kn‡ii eR©¨ ¯’vcbv, nvmcvZvj, wkí I Wvw¤ús eR©¨ BZ¨vw`i",
+        "body": "cvwb, K…wl Rwg‡Z e¨envi Ges msMª‡nvËi e¨e¯’vcbv I wecYb Kv‡R e¨envi Kiv hv‡e bv| cwi‡kvwaZ cvwb e¨env‡ii †¶‡Î RvZxq bxwZ AbymiY Ki‡Z n‡e| AwZ ¸iæZ¡c~Y© K‡¤úv÷ K‡¤úv÷ 9"
+    },
+    {
+        "title": "3.6.5 †`‡ki cªPwjZ AvBb †g‡b †mP Kv‡R cvwb msMªn, msi¶Y I e¨envi Kiv Ges",
+        "body": "e¨env‡ii we¯ÍvwiZ †iKW© †hgb: dmj, ZvwiL, ¯’vb, †m‡Pi cwigvY A_ev †m‡Pi mgqKvj wjwce× Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.6.6 dm‡ji cªKvi‡f‡`, cvwbi cªvc¨Zv Ges gvwUi Av`ª©Zvi Ici wfwË K‡i †mP cª`vb",
+        "body": " Kiv| †m‡Pi ZvwiL, ¯’vb, mgqKvj Ges cwigvY BZ¨vw` wel‡qi we¯ÍvwiZ †iKW©/Z_¨vejx msi¶Y Ki‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.6.7 †m‡Pi mgqm~wP (Schedule of irrigation)",
+        "body": "• Pviv †ivc‡Yi 3-4 w`b ci ch©šÍ nvjKv †mP I cieZ©x‡Z cªwZ wKw¯Í mvi cª‡qv‡Mi ci Rwg‡Z †mP w`‡Z n‡e| • †e¸b MvQ Rjve×Zv mn¨ Ki‡Z cv‡i bv| †e‡Wi `ycv‡ki bvjv w`‡q Rwg‡Z †mP †`qv myweavRbK| • cªwZwU †m‡Pi c‡i gvwUi Dcwifv‡Mi PUv †f‡½ w`‡Z n‡e hv‡Z gvwU‡Z ch©vß evZvm PjvPj Ki‡Z cv‡i| • wWªc c×wZ‡Z †mP w`‡j cvwbi cª‡qvRb Kg nq| AwZwi³ cvwb †ei nIqvi Rb¨ myôy wbKvk e¨e¯’v Ki‡Z n‡e|"
+    },
+    {
+        "title": "3.7| ivmvqwbK `ª‡e¨i (Dw™¢` msi¶Y Dcv`vb A_ev K…wlR I AK…wlR ivmvqwbK) e¨envi",
+        "body": "(Chemical uses: Plant protection products or other agro and non-agrochemicals)"
+    },
+    {
+        "title": "3.7.1 †e¸b Drcv`‡b jvB‡mÝcªvß mieivnKvix †_‡K ivmvqwbK `ªe¨ µq/msMªn Kiv Ges",
+        "body": "†j‡e‡j ewY©Z wb‡`©kbv ev Dchy³ KZ©…c‡¶i Øviv mycvwik Abyhvqx cª‡qvM wbwðZ Ki‡Z n‡e| AwZ ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.7.2 `yB ev Z‡ZvwaK ivmvqwbK `ªe¨ wgkªY bv Kiv| hw` GKvšÍB Ki‡Z nq †m‡¶‡Î Dchy³",
+        "body": "e¨w³/ms¯’v/KZ©…c‡¶i KvwiMwi mycvwi‡ki wfwË‡Z Ki‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.7.3 Aby‡gvw`Z gvÎvi AwaK ivmvqwbK `ªe¨ cª‡qvM bv Kiv Ges cª‡qvR‡bi AwZwi³",
+        "body": "ivmvqwbK `ªe¨ Ggbfv‡e bó Ki‡Z n‡e hv‡Z †e¸‡bi `~lY Gov‡bv m¤¢e nq| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.4 ivmvqwbK `ªe¨ e¨env‡ii †¶‡Î †j‡e‡j D‡jøwLZ cª‡qvM weiwZ Ges dmj msMªn c~e©",
+        "body": "weiwZ (Pre-harvest Interval) h_vh_fv‡e AbymiY Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.5 ivmvqwbK `ªe¨ cª‡qvM hš¿ Kv‡Ri Dc‡hvMx K‡i i¶Yv‡e¶Y Kiv Ges cªwZevi",
+        "body": "e¨env‡ii c‡i hš¿cvwZ h_vh_fv‡e †aŠZ Kiv I †aŠZ Kivi ci cvwb Ggbfv‡e AcmviY Kiv hv‡Z Drcvw`Z †e¸b I cwi‡ek `~lY Gov‡bv m¤¢e nq| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.6 ivmvqwbK `ªe¨mg~n mZK©Zv †bvwUkmn wbivc` ¯’v‡b gRy` Kiv hv‡Z †e¸‡bi `~lY",
+        "body": "Gov‡bv m¤¢e nq| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.7 Zij ivmvqwbK c`v_© cvDWvi RvZxq ivmvqwbK `ª‡e¨i Ici ivLv hv‡e bv| ¸iæZ¡c~Y©",
+        "body": "10"
+    },
+    {
+        "title": "3.7.8 ivmvqwbK `ªe¨mg~n †j‡ejhy³ cv‡Î msi¶Y Kiv Ges hw` ivmvqwbK `ªe¨ Ab¨ cv‡Î",
+        "body": "¯’vbvšÍi Ki‡Z nq †m‡¶‡Î ivmvqwb‡Ki bvg, gvÎv I msi¶Y Kvj h_vh_fv‡e D‡jøLc~e©K msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.9 ivmvqwbK `ª‡e¨i LvwjcvÎ cybe¨©envi bv Kiv Ges Zv GKwÎZ K‡i wbivc` ¯’v‡b",
+        "body": " ivL‡Z n‡e| †`‡ki cªPwjZ wewa Abyhvqx Ggbfv‡e bó Ki‡Z n‡e hv‡Z †e¸b I cwi‡ek `~lY Gov‡bv m¤¢e nq| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.10 evwZj/†gqv‡`vËxY© ivmvqwbK `ªe¨mg~n my¯úófv‡e kbv³ K‡i wbivc` ¯’v‡b msi¶Y",
+        "body": "Kiv Ges `vßwiK wbqgbxwZ ev AvBbMZ wewaweavb †g‡b msMªn K‡i wba©vwiZ ¯’v‡b bó Ki‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.7.11 ivmvqwbK `ªe¨mg~‡ni msMªn, cª‡qv‡Mi we¯ÍvwiZ weeiY, mieivnKvixi bvg, ZvwiL,",
+        "body": "cwigvY, Drcv`b I †gqv‡`vËxY© Zvwi‡Li weeiY msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.12 †e¸b Pv‡li Rb¨ ivmvqwbK `ªe¨ cª‡qv‡Mi KviY, ¯’vb, cª‡qvMgvÎv c×wZ, ZvwiL I",
+        "body": "cª‡qvMKvixi bvg msµvšÍ Z_¨vw`i †iKW© msi¶Y Ki‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.7.13 Drcvw`Z KvuVvj wewµ ev ißvwbi †¶‡Î †Kvb ivmvqwb‡Ki Maximum Residual",
+        "body": "Level (MRL) Aewkóvs‡ki gvÎv ¯^xK…Z cix¶vMvi (accredited laboratory) n‡Z wbY©q Ki‡Z n‡e| Z‡e MRL-Gi AwaKgvÎv kbv³ n‡j Zr¶bvr †m¸‡jv Rã K‡i Gi KviY Z`šÍ/wbY©q Kiv Ges ciewZ©‡Z ms‡kvabg~jK e¨e¯’v †bqv †hb Gi cybive„wË bv N‡U| NUbvi weeiY Ges M„nxZ e¨e¯’vw`i Z_¨ msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.14 AK…wlR ivmvqwbKmg~n Ggbfv‡e e¨e¯’vcbv, gRy` I webó Kiv hv‡Z Drcvw`Z",
+        "body": "†e¸‡b †Kvbiƒc SyuwK m„wó bv K‡i| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.15 mgwš^Z evjvB e¨e¯’vcbv (IPM) Ges ˆRe evjvBbvkK cª‡qvM DrmvwnZ K‡i",
+        "body": "ivmvqwbK evjvBbvk‡Ki e¨envi n«vm Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.16 ivmvqwbK `ªe¨vw` cª‡qv‡Mi †¶‡Î K…lK/kªwgK/Kg©x‡`i ¯^ ¯^ †¶‡Î `vwqZ¡ cvj‡bi",
+        "body": "wel‡q cªwk¶Y _vK‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.17 †e¸b dmj myi¶vq Ggbfv‡e ivmvqwbK wbe©vPb Ki‡Z n‡e hv cwi‡e‡ki Ici",
+        "body": "†bwZevPK Ges DcKvix †cvKvgvK‡oi Ici ¶wZKi cªfve n«vm Ki‡Z cv‡i| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.18 e¨env‡ii ci Aewkó wgkª‡Yi AcPq †iv‡a mwVK cwigv‡Y evjvBbvk‡Ki wgkªY ˆZwi",
+        "body": " Ki‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.7.19 Dchy³ KZ©…c‡¶i mycvwi‡ki wfwË‡Z dmj myi¶v c×wZ AbymiY Ki‡Z n‡e|",
+        "body": "¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.20 †`‡k cªvß Z‡_¨i wfwË‡Z evjvBbvkK e¨envi I dmj myi¶v c×wZ‡Z ch©vqµg",
+        "body": "†KŠkj (rotation strategy) Aej¤^b K‡i evjvB cªwZ‡iva Ki‡Z n‡e| mvaviY 11"
+    },
+    {
+        "title": "3.7.21 Dchy³ Ávb I `¶Zv m¤úbœ cªwkw¶Z kªwgK/Kg©xi gva¨‡g n¨vÛwjs Ges e¨env‡ii",
+        "body": "cª‡qvRbxq wbivcËv mvgMªx †hgb: Møvfm, gy‡Lvk, wbivcËv Pkgv, cvwb cªwZ‡ivax †cvkvK, Uzwc, RyZv h_vh_fv‡e e¨envi K‡i evjvBbvkK/ivmvqwbK cª‡qvM Ki‡Z n‡e| AwZ ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.7.22 fv‡jv, wbivc` Ges mw¾Z Zv‡K (†mjd) ivmvqwbK msi¶Y Kiv †hLv‡b ïay",
+        "body": "Aby‡gvw`Z e¨w³i cª‡ekvwaKvi _vK‡e| msi¶‡Yi †mjd/ZvK Ggb n‡Z n‡e hv‡Z K…lK/kªwgK/Kg©x‡`i AvµvšÍ nIqvi SyuwK Kg Ges ivmvqwbK wbM©gb n‡j Riæwi e¨e¯’v Mªn‡Yi ch©vß myweav _vK‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.23 ivmvqwb‡Ki g~j cv‡Î Dchy³ KZ©…c¶ Øviv wb‡`©kbv m¤^wjZ †j‡ejmn gRy` Ki‡Z",
+        "body": " n‡e| ivmvqwbK Ab¨ cv‡Î ¯’vbvšÍi Kivi †¶‡Î Avewk¨Kfv‡e eªv‡Ûi bvg, cª‡qvMgvÎv Ges msi¶YKvj D‡jøL ivL‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.24 Lvwj cv‡Î †mB evjvBbvkK e¨wZZ Ab¨ †Kv‡bv cY¨ ivLv/cwienb Kiv hv‡e bv|",
+        "body": "¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.25 Kg©x‡`i‡K wbivcËv wb‡`©kbv AewnZ/mieivn Kiv Ges Zv Dchy³ I mn‡R `„k¨gvb",
+        "body": "¯’v‡b cª`k©b Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.26 †Kv‡bv K…lK/kªwgK/Kg©x ivmvqwbK Øviv AvµvšÍ ev `yN©Ubvq AvnZ n‡j Zvr¶wYKfv‡e",
+        "body": "cªv_wgK wPwKrmv Ges cª‡qvRb Abyhvqx Ab¨vb¨ wPwKrmv wbwðZ Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.27 Riæwi wb‡`©kbvmg~n bw_fy³ Ges ivmvqwbK `ª‡e¨i gRy`¯’v‡b h_vh_ cª`k©‡bi e¨e¯’v",
+        "body": "MªnY Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.28 †h mKj K…lK/kªwgK/Kg©x ivmvqwbK `ª‡e¨i n¨vÛwjs Ges cª‡qvM Ki‡e ev ¯^í mg‡qi",
+        "body": "e¨eav‡b ivmvqwbK †¯úª Kiv ¯’v‡b cª‡ek Ki‡e Zv‡`i‡K Dchy³ †cvkvK Ges Ab¨vb¨ cª‡qvRbxq mZ©KZv Aej¤^b K‡i D³ KvR m¤úbœ Ki‡Z n‡e| e¨envh© †cvkvK Ges Ab¨vb¨ cª‡qvRbxq hš¿cvwZmg~n Avjv`vfv‡e †aŠZ I msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.29 ivmvqwbK cª‡qvMK…Z ¯’v‡b Rbmvavi‡Yi cª‡ekvwaKvi msiw¶Z ivL‡Z n‡e| gvbyl",
+        "body": "PjvP‡ji GjvKvq ivmvqwbK e¨envi Kiv n‡j ¯’vbwU mZK©Zv wPý Øviv wPwýZ Ki‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.7.30 K…lK ev kªwg‡Ki `vwqZ¡ Abyhvqx ivmvqwbK `ªe¨ cª‡qv‡Mi Rb¨ cªwk¶Y cª`vb Ki‡Z",
+        "body": " n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.7.31 ivmvqwbK `ªe¨ cª‡qvM Kv‡R e¨eüZ hš¿cvwZ hv‡Z h_vh_fv‡e (with calibration)",
+        "body": "KvR K‡i †mRb¨ Zv mwVKfv‡e msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.7.32 ivmvqwb‡Ki bvg, cª‡qv‡Mi KviY, ZvwiL, cª‡qvMgvÎv I c×wZ, AvenvIqv,",
+        "body": "cª‡qvMKvixi bvg msµvšÍ Z_¨vw`i †iKW© msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y© 12"
+    },
+    {
+        "title": "3.8| †e¸‡bi ¶wZKi †cvKvmg~n I `gb e¨e¯’vcbv (Harmful insects of brinjal and its",
+        "body": "management)"
+    },
+    {
+        "title": "3.8.1 †e¸‡bi WMv I dj wQ`ªKvix †cvKv: Leucinodes orbonalis (Lepidoptera: Pyralidae)",
+        "body": "¶wZi cªK…wZ (Nature of damage) • †e¸‡bi WMv I dj wQ`ªKvix †cvKv evsjv‡`‡k †e¸‡bi me‡P‡q †ewk ¶wZKviK †cvKv| • mvaviYZ Pviv †ivc‡Yi 3/4 mßv‡ni g‡a¨B G †cvKvi AvµgY ïiæ n‡Z †`Lv hvq| • †cvKvi AvµgY ïiæ nIqvi ci cªv_wgK j¶Y wnmv‡e Rwg‡Z m`¨ †bwZ‡q cov WMv †Pv‡L c‡o| • dj Avmvi c~‡e© G †cvKvi AvµgY KwP WMvq mxgve× _v‡K Ges cieZ©x‡Z dj Avmvi ci AwaKvsk KxovB KwP d‡j AvµgY K‡i| • kxZKvj A‡c¶v Mªx®§ ev el©vKv‡j GB †cvKvi AvµgY me©vwaK nq| • †cvKvi Kxov †e¸‡bi wfZ‡ii Ask †L‡q _v‡K d‡j AvµvšÍ †e¸b LvIqvi Aby‡cvhy³ n‡q hvq| †cvKvi cªwZKvi (Control measure) • mßv‡n Kgc‡¶ GKw`b Kxovmn AvµvšÍ WMv I dj msMªn K‡i gvwUi 1 dzU bx‡P cy‡Z †dj‡Z n‡e A_ev cywo‡q †dj‡Z n‡e| • †m· †d‡ivgb e¨envi: Pviv jvMv‡bvi 2/3 mßv‡ni g‡a¨B 10 wgUvi `~i‡Z¡ †m· †d‡ivgb duv` e¨envi Ki‡Z n‡e| • ˆRe evjvBbvkK e¨envi: †¯ú‡bv‡mW (mvK‡mm 2.5 Gmwm) 1.2 wgwj/wj. cvwb nv‡i Mv‡Q dzj Avmvi mgq 2 mßvn AšÍi 3-4 evi †¯úª Ki‡Z n‡e| wPÎ: †e¸‡bi WMv I dj wQ`ªKvix †cvKv KZ©…K AvµvšÍ WMv I dj 13"
+    },
+    {
+        "title": "3.8.2 †e¸‡bi †kvlK †cvKvmg~n: R¨vwmW, mv`v gvwQ, w_ªcm, GwdW, wgwjevM BZ¨vw`",
+        "body": ""
+    },
+    {
+        "title": "3.8.2.1 R¨vwmW: Amrasca biguttula (Ishida) (Homoptera: Jassidae)",
+        "body": "¶wZi cªK…wZ (Nature of damage) • AvµvšÍ †e¸‡bi cvZv wKbviv eivei Dc‡ii w`‡K †eu‡K hvq| • cvZvi wKbviv njy`vf n‡q hvq A_ev †cvKv AvµvšÍ cvZv cy‡o hvIqvi gZ †`Lvq| • cvZvi e„w× e¨nZ nq e‡j cvZv †QvU †_‡K hvq Ges †gvRvBK ai‡bi njy` is cwijw¶Z nq| AvµvšÍ Mv‡Q dj aivi msL¨v gvivZœKfv‡e K‡g †h‡Z cv‡i| • †cvKv Mv‡Qi cvZvi im LvIqvi cvkvcvwk gayi gZ GK cªKvi im †ei K‡i| GB im cvZvq AvU‡K †M‡j Zv‡Z my¨wU †gvì bvgK GK cªKvi Kv‡jv i‡Oi QÎvK Rb¥vq d‡j Mv‡Qi mv‡jvKms‡kølY cªwµqv wewNœZ nq|"
+    },
+    {
+        "title": "3.8.2.2 mv`v gvwQ: Bemisia tabaci (Hemiptera: Aleyrodidae)",
+        "body": "¶wZi cªK…wZ (Nature of damage) • mv`v gvwQi Avµg‡Y cvZvi Ic‡i njy`vf †Qvc †Qvc `vM c‡o| • †cvKvi msL¨v †ewk n‡j A‡bK¸‡jv †Qvc †Qvc `vM wg‡j meyR wkivmn cvZv njy` n‡q hvq| • c~Y©eq¯‹ Ges Acªvßeq¯‹ †cvKv cvZvi im Py‡q †L‡q MvQ‡K `~e©j K‡i †d‡j| • Avµg‡Yi gvÎv †ewk n‡j m¤ú~Y© cvZv njy` n‡q hvq Ges Ae‡k‡l cvZv S‡i c‡o| • †cvKv †e¸b Mv‡Q gvB‡µvcøvRgv †ivM Qov‡ZI mvnvh¨ K‡i| • †cvKv Mv‡Qi cvZvi im LvIqvi cvkvcvwk gayi gZ GK cªKvi im †ei K‡i| GB im cvZvq AvU‡K †M‡j Zv‡Z my¨wU †gvì bvgK GK cªKvi Kv‡jv i‡Oi QÎvK Rb¥vq d‡j Mv‡Qi mv‡jvKms‡kølY cªwµqv wewNœZ nq| wPÎ: mv`vgvwQ AvµvšÍ cvZv Acªvß eq¯‹ I c~Y© eq¯‹ mv`v gvwQ wPÎ: R¨vwmW AvµvšÍ †e¸b cvZv I MvQ 14"
+    },
+    {
+        "title": "3.8.2.3 GwdW: Aphis craccivora (Homoptera:Aphididae)",
+        "body": "¶wZi cªK…wZ (Nature of damage) • GwdW ev Rve †cvKv mvaviYZ ïK‡bv AvenvIqvq †e¸b Mv‡Q AvµgY K‡i _v‡K| • cªv_wgKfv‡e ¶wZMª¯’ cvZv mvaviYZ njy` †`Lvq| • e¨cKfv‡e Avµg‡Yi d‡j KwP cvZv bx‡Pi w`‡K K&uzKwo‡q hvq| • cvZvi DcwifvM AvVv‡jv ai‡bi Kvj QÎv‡K †X‡K hvq hv m¨ywU †gvì bv‡g cwiwPZ| GB Ae¯’vq Mv‡Qi e„w× e¨nZ nq Ges MvQ Lv‡Uv n‡q hvq|"
+    },
+    {
+        "title": "3.8.2.4 w_ªcm: Thrips palmi (Thysanoptera: Thripidae)",
+        "body": "¶wZi cªK…wZ (Nature of damage) • c~Y©v½ w_ªcm KwP cvZv, dzj I KwP d‡j wWg cv‡o| • jvf©v Ges c~Y©vsM w_ªcm KwP cvZv, dzj I KwP dj n‡Z im Py‡l Lvq d‡j dzj S‡i c‡o, d‡ji e„w× e¨nZ nq Ges d‡ji Ici AvPo covi gZ `vM c‡o djb gvivZ¥Kfv‡e K‡g hvq| • w_ªcm AvµvšÍ †e¸b we‡`‡k ißvwb Kiv hvq bv| wPÎ: w_ªcm AvµvšÍ †e¸b I jvf©v wPÎ: Rve‡cvKv AvµvšÍ †e¸b cvZv I MvQ 15"
+    },
+    {
+        "title": "3.8.2.5 wgwjevM: Coccidohystrix insolita (Hemiptera: Pseudococcidae)",
+        "body": "¶wZi cªK…wZ (Nature of damage) • wgwjev‡Mi ¯¿x †cvKv cvZvi im Py‡q †L‡q MvQ‡K `ye©j K‡i †d‡j| • Avµg‡Y cvZvi wkiv eivei njy`vf †Qvc †Qvc `vM c‡o| cieZ©x‡Z A‡bK¸‡jv †Qvc †Qvc `vM wg‡j mg¯Í cvZv njy` n‡q hvq| Ae‡k‡l cvZv S‡i c‡o| • †cvKv Mv‡Qi cvZvi im LvIqvi cvkvcvwk gayi gZ GK cªKvi im †ei K‡i| GB im cvZvq AvU‡K †M‡j Zv‡Z my¨wU †gvì bvgK GK cªKvi Kv‡jv i‡Oi QÎvK Rb¥vq d‡j Mv‡Qi mv‡jvKms‡kølY cªwµqv wewNœZ nq| GB †cvKvi Avµg‡Y †e¸b MvQ m¤ú~Y© gviv †h‡Z cv‡i| †e¸‡bi †kvlK †cvKvmg~‡ni `gb e¨e¯’vcbv (Management of sucking pests of brinjal) AvVv‡jv duv‡`i e¨envi (Use of sticky trap) • njy` i‡Oi duv` Pviv †ivc‡Yi 2-3 mßvn c‡i 15-20 wgUvi `~‡i `~‡i mv`v i‡Oi AvVv‡jv duv‡`i ci njy` i‡Oi duv` ch©vqµwgKfv‡e ¯’vcb Ki‡Z n‡e| fvj Kvh©KvwiZvi Rb¨ AvVv‡jv duv` cªwZ mßv‡n GKevi cwi¯‹vi K‡i cybivq †gvwe‡ji cª‡jc w`‡Z n‡e Ges 2 gvm AšÍi GKevi is Ki‡Z n‡e| w_ªcm †cvKvi Rb¨ mv`v i‡Oi AvVv‡jv duv` e¨envi Ki‡Z n‡e| • ˆRe evjvBbvkK †hgb wW-wj‡gvwbb (ev‡qvwK¬b) 5% GmGj A_ev †mvwWqvg jwij B_vi mvj‡dU (wdwRgvBU) 10% (1wgwj/wj. cvwb) A_ev †gwUªb (ev‡qvwUªb) 0.5% cªwZ wjUvi cvwb‡Z 1.5 wgwj nv‡i AvµvšÍ cvZvq 7-10 w`b AšÍi 3-4 evi †¯úª Ki‡Z n‡e| wgwjevM wPÎ: AvVv‡jv duv‡`i e¨envi wPÎ: wgwjevM AvµvšÍ †e¸b cvZv I MvQ 16 `g‡bi Rb¨ dvB‡UvwK¬b 8-10 wgwj/wj. cvwb‡Z 7-10  w`b AšÍi 3-4 evi †¯úª Ki‡Z n‡e| • me©‡kl Dcvq wnmv‡e ivmvqwbK KxUbvkK Wvqv‡dbw_Dib (†cMvmvm) 50 Gmwm 1.0 wgwj/wj nv‡i 10 w`b AšÍi 2-3 evi †¯úª Ki‡Z n‡e|"
+    },
+    {
+        "title": "3.8.3 KuvUv‡j †cvKv ev Bwcj¨vKbv weUj: Epilachna sp. (Coleoptera: Coccinellidae)",
+        "body": "¶wZi cªK…wZ (Nature of damage) c~Y©v½ ¯¿x †cvKv cvZvi bx‡P ¸”QvKv‡i njy` i‡Oi wWg cv‡i| wWg †_‡K Kxov (Mªve) †ei n‡q cvZvi Dc‡ii Z¡K †L‡q cvZv‡K RvwjKvKvi K‡i †d‡j| c~Y©v½ I Mªve DfqB †e¸b cvZvi Dc‡ii Z¡K †L‡q cvZv‡K RvwjKvKvi K‡i †d‡j| G‡`i Avµg‡Y A‡bK mgq cvZv †K¬v‡ivwdj k~b¨ n‡q c‡o Ges GKch©v‡q MvQ gviv †h‡Z cv‡i| `gb e¨e¯’vcbv (Control measure) • †cvKvmn AvµvšÍ cvZv nvZ evQvB K‡i †g‡i †dj‡Z n‡e| • wbg †Zj 5 wgwj+3 wgwj wUªKm cªwZ wjUvi cvwb‡Z wgwk‡q †¯úª Ki‡Z n‡e| • wW-wj‡gvwbb (ev‡qvwK¬b) 5% GmGj A_ev †mvwWqvg jwij B_vi mvj‡dU (wdwRgvBU) 10% (1wgwj/wj. cvwb) A_ev †gwUªb (ev‡qvwUªb) 0.5% cªwZ wjUvi cvwb‡Z 1.5 wgwj nv‡i AvµvšÍ cvZvq 7-10 w`b AšÍi 3-4 evi †¯úª Ki‡Z n‡e| • Avµg‡Yi gvÎv †ewk n‡j me©‡kl Dcvq wnmv‡e ivmvqwbK KxUbvkK mvBcvi‡gw_ªb 10 Bwm 1 wgwj/wj. cvwb nv‡i 10-12 w`b AšÍi cª‡qvM Kiv †h‡Z cv‡i|"
+    },
+    {
+        "title": "3.8.4 jvj gvKo: Tetranychus urticae (Acarina: Tetranychidae)",
+        "body": "¶wZi cªK…wZ (Nature of damage) • jvj gvK‡oi Avµg‡Yi d‡j †e¸b cvZvq njy`vf †Qvc †Qvc `v‡Mi m„wó nq| • G‡`i Avµg‡Y cvZv wb‡Pi w`‡K †eu‡K hvq Ges Giv cvZvi im Py‡q †L‡q MvQ‡K `ye©j K‡i †d‡j| • jvj gvK‡oi e¨cK Avµg‡Yi d‡j m¤ú~Y© cvZv njy` I ev`vwg eY© aviY K‡i Ges GK ch©v‡q cvZv S‡i c‡o| wPÎ: KvUv‡j †cvKv 17 `gb e¨e¯’vcbv (Control measure) • AwaK AvµvšÍ cvZv msMªn K‡i cywo‡q †dj‡Z n‡e| • cvBwi_ª‡qW RvZxq KxUbvkK e¨envi h_vm¤¢e cwinvi Ki‡Z n‡e| • ˆRe gvKobvkK †K-gvBU (0.5 % †gwUªb + 25% cøv›U A‡qj) A_ev wdwRwUgvBU 1.0 wgwj/wj. nv‡i 7 w`b AšÍi 3-4 evi cª‡qvM Ki‡Z n‡e|"
+    },
+    {
+        "title": "3.9| †e¸‡bi cªavb †ivMmg~n I `gb e¨e¯’vcbv (Major disease management of brinjal)",
+        "body": ""
+    },
+    {
+        "title": "3.9.1 W¨vw¤ús Ad/Pviv MvQ X‡j cov/‡bwZ‡q cov (Damping off)",
+        "body": "†iv‡Mi KviY (Causes of disease) dvB‡Uvc‡_viv, wcw_qvg, wdDRvwiqvg, ivB‡RvK‡Uvwbqv, †¯‹‡j‡ivwkqvg bvgK QÎvK j¶Y (Symptoms) • gvwU me mgq m¨vuZm¨vu‡Z _vK‡j µgvMZ †gNv”Qbœ AvenvIqv weivR Ki‡j Ges evqy PjvP‡j weNœ NU‡j G †iv‡Mi Avµg‡Yi Avk¼v †ewk _v‡K| †ivMwU QÎv‡Ki Avµg‡Y exRZjvq n‡q _v‡K| • ex‡R AvµgY n‡j exR c‡P hvq| • Pvivi †Mvov gvwUi KvQvKvwQ c‡P wPKb n‡q hvq| • Kv‡Ði Mv‡q QÎv‡Ki Dcw¯’wZ †`Lv hvq| • Pvivi †Mvov wPKb, wjKwj‡K n‡q X‡j c‡o I gviv hvq| wPÎ: W¨vw¤ús Ad/Pviv MvQ X‡j cov/†bwZ‡q cov wPÎ: jvj gvKo 18 `gb e¨e¯’vcbv (Control measure) cªwZ eM©wgUv‡i 2.0-2.5 †KwR nv‡i ˆLj ¸‡ov K‡i wgwk‡q fvjfv‡e cPv‡Z n‡e| exR jvMv‡bvi Av‡M gvwU fvjvfv‡e ˆZwi K‡i exR ecb Ki‡Z n‡e| wgwkªZ ˆLj c‡P wM‡q n‡iK iK‡gi ˆRe A¤ø-‰Zwi K‡i hv †ivM Rxevby I Mv‡Qi K…wg `gb Ki‡Z cv‡i| GQvov, mwilvi ˆLj gvwUi De©iv kw³ e„w× K‡i| A_ev exR †kvab: cªwZ †KwR ex‡R Kv‡e©vw·b+w_ivg Mªæ‡ci QÎvKbvkK (†hgb: †cªvf¨v· 200 WweøDwc) cªwZ †KwR ex‡R 2.5 Mªvg nv‡i wgwk‡q exR †kvab K‡i exR ecb Ki‡Z n‡e| exR †kvabKvix ivmvqwbK `ªe¨vw` welv³ weavq †kvwaZ exR †kvab mvgMªx I hš¿cvwZ BZ¨vw` e¨env‡i mZKZ©v Aej¤^b Ki‡Z n‡e| "
+    },
+    {
+        "title": "3.9.2 †e¸‡bi e¨vK‡Uwiqv X‡j cov (Bacterial wilt of brinjal) †ivM",
+        "body": "†iv‡Mi KviY (Causes of disease) Ralstonia solanacearum bvgK e¨vK‡Uwiqv Øviv n‡q _v‡K| j¶Y (Symptoms) • Mv‡Qi †h †Kvb eq‡m †ivMwU †`Lv hvq| • AvµvšÍ Mv‡Qi cvZv I WMv Lye `ªæZ X‡j c‡o| • AvµvšÍ MvQ weKv‡ji w`‡K X‡j c‡o Avevi mKv‡ji w`‡K m‡ZR nq| Gfv‡e 3-4 w`b ci mKv‡jI m‡ZR nq bv Ges MvQ meyR Ae¯’v‡ZB X‡j c‡o I g‡i hvq| • MvQ givi c~e© ch©šÍ cvZvq †Kvb cªKvi `vM c‡o bv| • Kv‡Ûi wbgœvsk KvU‡j g¾vi g‡a¨ Kv‡jv i‡Oi `vM †`Lv hvq Ges Pvc w`‡j Dnv n‡Z a~mi e‡Y©i Zij AvVv‡jv c`v_© †ei n‡q Av‡m| GB Zij c`v‡_© AmsL¨ e¨vK‡Uwiqv _v‡K| • AvµvšÍ Mv‡Qi Wvj ev †Mvov †K‡U Møv‡m cwi¯‹vi cvwb‡Z ivL‡j `y‡ai gZ mv`v myZvi gZ e¨vK‡Uwiqvj IR †ei n‡q Av‡m| `gb e¨e¯’vcbv (Control measure) • cªwZ‡ivax RvZ Pvl Ki‡Z n‡e | • my¯’ Pviv msMªn Ki‡Z n‡e| • wZZ †e¸b ev evwi †e¸b-8-Gi iæU÷‡Ki  mv‡_ KvswLZ Rv‡Zi †e¸‡bi †Rvo Kjg Ki‡Z n‡e| • km¨ ch©v‡q ev`vg, mwilv, fyÆv BZ¨vw` dmj Pvl Ki‡Z n‡e| wPÎ: †e¸‡bi X‡j cov †iv‡Mi jÿY 19 • Rwg‡Z me©‡kl Pv‡li c~‡e© (Pviv jvMv‡bvi Kgc‡¶ 5 w`b c~‡e©) †÷ej weøwPs cvDWvi (20-25 †KwR/‡n±i nv‡i A_ev 3-5 Mªvg cªwZ Mv‡Qi †Mvovq) gvwU‡Z wgkv‡bvi mv‡_ mv‡_B nvjKv †m‡Pi e¨e¯’v Ki‡Z n‡e| • X‡j cov Pviv MvQ †`Lv gvÎ gvwUmn Zy‡j aŸsm Ki‡Z n‡e Ges AvµvšÍ ¯’v‡bi gvwU †÷ej weøwPs cvDWvi w`‡q †kvab Ki‡Z n‡e | • Rwg‡Z cwiwgZ †mP w`‡Z n‡e| †e¸‡bi Rwg m¨vuZm¨vu‡Z ivLv hv‡e bv|"
+    },
+    {
+        "title": "3.9.3 †e¸‡bi wkKo wMU (Root knot of brinjal) †ivM",
+        "body": "†iv‡Mi KviY (Causes of disease) †g‡jvq‡WvRvBb BbKMwbUv Ges †g‡jvq‡WvRvBb hvfvwbKv (Meloidogyne incognita I M. javanica) bvgK K…wgi Øviv G †ivM n‡q _v‡K| j¶Y (Symptoms) • †ivM Pviv Ae¯’v †_‡KB ïiæ nq| • gvwU‡Z Ae¯’vbKvix K…wgi Avµg‡Yi d‡j AvµvšÍ ¯’v‡bi †Kvlmg~n `ªæZ e„w× cvq I H ¯’vb ùxZ n‡q bU ev wM‡Ui m„wó K‡i| • AvµvšÍ MvQ `ye©j, LvU I nj‡`‡U n‡q hvq| • Mv‡Qi †Mvovi gvwU mwi‡q wkK‡o wM‡Ui Dcw¯’wZ †`‡L mn‡RB G †ivM kbv³ Kiv hvq| • Pviv MvQ AvµvšÍ n‡j mg¯Í wkKo bó n‡q hvq I w`‡bi †ejvq MvQ X‡j c‡o| • dzj I dj aviY ¶gZv G‡Kev‡iB K‡g hvq| `gb e¨e¯’vcbv (Control measure) • Rwg‡Z mwilv, ev`vg, Mg, fyÆv cªf„wZ Øviv km¨ ch©vq Aej¤^b Ki‡Z n‡e| • dmj msMª‡ni ci Aewkóvsk cy‡o †dj‡Z n‡e| • Rwg cøvweZ K‡i ivL‡j G †iv‡Mi K…wg gviv hvq, ZvB my‡hvM _vK‡j eQ‡i GKevi cøvweZ K‡i ivL‡Z n‡e| • Pviv jvMv‡bvi Kgc‡¶ 3 mßvn c~‡e© †n±i cªwZ 4-5 Ub Aa©cPv gyiMxi weôv Rwg‡Z cª‡qvM K‡i Zv cvwb cª‡qv‡Mi gva¨‡g cPv‡Z n‡e A_ev Pviv †ivc‡Yi GK mßvn Av‡M UªvB‡Kv-K‡¤úv÷ 2.5 Ub/‡n±i nv‡i gvwU‡Z fvjfv‡e wgwk‡q w`‡Z n‡e| • Pviv jvMv‡bvi mgq †n±i cªwZ 15-20 †KwR (A_ev cªwZ Mv‡Qi †Mvovq 2-3 Mªvg nv‡i) ivMwe 10 wR gvwUi mv‡_ fvjfv‡e wgwk‡q Pviv †ivcY K‡i nvjKv †mP w`‡Z n‡e| • ï®‹ †gŠmy‡g Rwg cwZZ †i‡L 2/3 evi Pvl w`‡q gvwU fvjfv‡e ïKv‡Z n‡e| wPÎ: wkKo wMU †iv‡Mi jÿY 20"
+    },
+    {
+        "title": "3.9.4 †e¸‡bi †Mvov cPv/wdDRvwiqvg X‡j cov (Fusarium wilt of brinjal) †ivM",
+        "body": "†iv‡Mi KviY (Causes of disease) wdDRvwiqvg Aw·‡¯úvivg (Fusarium oxysporum) bvgK QÎv‡Ki Avµg‡Y G †ivM n‡q _v‡K| j¶Y (Symptoms) • Pviv MvQ †_‡K ïiæ K‡i †h †Kvb Ae¯’vq MvQ G †iv‡M AvµvšÍ n‡Z cv‡i| • Pviv Mv‡Qi eq¯‹ cvZv¸‡jv bx‡Pi w`‡K †eu‡K hvq I X‡j c‡o| • ax‡i ax‡i mg¯Í MvQB †bwZ‡q c‡o I g‡i hvq| • Mv‡Qi Kv‡Û I wkK‡o ev`vwg `vM c‡o| • Mv‡Q cª_‡g Kv‡Ûi GK cv‡ki kvLvi cvZv¸‡jv nj‡` n‡q Av‡m Ges c‡i Ab¨vb¨ Ask njy` n‡q hvq| • †ivM e„w× †c‡j mg¯Í cvZvB njy` n‡q hvq Ges Ae‡k‡l m¤ú~Y© kvLvwU g‡i hvq| GB fv‡e GKUv kvLv gi‡Z gi‡Z mg¯Í MvQUvB ax‡i ax‡i g‡i hvq| • AvµvšÍ Mv‡Qi KvÛ †Mvovi w`‡K j¤^vjw¤^fv‡e wPi‡j wfZ‡i ev`vwg `vM †`Lv hvq| `gb e¨e¯’vcbv (Control measure) • bx‡ivM exRZjvi Pviv jvMv‡Z n‡e| • †ivM cªwZ‡ivax RvZ †hgb: evwi †e¸b 6, evwi †e¸b 7, evwi †e¸b 8 Pvl Ki‡Z n‡e| • †ivMvµvšÍ MvQ aŸsm Ki‡Z n‡e| • Rwg‡Z Dchy³ cwigv‡Y cUvk mvi cª‡qvM Ki‡j †ivM A‡bK Kg nq| • Pviv †ivc‡Yi GK mßvn Av‡M UªvB‡Kv-K‡¤úv÷ 2.5 Ub/‡n±i nv‡i gvwU‡Z fvjfv‡e wgwk‡q w`‡q G †ivM `gb Kiv hvq| • †iv‡Mi AvµgY †`Lv w`‡j Kv‡e©ÛvwRg Mªæ‡ci QÎvKbvkK (‡hgb: A‡Uvw÷b 50 WweøDwWwR) cªwZ wjUvi cvwb‡Z 2 Mªvg nv‡i wgwk‡q 7-10 w`b ci ci Mv‡Qi †Mvovq 2-3 evi †¯úª Ki‡Z n‡e| wPÎ: †e¸‡bi †Mvov cPv †iv‡Mi jÿY 21"
+    },
+    {
+        "title": "3.9.5 †e¸‡bi †dv‡gvcwmm eøvBU/dj I KvÛ cPv (Phomopsis blight/Fruit and stem rot of",
+        "body": "brinjal) †iv‡Mi KviY (Causes of disease) Phomopsis vexans bvgK QÎv‡Ki Avµg‡Y G †ivM n‡q _v‡K| j¶Y (Symptoms) • exR, Pviv, KvÛ, Wvj, cvZv, dzj I dj GB †ivM Øviv AvµvšÍ nq| • mvaviYZ wb‡Pi cvZvq cª_g `vM †`Lv hvq, c‡i `vM¸wj ¯úó †MvjvKvi I a~mi ev`vwg is aviY K‡i| • eq¯‹ `v‡M A‡bK Kv‡jv Kv‡jv wcKwbwWqv †`Lv hvq| • ev`vwg AvµvšÍ cvZv njy` n‡q gviv hvq I S‡i c‡o| • gvwUi ms‡hvM¯’‡j Mv‡Qi KvÛ nVvr miæ n‡q hvq| • dj Mv‡Q _vK‡ZB AvµvšÍ nq| • d‡ji Ici d¨vKv‡k wKQyUv emv‡bv `vM c‡o, AvµvšÍ ¯’‡j ev`vwg ¶‡Zi m„wó nq I Kv‡jv QÎvK `„wó‡MvPi nq I AvµvšÍ dj `ªæZ c‡P hvq| `gb e¨e¯’vcbv (Control measure) • my¯’ I bx‡ivM †e¸b n‡Z exR msMªn Ki‡Z n‡e| • Kv‡jv I KzPvKv‡bv exR e¨envi Kiv DwPZ bq| • my¯’ I mej Pviv e¨envi Ki‡Z n‡e| •  †mvjvbvwm cwiev‡ii mewR ev` w`‡q km¨ ch©vq Aej¤^b Ki‡Z n‡e| • GB QÎvKwU AvµvšÍ Mv‡Qi cwiZ¨³ Askmg~‡n eQ‡ii ci eQi †eu‡P _v‡K, ZvB AvµvšÍ MvQ, S‡o civ cvZv, Wvjcvjv GKÎ K‡i cywo‡q aŸsm K‡i †dj‡Z n‡e| • cwi‡ek evÜe ˆRe evjvBbvkK-dvB‡Uvg¨v· (5-7 wgwjwjUvi) ev jvB‡Kvg¨v· (2-3 Mªvg/wjUvi) cvwb‡Z wgwk‡q †¯úª Ki‡Z n‡e| • Kv‡e©ÛvwRg Mªæ‡ci QÎvKbvkK (‡hgb: A‡Uvw÷b 50 WweøDwWwR) cªwZ wjUvi cvwb‡Z 1 Mªvg ev †cªvwc‡Kvbv‡Rvj Mªæ‡ci QÎvKbvkK (†hgb: wUë 250 Bwm) cªwZ wjUvi cvwb‡Z 0.5 wgwj wjUvi nv‡i wgwk‡q 7-10 w`b ci ci 2-3 evi Rwgi me ¸‡jv Mv‡Q †¯úª Ki‡Z n‡e|"
+    },
+    {
+        "title": "3.9.6 †e¸‡bi cvZvi `vM (Leaf spot of brinjal) †ivM",
+        "body": "†iv‡Mi KviY (Causes of disease) AjUvbvwiqv †g‡jvb‡Rwb I mviKv‡¯úviv †g‡jvb‡Rwb (Alternaria melongenae and Cercospora melongenae) bvgK QÎv‡Ki Avµg‡Y G †ivM n‡q _v‡K| wPÎ: †dv‡gvcwmm eøvBU/dj I KvÐ cuPv †iv‡Mi jÿY 22 AjUvibvwiqv cvZvq `vM †iv‡Mi j¶Y • AjUvibvwiqv QÎvK Øviv Avµg‡Yi d‡j cvZvq †K›`ªxf~Z ev`vwg i‡Oi PµvKvwi †cuPv‡bv †MvjvKvi `vM c‡o| • `vM¸‡jv ev`vwgi fvMB Amg, PµvKv‡i e¨vm 4-8 wgwg Ges Bnv †e‡o cÎdj‡Ki eo GKUv Ask Ry‡o we¯ÍyZ n‡q _v‡K| • gvivZœK Avµg‡Yi d‡j cvZv¸‡jv Sj‡m hvq I S‡i c‡i| • d‡j emv‡bv `v‡Mi m„wó K‡i| • AvµvšÍ dj njy` n‡q Acªvß Ae¯’vqB S‡o c‡o| mvi‡Kv‡¯úviv cvZvq `vM †iv‡Mi j¶Y • mviKv‡¯úviv QÎvK Øviv Avµg‡Yi d‡j cvZvq †KvbvKvi †_‡K Amg ai‡Yi `vM c‡o| • c‡i `vM¸wj eo nq I msL¨vq e„w× cvq| • `vM¸‡jvi †K›`ª¯’j a~mi I Pvwiw`K d¨vKv‡k njy` ejq Øviv wN‡i _v‡K| • `v‡Mi †K›`ª¯’j ïwK‡q S‡i c‡o I wQ`ª n‡q hvq| • ‡iv‡Mi gvÎv ev`vwg n‡j cvZv gyPwi‡q hvq Ges c‡i Sj‡m wM‡q S‡i c‡o| • djb A‡bK K‡g hvq| `gb e¨e¯’vcbv (Control measure) • dm‡ji cwiZ¨v³ Ask cywo‡q aŸsm K‡i †dj‡Z n‡e| • cwiwgZ mvi I mgqgZ †mP cª‡qvM Ki‡Z n‡e| • mgqgZ I mwVK `~i‡Z¡ eRvq †i‡L Pviv †ivcY Ki‡Z n‡e| • AjUvibvwiqv cvZvi `vM †iv‡Mi Rb¨ Bc‡ivwWqvb Mªæ‡ci QÎvKbvkK (†hgb: †ivfivj 50 WweøDwc) cªwZ wjUvi cvwb‡Z 2 Mªvg A_ev WvB‡d‡bv‡KvbvRj+G¨v‡Rvw·÷ªweb Mªæ‡ci QÎvKbvkK (†hgb: Gwg÷vi Uc 325 Gmwm) cªwZ wjUvi cvwb‡Z 1 wgwj nv‡i wgwk‡q 7-10 w`b ci ci 2-3 evi †e¸b Mv‡Q †¯úª Ki‡Z n‡e| • mvi‡Kv‡¯úviv cvZvi `vM †iv‡Mi Rb¨ Kv‡e©ÛvwRg Mªæ‡ci QÎvKbvkK (†hgb: A‡Uvw÷b 50 WweøDwWwR) cªwZ wjUvi cvwb‡Z 1 Mªvg ev †cªvwc‡KvbvRj Mªæ‡ci QÎvKbvkK (†hgb: wUë 250 Bwm) cªwZ wjUvi cvwb‡Z 1 wgwj nv‡i wgwk‡q 7-10 w`b ci ci 2-3 evi †e¸b Mv‡Q †¯úª Ki‡Z n‡e| wPÎ: AjUvibvwiqv cvZvq `vM †iv‡Mi j¶Y wPÎ: mvi‡Kv‡¯úviv cvZvq `vM †iv‡Mi jÿY 23"
+    },
+    {
+        "title": "3.9.7 †e¸‡bi ¶y`ª cvZv/¸”Q cvZv/Zyjwm jvMv (Little leaf of brinjal) †ivM",
+        "body": "†iv‡Mi KviY (Causes of disease) gvB‡KvcøvRgv (Mycoplasma) Øviv G †ivM n‡q _v‡K| j¶Y (Symptoms) • AvµvšÍ Mv‡Qi AvMvq ev WMvq AmsL¨ †QvU †QvU cvZv nq| • AvµvšÍ Mv‡Qi cvZv AvK…wZ‡Z Lye †QvU nq| • AvµvšÍ cvZvi avi njy` ev mv`v is aviY K‡i| • cvZvi †evUv I Kv‡Ûi ce©¸wj AZ¨šÍ †QvU n‡q hvq| A‡bK mgq †evUv mn‡R †Pbv hvq bv| • cvZv¸wj ¸”QvK…wZi g‡b nq I MvQ Le©vK…wZi nq| • dz‡ji wewfbœ Ask iæcvšÍwiZ n‡q cvZvi AvK…wZ aviY K‡i| • AvµvšÍ MvQ mvaviYZ eÜ¨v nq, dzj-dj aviY K‡i bv| • hw`I 2/1wU dj aviY K‡i Z‡e †m¸‡jv †QvU I LyeB k³ nq| `gb e¨e¯’vcbv (Control measure) • my¯’ I bx‡ivM †e¸b n‡Z exR msMªn Ki‡Z n‡e| • AvµvšÍ MvQ †`Lv gvÎ Zy‡j aŸsm Ki‡Z n‡e| • ZvgvK I aZyiv RvZxq AvMvQv aŸsm Ki‡Z n‡e| • evnK †cvKv cvZv dwos `g‡bi Rb¨ BwgWv‡K¬vwcªW Mªæ‡ci KxUbvkK †hgb: bBb/BwgUvd) cªwZ wjUvi cvwb‡Z 0.5 wgwj A_ev WvqvwRbb (60 Zij) cªwZ wjUvi cvwb‡Z 1.5 wgwj nv‡i cvwb‡Z wgwk‡q Rwg‡Z †¯úª Ki‡Z n‡e|"
+    },
+    {
+        "title": "3.10| †e¸b msMªn Ges msMªn cieZ©x e¨e¯’vcbv (Harvesting and postharvest",
+        "body": "management)"
+    },
+    {
+        "title": "3.10.1 gvwU †_‡K msµg‡Yi h‡_ó SyuwK we`¨gvb _vKvq †e¸b msMªn K‡i I †e¸b fwZ©",
+        "body": "cvÎmg~n gvwUi ms¯ú‡k© ivLv hv‡e bv| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.2 hš¿cvwZ, cvÎ I Ab¨vb¨ Dcv`vb Ges e¨e¯’vcbv hv Drcvw`Z †e¸‡bi ms¯ú‡k©",
+        "body": "Avm‡e Zv Ggbfv‡e ˆZwi n‡Z n‡e hv‡Z †e¸b †Kvbfv‡e msµwgZ bv nq Ges mn‡RB cwi®‹vi Kiv hvq| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.3 †e¸‡bi msµgY mxwgZ ivLvi Rb¨ hš¿cvwZ I cvÎmg~n wbqwgZ i¶Yv‡e¶Y Kiv",
+        "body": "Ges ivmvqwbK evjvBbvkK, mvi I gvwUi Dc‡hvM †_‡K msµgY Gov‡bvi Rb¨ c„_Kfv‡e msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y© wPÎ: ÿz`ª cvZv/¸”Q cvZv/Zyjwm jvMv †iv‡Mi j¶Y 24"
+    },
+    {
+        "title": "3.10.4 mwVK cwigvc wbwðZ Kivi Rb¨ Drcv`bKvix KZ©…K gvbm¤úbœ cwigvc hš¿/wbw³",
+        "body": "e¨envi Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.5 evQvB, †MªwWs, c¨v‡KwRs, n¨vÛwjs Ges msi¶‡Yi Rb¨ wbwg©Z ¯’vb I AeKvVv‡gv",
+        "body": "Ggbfv‡e ˆZwi I i¶Yv‡e¶Y Kiv hv‡Z †e¸‡bi msµgY SyuwK Gov‡bv m¤¢e nq| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.6 †e¸b‡K msµgY †_‡K i¶vi Rb¨ Drcv`b, n¨vÛwjs, c¨v‡KwRs I msi¶‡Yi ¯’vb",
+        "body": "†_‡K wMªR, †Zj, R¡vjvwb I K…wl hš¿cvwZ c„_K ivL‡Z n‡e Ges c¨v‡KwRs I n¨vÛwjs Gi KvR Kivi mgq †m¸‡jv e¨envi bv Kiv| mvaviY"
+    },
+    {
+        "title": "3.10.7 b`©gvi gqjv, eR©¨ AcmviY I wb®‹vkb bvjv Ggbfv‡e wbg©vY Ki‡Z n‡e hv‡Z",
+        "body": "Drcv`‡bi ¯’vb Ges cvwb mieiv‡n msµgY Gov‡bv m¤¢e nq| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.8 c¨vwKs nvDR A_ev msi¶YvMv‡ii Av‡jv e¨env‡ii Rb¨ Dchy³ evwZ e¨envi",
+        "body": " Ki‡Z n‡e| mvaviY "
+    },
+    {
+        "title": "3.10.9 c¨v‡KwRs, n¨vÛwjs, msi¶Y ¯’vb Ges hš¿cvwZ wbqwgZ cwi¯‹vi I RxevYygy³ Kivi",
+        "body": "†¶‡Î Aby‡gvw`Z ivmvqwbK `ªe¨ e¨envi Ki‡Z n‡e hv‡Z †e¸‡b msµgY bv N‡U| mvaviY"
+    },
+    {
+        "title": "3.10.10 M„ncvwjZ I Lvgv‡ii cªvYx‡K dmwj Rwg I Zvi cvk¦©eZ©x ¯’vb Ges n¨vÛwjs,",
+        "body": "c¨v‡KwRs I msi¶Y ¯’vb †_‡K `~‡i ivL‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.10.11 evjvB wbqš¿‡Y †Uvc (bait) Ges duv` (trap) Ggbfv‡e e¨envi Kiv hv‡Z  †e¸‡b",
+        "body": "msµgY Gov‡bv m¤¢e nq| †Uvc I duv` e¨env‡ii ¯’vb wPwýZ K‡i ivL‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.12 ¯^v¯’¨wewai Abykxjbxq wb‡`©kbvmg~n wjwLZiƒ‡c Kg©x‡`i cª`vb Ges ¸iæZ¡c~Y© ¯’v‡b",
+        "body": "cª`k©b Ki‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.10.13 ¯^v¯’¨m¤§Z Uq‡jU I nvZ †aŠZ Kivi e¨e¯’v ivL‡Z n‡e| ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.10.14 Kg©x‡`i Uq‡jU/b`©gvi eR©¨mg~n Ggbfv‡e AcmviY Kiv hv‡Z Drcvw`Z †e¸‡b",
+        "body": "cªZ¨¶ ev c‡iv¶ msµgY bv N‡U| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.15 †e¸b cwi‡kvab I †aŠZKi‡Y `~lYgy³ I my‡cq cvwb e¨envi Kiv Ges e¨eüZ",
+        "body": "cvwb wbqwgZ cwieZ©b Ki‡Z n‡e hv‡Z †e¸b ¶wZKi RxevYy Øviv msµwgZ bv nq| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.16 msMª‡nvËi ch©v‡q ivmvqwb‡Ki e¨envi I Iqvw·s (waxing) cª‡qvMwewa h_vh_",
+        "body": "KZ©…c‡¶i wb‡`©kbv I Aby‡gv`‡bi mv‡_ m½wZc~Y© n‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.17 Avg`vwbKviK †`k KZ©…K Pvwn`v †gvZv‡eK c‡Y¨i mywbw`©ó cix¶v AšÍf©y³ Ki‡Z",
+        "body": " n‡e| mvaviY "
+    },
+    {
+        "title": "3.10.18 ivmvqwbK, RxeR/RxeNwUZ A_ev †fŠZ msµgY n‡Z cv‡i Ggb `ªe¨vw` †_‡K",
+        "body": "†e¸b Avjv`vfv‡e msi¶Y I cwienb Ki‡Z n‡e| ¸iæZ¡c~Y© 25"
+    },
+    {
+        "title": "3.10.19 †e¸b VvÛv¯’v‡b msi¶Y I AwZwi³ †e¸b ¯Íyc bv Kiv Ges †e¸b cwien‡bi mgq",
+        "body": "Av`ª©Zv msi¶‡Yi Rb¨ Av”Qv`b e¨envi Ki‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.10.20 cwien‡bi Rb¨ e¨eüZ evnb cwi”Qbœ ivLv Ges fv‡jvfv‡e i¶Yv‡e¶Y Kiv|",
+        "body": "†e¸b †evSvB Gi c~‡e© cwi”QbœZv, ivmvqwbK wbM©gb, Ab¨ e¯Íyi Aw¯ÍZ¡ Ges †ivM I †cvKvgvK‡oi Aw¯ÍZ¡ Av‡Q wKbv Zv kbv³ Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.21 dmj cwic°Zvi m~PK Abyhvqx Dchy³ mg‡q msMªn Ki‡Z n‡e| dmj msMª‡ni",
+        "body": "Rb¨ Dchy³ mgq n‡jv w`‡bi me‡P‡q VvÐv mgq, †hgb: mKvj †ejv| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.22 †e¸b msMª‡ni Rb¨ Dchy³ hš¿cvwZ, msMªn cvÎ I Ab¨vb¨ DcKiY msMªn Ges",
+        "body": "e¨env‡ii c~‡e© cwi®‹vi K‡i wb‡Z n‡e| cv‡Î AwZwi³ †e¸b fwZ© Kiv hv‡e bv| Agm„Y Dcwifv‡M mwVK AveiY Øviv Av”Qvw`Z Ki‡Z n‡e| †e¸‡bi Av`ª©Zv i¶vq cvÎ †X‡K ivL‡Z n‡e| GKwUi Ici Av‡iKwU cvÎ ¯Í~c K‡i ivLv hv‡e bv eis Ggbfv‡e ivL‡Z n‡e hv‡Z †e¸‡bi ¶wZ Gov‡bv m¤¢e nq| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.23 n¨vÛwjs/c¨vwKs/gRy` ¯Í‡i ¸YMZgvb n«vm I †ivMevjvB cªwZ‡iv‡a h_vh_ †kvab",
+        "body": "e¨e¯’v MªnY Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.24 †e¸b hZ`ªæZ m¤¢e MšÍe¨¯’v‡b †bqvi †¶‡Î hw` A‡bK mgq cwien‡bi Rb¨",
+        "body": "A‡c¶v Ki‡Z nq, †m‡¶‡Î †e¸b Dc‡hvMx ZvcgvÎvq gRy` ivL‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.10.1| †e¸b msMªn cieZ©x e¨e¯’vcbvi Ab¨vb¨ welqmg~n (Other postharvest",
+        "body": "management) • †e¸b mvaviYZ LvIqvi Dc‡hvMx cwic° Ae¯’vq gvV †_‡K DVv‡bv nq| • mvaviYZ mßv‡n 2-3 evi MvQ †_‡K dj msMªn Kiv n‡q _v‡K| dj msMª‡ni mgq cªwZwU d‡j †evuUvmn msMªn Ki‡Z n‡e| • msMªn‡cv‡hvMx †e¸b‡K aviv‡jv PvKz, KuvwP ev wm‡KPvi w`‡q msMªn Kiv| • dj msMª‡ni ci VvÛv A_P Qvqvhy³ ¯’v‡b evRviRvZKi‡Yi c~e© ch©šÍ msi¶Y Ki‡Z n‡e| • w`‡bi VvÛv As‡k (†hgb: †fv‡i ev we‡K‡j) †e¸b msMªn K‡i wQ`ªhy³ cøvwó‡Ki cv‡Î Ges VvÛv Qvqvhy³ ¯’v‡b ivLv| • m¤¢e n‡j Av`ª©Zv msi¶‡Yi Rb¨ wfRv Kvco w`‡q †X‡K ivLv| • †e¸b‡K evRviRvZKi‡Yi c~‡e© ay‡q evQvB ev †MªwWs Kiv| • †ivM-†cvKvµvšÍ, AvNvZcªvß, AwZ KwP ev AwaK cwic° I wfbœ i‡Oi dj‡K evQvB Kiv| • K…lK‡K me©ve¯’vq cwi®‹vi cwi”Qbœ e¨e¯’vcbv wbwðZ Kiv| • dmj msMªn K‡i Zv mivmwi gvwU‡Z ivLv cwinvi Kiv Ges c¨v‡KwRs ev msi¶‡Yi mgq †g‡S‡Z bv ivLv| • hš¿cvwZ, cvÎ I Ab¨vb¨ Dcv`vb Ges e¨e¯’vcbv hv Drcvw`Z c‡Y¨i ms¯ú‡k© Avm‡e Zv Ggbfv‡e ˆZwi n‡Z n‡e hv‡Z †e¸b †Kvbfv‡e msµwgZ bv nq Ges mn‡RB cwi®‹vi Kiv hvq| 26"
+    },
+    {
+        "title": "3.11| mÜvb‡hvM¨Zv I cY¨ cªZ¨vnvi Kiv (Traceability and recall)",
+        "body": ""
+    },
+    {
+        "title": "3.12.1 †e¸b Drcv`‡bi ¯’vb‡K GKwU bvg ev †KvW Øviv wPwýZ Kiv Ges ¯’v‡bi gvbwP‡Îi",
+        "body": "†iKW© ivL‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.12.2 Drcvw`Z †e¸‡bi c¨v‡K‡Ui Mv‡q GKwU †KvW Bangladesh GAP Number",
+        "body": "(BGN) Øviv mbv³ Ki‡Z n‡e Ges mbv³KiY wPý †e¸‡bi Mv‡q fv‡jvfv‡e jvMv‡Z n‡e| ¸iæZ¡c‚Y©"
+    },
+    {
+        "title": "3.12.3 cªwZwU †e¸‡bi Pvjv‡b mieiv‡ni ZvwiL, †e¸‡bi RvZ I cwigvY Ges MšÍe¨ ¯’v‡bi",
+        "body": "weei‡Yi †iKW© msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.12.4 †e¸‡bi msµgY kbv³ n‡j ev msµgY nIqvi m¤¢vebv †`Lv w`‡j Zv c„_K K‡i ivLv",
+        "body": "Ges weµ‡qi c‡i kbv³ n‡j †fv³v‡`i‡K `ªæZ AewnZ I cªZ¨vnv‡ii e¨e¯’v Ki‡Z n‡e| AwZ ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.12.5 msµg‡Yi KviY AbymÜvb I cybivq msNwUZ bv nIqvi Rb¨ ms‡kvabg~jK e¨e¯’v",
+        "body": "MªnY Ges G msµvšÍ †iKW© msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.12.6 cÖ‡Z¨KwU Pvjv‡bi (consignment) mieiv‡ni ZvwiL, †e¸‡bi cwigvY Ges MšÍe¨",
+        "body": "¯’v‡bi †iKW© msiÿY Ki‡Z n‡e| ¸iæZ¡c‚Y©"
+    },
+    {
+        "title": "3.12| Kg© cwi‡ek I e¨w³MZ ¯^v¯’¨wewa (Working environment and personal hygiene)",
+        "body": ""
+    },
+    {
+        "title": "3.13.1 Kg©x‡`i Kg© cwi‡ek wbivc` n‡Z n‡e, Z‡e †hLv‡b wec‡`i SyuwK m¤ú~Y©fv‡e wbimb",
+        "body": "Kiv m¤¢e bq †mLv‡b Kg©x‡`i Rb¨ Dchy³ mvgMªx/‡cvkvK cª`vb Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.13.2 Kg©x‡`i SyuwK n«v‡mi Rb¨ Lvgv‡ii mKj miÄvgvw`, nvwZqvi Ges ˆe`¨ywZK",
+        "body": "hš¿cvwZmg~n h_vh_fv‡e msi¶Y Ges e¨envi c×wZ m¤úwK©Z wbivcËv wb‡`©kbv g¨vbyqvj mieivn Kiv, g¨vbyqvj e¨env‡ii wb‡`©kbv cª`vb Ges Dchy³ ¯’v‡b msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.13.3 K…lK Ges Kg©x‡`i e¨w³MZ ¯^v¯’¨ wbivcËv I Kj¨vY wbwðZ Kivi j‡¶¨ ¯^v¯’¨wewa",
+        "body": "m¤ú‡K© cªwkw¶Z Kiv Ges G msµvšÍ †iKW© msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.13.4 Kg©x‡`i e¨w³MZ ¯^v¯’¨wewai wjwLZ wb‡`©kbv mieivn Ges Dchy³ ¯’v‡b cª`k©b Kiv|",
+        "body": "¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.13.5 Qq gvm AšÍi AšÍi mswkøó Kg©x‡`i ¯^v¯’¨ cix¶v Kiv Ges G msµvšÍ †iKW© cuvP eQi",
+        "body": "ch©šÍ msi¶Y Ki‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.13.6 †kŠPvMvi Ges nvZ I kixi cwi®‹vi ivLvi cª‡qvRbxq DcKiY/myweav Zvr¶wYKfv‡e",
+        "body": "mnRjf¨ Ges ¯^v¯’¨m¤§Zfv‡e i¶Yv‡e¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.13.7 b`©gvi eR©¨ AcmviY Ggbfv‡e Ki‡Z n‡e hv‡Z Kg©x‡`i msµwgZ nIqvi SyuwK nªvm",
+        "body": " cvq| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.13.8 wb‡qvMKvix KZ©…K ¯^v¯’¨ myweav cª`vb Ges ¯^v¯’¨ welqK ¸iæZ¡c~Y© Z_¨ h_vh_",
+        "body": "KZ©…c¶‡K AewnZ Ki‡Z n‡e| ¸iæZ¡c~Y© 27"
+    },
+    {
+        "title": "3.13| kªwgK Kj¨vY (Worker welfare)",
+        "body": ""
+    },
+    {
+        "title": "3.14.1 wj½, eqm, eY© †f‡` Kg©x‡`i m‡½ mgvb AvPiY Ki‡Z n‡e Ges †Kvb Kvi‡Y",
+        "body": "Kg©x‡`i‡K ˆelg¨ ev ewÂZ Kiv hv‡e bv| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.14.2 Kg©x‡`i Avevm¯’j evm‡hvM¨ nIqv Ges †gŠwjK my‡hvM myweav †hgb: Lv`¨ msi¶‡Yi",
+        "body": "cwi®‹vi ¯’vb, Lvev‡ii Avjv`v ¯’vb, nvZ †avqvi e¨e¯’v Ges cvbxq R‡ji mye¨e¯’v _vKv I h_vh_ †kŠPvMvi I cqtwb®‹vkb e¨e¯’v wbwðZ Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.14.3 Kg©xi me©wbgœ eqm, kªg N›Uv I me©wbgœ gRywi †`‡ki mswkøó AvB‡bi m‡½ m½wZc~Y©",
+        "body": " n‡Z n‡e| AwZ ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.14.4 Kg©xi ¯^v¯’¨, wbivcËv Ges Kj¨v‡Yi Rb¨ `vwqZ¡ cªvß m`m¨ wPwýZ Ki‡Z n‡e|",
+        "body": "wbqwgZ Lvgvi e¨e¯’vcK I Kg©x‡`i g‡a¨ wØ-gyLx ms‡hvM mfv Av‡qvRb Ges GZ`&msµvšÍ †iKW©mg~n msi¶Y wbwðZ Ki‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.14| cªwk¶Y (Training)",
+        "body": ""
+    },
+    {
+        "title": "3.15.1 K…lK Ges kªwgK/Kg©x‡`i‡K Zv‡`i wbR wbR Kv‡Ri mv‡_ m¤úwK©Z DËg K…wl PP©v",
+        "body": "wel‡q cªwk¶Y cª`vb Ges cªwk¶Y msµvšÍ †iKW© msi¶Y Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.15.2 eQ‡i GKevi cªwk¶‡Yi cª‡qvRbxqZv ch©v‡jvPbv Ki‡Z n‡e| ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.15.3 Kg©x‡`i‡K cwienb, hš¿vsk I hš¿cvwZ Pvjbv, `yN©Ubv I Riæwi cªwZKvi, ivmvqwb‡Ki",
+        "body": "wbivc` e¨envi Ges e¨w³MZ cwi”QbœZvi Ici cªwk¶Y cª`vbc~e©K Ávb e„w× Ki‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.15| WKz‡g›Um Ges †iKW©m (Documents and records)",
+        "body": ""
+    },
+    {
+        "title": "3.16.1 DËg K…wl PP©v AbymiY msµvšÍ hveZxq Z_¨vw` AšÍZ `yB eQ‡ii Rb¨ msi¶Y Ki‡Z",
+        "body": "n‡e; Z‡e †`‡ki AvBb Abyhvqx ev †µZvi cª‡qvR‡b Zv AwaK mg‡qi Rb¨ msi¶Y Kiv †h‡Z cv‡i| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.16.2 †gqv‡`vËxY© WKz‡g›U evwZj K‡i ïay nvjbvMv` WKz‡g›U e¨envi Ki‡Z n‡e|",
+        "body": "¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.16| eR©¨ e¨e¯’vcbv (Waste management)",
+        "body": ""
+    },
+    {
+        "title": "3.17.1 eR©¨ e¨e¯’vcbv c×wZ _vK‡e Ges †m Abyhvqx KvR Kiv hvi g‡a¨ Drcv`b I dmj",
+        "body": "msMª‡nvËi e¨e¯’vcbvi mgq m„ó eR©¨ kbv³KiY, eR©¨ Drcv`b n«vm, cybe¨©envi (recycling) Ges webó Kiv BZ¨vw` AšÍf©y³ _vK‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.17| kw³i `¶Zv (Energy efficiency)",
+        "body": ""
+    },
+    {
+        "title": "3.18.1  `¶ Kvh©c×wZ ev¯Íevqb wbwðZ Kivi j‡¶¨ we`¨yr I R¡vjvwbi e¨envi ch©v‡jvPbv",
+        "body": " Ki‡Z n‡e| bevqb‡hvM¨ R¡vjvwbi e¨envi DrmvwnZ Ki‡Z n‡e| mvaviY "
+    },
+    {
+        "title": "3.18.2 Kv‡Ri m¶gZv e„w× I kw³i AcPq‡iva wbwðZ Ki‡Z †gwkb Ges hš¿cvwZ‡K mPj",
+        "body": " ivL‡Z n‡e| ¸iæZ¡c~Y© 28"
+    },
+    {
+        "title": "3.18| Rxe ˆewPÎ¨ (Biodiversity)",
+        "body": ""
+    },
+    {
+        "title": "3.19.1 †`‡ki we`¨gvb AvBb Abyhvqx Ggb GKwU Drcv`b cwiKíbv MªnY Kiv hv ¯’vbxq",
+        "body": "Dw™¢` I cªvYx cªRvwZi wbivcËv Ges msi¶Y, Rjc‡_i cv‡k ¯’vbxq Dw™¢` msi¶Y I eb¨cªvYxi hvZvqv‡Zi Rb¨ Db¥y³ c‡_i e¨e¯’v _vK‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.19| evZvm/kã (Air/noise)",
+        "body": ""
+    },
+    {
+        "title": "3.20.1 Drcv`b c×wZi d‡j `yM©Ü, †avuqv, aywj ev kã BZ¨vw` `~lY m„wó n‡j Zvi †_‡K",
+        "body": "cvk¦©eZ©x m¤ú` Ges GjvKvq Gi cªfve n«v‡mi Rb¨ Dchy³ e¨e¯’v MªnY Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.20| PP©vi ch©v‡jvPbv (Review of practices)",
+        "body": ""
+    },
+    {
+        "title": "3.21.1 DcKiY I cªwµqvi Kvi‡Y bZyb ev m¤¢ve¨ SyuwK wbY©‡qi Rb¨ eQ‡i AšÍZ GKevi",
+        "body": "ch©v‡jvPbvi (review) e¨e¯’v Kiv Ges †Kv‡bv ÎæwU kbv³ n‡j Zv ms‡kva‡bi e¨e¯’v MªnY Ges G msµvšÍ Z_¨ msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.21.2 Lvgv‡ii mKj Kvh©µg mwVKfv‡e m¤úbœ n‡”Q wKbv Ges D³ Kvh©µg PjvKvjxb",
+        "body": "mg‡q †Kvb ÎæwU kbv³ n‡q _vK‡j †m e¨vcv‡i wK ms‡kvaYg~jK e¨e¯’v MªnY Kiv n‡q‡Q Zv eQ‡i AšÍZ GKevi ch©v‡jvPbv Ges G msµvšÍ †iKW© msi¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.21.3 Kg©xi ¯^v¯’¨, wbivcËv Ges Kj¨vY m¤úwK©Z Awf‡hvMmg~n Mªn‡Yi e¨e¯’v Kiv Ges",
+        "body": "Awf‡hvM I M„wnZ e¨e¯’vi †iKW© msi¶Y Ki‡Z n‡e| mvaviY"
+    },
+    {
+        "title": "3.21| cY¨gvb cwiKíbv (Produce quality plan)",
+        "body": ""
+    },
+    {
+        "title": "3.22.1 †e¸‡bi ¸YMZ gvb eRvq ivLvi j‡¶¨ Drcv`b, msMªn I msMª‡nvËi ch©v‡q  DËg",
+        "body": "K…wl PP©v Abymi‡Y mywbw`©ó cwiKíbv _vK‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.22| GAP †cÖv‡UvKj Abymi‡Y `jMZfv‡e †e¸b Drcv`‡b we‡eP¨ welqmg~n (Points to be",
+        "body": "considered in the GAP Protocol for group production/certification of brinjal)"
+    },
+    {
+        "title": "3.23.1 cªZ¨q‡bi wbwgË e¨eüZ Rwg Av‡e`bKvixi wb‡Ri n‡Z n‡e A_ev Rwgi ˆea",
+        "body": "gvwj‡Ki m‡½ Av‡e`bKvixi g‡a¨ GKwU Pyw³ ¯^v¶wiZ n‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.2 GAP m¤úwK©Z †h‡Kvb Kvh©µg cwi`k©‡bi †¶‡Î cwi`k©KMY‡K GAP Kvh©µ‡gi",
+        "body": "Kg©x‡`i Rb¨ cª‡hvR¨ bxwZgvjv AbymiY Ki‡Z n‡e hv‡Z †e¸‡bi I e¨w³ wbivcËv A¶ybœ _v‡K| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.3 mKj Awf‡hvM h_vh_fv‡e ZvwjKvfy³ I Avg‡j wb‡Z n‡e| G msµvšÍ Z_¨vw`",
+        "body": "msi¶Y Ges Awf‡hvM wb®úwËi Kvh©Ki e¨e¯’v MªnY Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.4 cª‡Z¨KwU Lvgvi Ges Drcv`b BDwbU Lvgvi cwiKíbv ev g¨v‡ci wfwË‡Z  cwiPvjbv",
+        "body": " Ki‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.23.5 Drcv`K `j †h GKwU wbewÜZ ms¯’v Zv cª`k©‡bi Rb¨ mb`cÎ/WKz‡g‡›Ukb _vK‡Z",
+        "body": " n‡e| ¸iæZ¡c~Y© 29"
+    },
+    {
+        "title": "3.23.6 GAP ev¯Íevq‡b `‡ji c~Y©v½ KvVv‡gv _vKv Ges Drcv`K `‡ji",
+        "body": "cªkvmwbK/e¨e¯’vcbv KvVv‡gv‡Z `‡ji m`m¨‡`i g‡a¨ h_vh_ mgš^q _vK‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.7 `‡ji cª‡Z¨K m`m¨ Ges `‡ji g‡a¨ e¨w³i we¯ÍvwiZ weeiY D‡jøL K‡i wjwLZ I",
+        "body": "¯^v¶wiZ Pyw³ _vK‡Z n‡e, hv‡Z GAP gvb`Ð I e¨w³i Kvh©vewj Abymi‡Yi e¨Z¨q n‡j AvcwË/wb‡lavÁv Av‡ivc Kiv hv‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.8 GKwU †iwR÷vi ivLv †hLv‡b Drcv`K `‡ji we¯ÍvwiZ weeiY, Drcv`b ev¯Íevq‡bi",
+        "body": "Ae¯’v, wbewÜZ Drcv`b GjvKv I Drcvw`Z dm‡ji Af¨šÍixY wbix¶vi Z_¨ AšÍf©y³ _vK‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.9 GAP gvb`Ð Abymi‡Yi Rb¨ `‡ji cª‡Z¨‡Ki `vwqZ¡ I KZ©e¨ mywbw`©ó Ki‡Z n‡e|",
+        "body": "¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.10 Drcv`K `‡ji Aby‡gv`b I wm×všÍ MªnY cªwµqv mywbw`©ó Ki‡Z n‡e| ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.23.11 `j cªZ¨qb e¨e¯’vcbvi Kv‡R mswkøó g~j e¨w³eM© h_v: gvb e¨e¯’vcK, Af¨šÍixY",
+        "body": "wbix¶K, cªwk¶K Ges `j e¨e¯’vc‡Ki Ávb I `¶Zv g~j¨vqb Ki‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.12 `j‡K wbwðZ n‡Z n‡e †h, GAP cªZ¨q‡b `vwqZ¡ cªvß cª‡Z¨‡K h‡_ó `¶ Ges",
+        "body": "cª‡qvRbxqZv Abyhvqx Kvh©µg cwiPvjbvq m¶g| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.13 GAP cª‡qvRbxqZvi Av‡jv‡K `‡ji mywbw`©ó Kg©x‡`i Ávb I `¶Zv wba©viY Kiv,",
+        "body": "cªwk¶Y I wk¶vMZ †hvM¨Zv wjwce× ivL‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.14 `j‡K wbwðZ n‡Z n‡e †h, Af¨šÍixY cwi`k©KMY Af¨šÍixY wbix¶v cªwµqvq",
+        "body": "†hvM¨Zv m¤úbœ| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.15 `j KZ©…K wbewÜZ m`m¨ Ges `vwqZ¡ cªvß m`m¨‡`i Rb¨ cªZ¨qb cwiwa (scope of",
+        "body": "certification), e¨e¯’vcbv I Af¨šÍixY wbqš¿Y, bxwZgvjv Ges Kg© c×wZi mgš^‡q gvb g¨vbyqvj ˆZwi Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.16 †e¸b Drcv`‡Ki GAP/Ab¨vb¨ cª‡qvRbxqZvmg~n wbwðZ Kiv hv‡Z gvb g¨vbyqvj",
+        "body": "wb‡`©wkKv wbw`©ó mgqv‡šÍ ch©v‡jvPbv Ges nvjbvMv` Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.17 `j KZ©…K GAP AbymiY msµvšÍ nvjbvMv` Z_¨vw`, weZiY I AvBbMZ ms¯‹vi",
+        "body": "Ges m‡PZbZv e„w× wbwðZ Ki‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.18 mKj WKz‡g›UB `‡ji wbqšÍYvaxb _vK‡Z n‡e| AwZ ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.23.19 GAP cwiK‡íi cª‡qvRb Abyhvqx mKj WKz‡g‡›Ui GKwU g~j ZvwjKv (master",
+        "body": "list) _vK‡Z n‡e hv‡Z gvb g¨vbyqvj, Kvh©c×wZ, wb‡`©kbv, †iKW© dig¨vUmg~n Ges wewfbœ Drm n‡Z cªvß WKz‡g›U AšÍf©y³ _vK‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.20 Kvh©Kix WKz‡g›U e¨env‡ii †¶‡Î WKz‡g›U mnRjf¨ n‡Z n‡e| ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.23.21 wfbœ Dr‡mi WKz‡g›U e¨env‡ii Rb¨ GKwU c×wZ _vK‡Z n‡e, hw` GwU Zv‡`i",
+        "body": "cwiPvjbvi Ask n‡q _v‡K| mvaviY 30"
+    },
+    {
+        "title": "3.23.22 GAP mswkøó Awf‡hvMmg~n n¨vÛwjs Gi Rb¨ GKwU c×wZ _vK‡Z n‡e| hv‡Z",
+        "body": "Awf‡hvM MªnY, wbeÜb, mgm¨v kbv³KiY, KviY we‡kølY, mgvavb Ges d‡jvAvc AšÍf©y³ _vK‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.23 Awf‡hvM wb¯úwËi mgq wba©vwiZ _vK‡Z n‡e| ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.23.24 Awf‡hvM msµvšÍ †iKW© i¶Yv‡e¶Y Ki‡Z n‡e| ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.23.25 cª‡hvR¨ †¶‡Î †MvcbxqZv i¶vi wewaweavb _vK‡Z n‡e| ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.23.26 cª‡Z¨K m`m¨ hv‡Z GAP Ges Drcv`K `‡ji Af¨šÍixY wbqš¿Y c×wZi",
+        "body": "cª‡qvRbxqZvmg~n AbymiY K‡i Zvi GKwU wbix¶v c×wZ _vK‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.27 Af¨šÍixY wbix¶‡Ki cª‡qvRbxq mKj wb‡`©kbvejxmn GAP mswkøó Ávb I `¶Zv",
+        "body": " _vK‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.23.28 GKRb Af¨šÍixY wbix¶K Øviv ch©v‡jvPbv Ges wbix¶v †_‡K cªvß Z‡_¨i Av‡jv‡K",
+        "body": "M„nxZ e¨e¯’vi Af¨šÍixY WKz‡g›U c×wZ mnRjf¨ n‡Z n‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.29 ms‡kvabg~jK Kvh©µg kbv³KiY †iK‡W©i Rb¨ GKwU c×wZ _vKv Ges ev¯ÍevwqZ",
+        "body": " nIqv| G‡Z kZ©f½/Agvb¨Zvi g~j KviY we‡kølY, `vwqZ¡ Ges ms‡kvabg~jK e¨e¯’vi mgqmxgv AšÍf©y³ _vK‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.30 †hme m`m¨ kZ©vejx †g‡b Pj‡e bv Zv‡`i Ici Drcv`K `j wb‡lavÁv Av‡ivc",
+        "body": "Ki‡Z cvi‡e| welqwU cªZ¨qb ms¯’v‡K `ªæZ AewnZ Kiv ev ¯’wMZ Kiv A_ev cªZ¨vnvi Kiv (wbewÜZ m`‡m¨i wbeÜb) AšÍf©y³ _vK‡e| Drcv`K Ges Drcv`K `‡ji g‡a¨ wb‡lavÁv ev Drcv`b eÜ K‡i ivLvi welqwU Pyw³i Ask n‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.31 kZ©f½/Agvb¨Zv ms‡kvabg~jK Kvh©µg Ges wb‡lavÁvi mKj Z‡_¨i †iKW©",
+        "body": " _vK‡Z n‡e| ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.23.32 wbewÜZ Drcv`K I Lvgvi KZ©…K GAP cªZ¨wqZ †e¸b wjwce× Ki‡Z n‡e| GAP",
+        "body": "cªZ¨wqZ I GAP ewn©f~Z bKj †j‡ejhy³ (wrong labelling) ev wgkªY †e¸‡bi SyuwK wbim‡b Kvh©Ki c×wZ _vK‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.33 msMª‡ni ¯’vb wbewÜZ †e¸‡bi Rb¨ wba©vwiZ K‡i ivL‡Z n‡e hv‡Z µq Av‡`k",
+        "body": "†_‡K msMª‡nvËi n¨vÛwjs, gRy` I weZi‡Yi mgq Zv kbv³ Kiv Ges Lyu‡R †ei Kiv hvq| AwZ ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.23.34 cªZ¨wqZ †e¸b kbv³KiY Ges cª‡qvR‡b Zv evRvi †_‡K cªZ¨vnvi Kivi c×wZ",
+        "body": "_vK‡Z n‡e hv eQ‡i GKevi ch©v‡jvPbv Ki‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.35 hw` `‡ji Lvgvi Kvh©µg cwiPvjbvi Rb¨ GK ev GKvwaK mvaviY c¨vK nvDR",
+        "body": "_v‡K, Z‡e cªwZwU c¨vK nvDR‡K GAP cª‡qvRbxqZvmg~n cwic~iY Ki‡Z n‡e| AwZ ¸iæZ¡c~Y© 31"
+    },
+    {
+        "title": "3.23.36 `j Ges †µZvi g‡a¨ GAP cªZ¨qb (certification) Ace¨envi msµvšÍ mZK©Zv",
+        "body": "AšÍf©y³ K‡i wjwLZ Pyw³bvgv _vK‡Z n‡e| AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.37 mveK›Uªvw±s Gi †¶‡Î GKwU mywbw`©ó c×wZ _vK‡Z n‡e| AwZ ¸iæZ¡c~Y©",
+        "body": ""
+    },
+    {
+        "title": "3.23.38 Giƒc ewnt¯’ mveK›Uªvw±s †mevmg~n GAP cª‡qvRbxqZvmg~‡ni m‡½ m½wZc~Y© n‡Z",
+        "body": " n‡e| AwZ ¸iæZ¡c~Y© "
+    },
+    {
+        "title": "3.23.39 mveK›UªvKU‡ii `¶Zvi g~j¨vqb _vK‡Z n‡e Ges Zvi †iKW© msi¶Y Ki‡Z n‡e|",
+        "body": "AwZ ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "3.23.40 `‡ji gvb wbqš¿Y c×wZi (quality control system) mv‡_ m½wZ †i‡L",
+        "body": "mveK›Uªv±i Kvh©µg cwiPvjbv Ki‡e| ¸iæZ¡c~Y©"
+    },
+    {
+        "title": "4.0| Dcmsnvi (Conclusion)",
+        "body": "evsjv‡`‡k mviveQiB ch©vß cwigv‡Y †e¸b Drcvw`Z nq| mwVK Drcv`b e¨e¯’vcbv AbymiY bv Kivi d‡j Drcvw`Z Gme †e¸b kZfvM wbivc` e‡j we‡ewPZ n‡”Q bv| evsjv‡`k GAP gvb`‡Ði Av‡jv‡K cªYxZ Ôevsjv‡`k GAP †cªv‡UvKj: †e¸bÕ Abymi‡Yi gva¨‡g wbivc` I gvbm¤úbœ †e¸b Drcv`b wbwðZ Ki‡e| DËg K…wl PP©v (GAP) Abymi‡Y †e¸b Drcvw`Z n‡j †`‡k-we‡`‡ki evRvi m¤úªmvwiZ n‡e Ges †e¸b ißvwbi aviv A‡bKvs‡k e„w× cv‡e e‡j Avkv Kiv hv‡Q| cª¯ÍyZK…Z GAP †cªv‡UvKj e¨envi K‡i wbivc` †e¸b Drcv`b wbwðZ Kiv m¤¢e n‡e e‡j Avkv Kiv hv‡”Q| Z‡e †fv³v ch©v‡q m‡PZbZv e„w×mn GAP wel‡q KvwiMwi `¶Zv e„w×i j‡¶¨ K…lK, D‡`¨v³v, wWGB Kg©KZ©v, weÁvbx I Ab¨vb¨ †÷K‡nvìvi‡`i cªwk¶Y cª`vb Kiv Avek¨K|"
+    },
+    {
+        "title": "5.0| Z_¨m~Î (References)",
+        "body": "Azad et al., 2020. Krishi Projukti Hatboi, 9th Edition (Edited). Bangladesh Agricultural Research Institute, Gazipur-1701, Bangladesh. BBS. 2023. Yearbook of Agricultural Statistics of Bangladesh. Bangladesh Bureau of Statistics, Ministry of Planning, Government of People’s Republic of Bangladesh, Dhaka. Bokhtiar, SM., Salam, MA., Moni, Z.R., Hossain, SMM., Hassan, M.S., 2024. Bangladesh GAP Standard, BDS 2025: 2023; Bangladesh Agricultural Research Council, Farmgate, Dhaka-1215. Hossain, M.B., Jahiruddin, M., Chowdhury, M.A., Naser, H.M., Anwar, M.M., Islam, A., Haque, M.A., Alim, M.A., Hossain, G.M.A., Islam, M.A., Hossain, A., Satter, M.A. and Alam, F. 2024. Fertilizer Recommendation Guide-2024. Bangladesh Agricultural; Research Council (BARC), Farmgate, Dhaka-1215, Bangladesh. World Vegetables: Principles, Production and Nutritive Values. 2012. Masatoshi Yamaguchi, Springer Science & Business Media. mewR Drcv`‡bi DbœZ Kjv‡KŠkj, cª_g cªKvk, 2006, evsjv‡`k K…wl M‡elYv Bbw÷wUDU, MvRxcyi-1701. 32"
+    },
+    {
+        "title": "6.0| cwiwkó ÔKÕ: evsjv‡`k DËg K…wl PP©v (GAP) ev¯Íevq‡b gvwU I cvwb we‡k øl‡Yi wbwgË",
+        "body": "c¨vivwgUvimg~‡ni gvbgvÎv wba©viY| eZ©gvb K…wl  eûgyLx, cÖhyw³ wbf©i I †Lvi‡cvl K…wl n‡Z `ªæZ evwYwR¨KxKi‡Yi w`‡K AMÖmigvb| A_©‰bwZK ev¯ÍeZv, cwi‡ekMZ ¯’vwqZ¡, mvgvwRK MÖnY‡hvM¨Zv Ges Lv`¨ myi¶v I ¸YMZgvb wbwðZK‡í DËg K…wl PP©v (GAP) ev¯ÍevwqZ n‡”Q hv AZ¨šÍ ¸iæZ¡c~Y©| mvgwMÖKfv‡e GAP cwi‡ekMZ †UKmB Ges Rxe‰ewPÎ¨ msi¶‡Yi cvkvcvwk K…wl‡Z e¨eüZ m¤ú‡`i `¶Zv e„w×mn wbivc` Lv`¨ wbwðZ Ki‡e| evsjv‡`‡k GAP ev¯Íevq‡bi j‡¶¨ K…wl gš¿Yvjq KZ©…K evsjv‡`k K…wl M‡elYv KvDwÝj (weGAviwm)-†K cwiKí ¯^Z¡vwaKvix (w¯‹gIbvi) wn‡m‡e g‡bvbqb cÖ`vb Kiv nq| GAP ev¯Íevq‡b w¯‹gIbv‡ii (weGAviwm) Ab¨Zg `vwqZ¡ n‡jv Kvh©µg cwiPvjbv, i¶Yv‡e¶Y I Dbœq‡bi Rb¨ ch©vß WKz‡g›U (bxwZgvjv, gvb`Ð, †cÖv‡UvKj I cwiPvjbvi `vwqZ¡mg~n) ˆZwi, wbqš¿Y Ges msi¶Y| †m j‡¶¨ w¯‹gIbvi KZ©…K evsjv‡`k GAP standard Abyhvqx gvwU I cvwbi ¸YMZ gvb eRvq ivL‡Z gvwU I cvwb cix¶vi Rb¨ c¨vivwgUvimg~‡ni gvbgvÎv wba©viY Riæwi hvi gva¨‡g gvwU I cvwbi cywó Dcv`vb msi¶Y, `~lY cÖwZ‡ivamn wbivc` dmj Drcv`b wbwðZ Kiv m¤¢e n‡e| Bangladesh GAP standard-G wbivc` Lv`¨, cwi‡ekMZ e¨e¯’vcbv I cY¨gvb gwWD‡j gvwU I cvwb e¨env‡ii gvb`‡Ði wb‡`©kbv D‡jøL Av‡Q| gvwU I cvwbi ¸YMZ gvb n‡jv GK ev GKvwaK ˆRweK cÖRvwZi cÖ‡qvRbxqZv A_ev gvby‡li cÖ‡qvRb ev D‡Ï‡k¨i mv‡_ m¤úwK©Z GKwU cwigvc| gvwU I cvwb we‡køl‡Yi †¶‡Î G `yÕwU cÖvK…wZK m¤ú‡`i †fŠZ, ivmvqwbK I ˆRweK ¸Yvejxi ¸iæZ¡c~Y© wKQz c¨vivwgUvi wPwýZ Kiv n‡q‡Q| 1| gvwUi bgybv we‡kølY GAP ev¯Íevq‡b w¯‹gIbvi KZ©…K GAP standard Abyhvqx gvwU cix¶vi †¶‡Î wb‡¤œv³ c¨vivwgUvimg~n Ges †¶Î we‡k‡l G‡`i gvbgvÎv wba©vi‡Yi gva¨‡g gvwUi De©iZv i¶v Kiv, fvix avZzi (Heavy metal) Dcw¯’wZRwbZ Kvi‡Y gvwU `~lY †ivamn wbivc` dmj Drcv`b wbwðZ Kiv m¤¢e n‡e| gvwU cix¶vi Rb¨ bgybv msMÖn GKwU ¸iæZ¡c~Y© welq hvi Ici gvwUi cÖK…Z ¸YMZ gvb wbY©q wbf©i K‡i|"
+    },
+    {
+        "title": "1.1| gvwUi bgybv msMÖn",
+        "body": "gvwUi De©iZv gvb wbY©‡qi Rb¨ gvwUi Kl©Y ¯Í‡ii g„wËKv bgybv we‡kølY Ki‡Z n‡e| ZvB gvwUi De©iZv gvb wbY©‡qi Rb¨ Rwg cÖ¯‘Z I mvi cÖ‡qv‡Mi Av‡MB gvwUi Kl©Y¯Íi (wPÎ-1) †_‡K mwVKfv‡e g„wËKv bgybv msMÖn Kiv Avek¨K|"
+    },
+    {
+        "title": "1.2| Rwg †_‡K K‡¤úvwRU g„wËKv bgybv msMÖn c×wZ",
+        "body": " Rwgi mxgvbv †_‡K 2-3 wgUvi ev 4-6 nvZ wfZ‡i wPÎ Abyhvqx mgvšÍivjfv‡e mg`~iZ¡ eRvq †i‡L 9wU ¯’vb †_‡K g„wËKv bgybv msMÖn Ki‡Z n‡e|  iv¯Ív ev evu‡ai wbKUeZ©x ¯’vb/cwiZ¨³ B‡Ui fvUv/m`¨ mvi cÖ‡qvMK…Z Rwg/†Mvei ev K‡¤úv÷ wKsev †h‡Kv‡bv AveR©bv ¯ÍzcK…Z RvqMv/dm‡ji bvov †cvov‡bvi RvqMv †_‡K g„wËKv bgybv msMÖn Kiv hv‡e bv| D‡jøL¨ †h, gvwUi GiKg GKwU wgkÖ bgybv †Kej GKwU LÐ cøU n‡ZB wb‡Z n‡e| 33  GKvwaK cø‡Ui gvwUi bgybv cix¶v Ki‡Z n‡j cÖwZ LÐ Rwg n‡Z Avjv`v K‡¤úvwRU bgybv msMÖn Ki‡Z n‡e|  gvwU msMÖ‡ni Av‡M Rwgi GK ¯’v‡b MZ© K‡i Kl©Y ¯Í‡ii MfxiZv †`‡L wb‡Z n‡e (wPÎ-1 K I L)| mvaviYZ †ivcv av‡bi Rwg‡Z Kl©Y ¯Í‡ii wb‡P k³ ÔKl©Y ¯ÍiÕ _v‡K, bgybv msMÖnKv‡j Kl©Y ¯Íi ev` hv‡e|  Kl©Y ¯Í‡ii MfxiZv Rvbvi ci Rwgi AvqZb wPÎ Abyhvqx (wPÎ-2) Rwg‡Z 9wU ¯’vb wPwýZ Ki‡Z n‡e|  cwi¯‹vi †Kv`vj ev LšÍv ev †h †Kv‡bv Lbb h‡š¿i mvnv‡h¨ Kl©Y ¯Í‡ii MfxiZv ch©šÍ (wPÎ-2L) ÔVÕ AvK…wZi MZ© Ki‡Z n‡e (wPÎ-2M)|  M‡Z©i GK cvk †_‡K 4 Av½yj cwigvY (7-8 †mwg) cyiægvwUi PvKv Zz‡j PvKvwUi `yB cvk Ges Kl©Y Z‡ji Ask (hw` _v‡K) †K‡U ev` w`‡q PvKvwU cwjw_b kx‡Ui Dci wKsev cøvw÷K evjwZ‡Z ivL‡Z n‡e|  GKBfv‡e 9wU ¯’vb †_‡K msM„nxZ GKB cwigvY gvwU evjwZ/cwjw_b kx‡U ivL‡Z n‡e|  Pvl †`qv Rwg †_‡K gvwU Ggbfv‡e wb‡Z n‡e hv‡Z †Xjvhy³ wKsev ¸‡ov Kl©Y¯Í‡ii m¤ú~Y© AskB mgcwigv‡Y msMÖn Kiv nq| wPÎ: Kl©Y¯Íi wPÎ-2: bgybv msMÖn c‡q›U ev ¯’vb (K) (L) (K) (L) (M) (N) (O) (P) 2-3 wgUvi 2-3 wgUvi 2-3 wgUvi wPÎ-3: g„wËKv bgybv msMÖn c×wZ 34"
+    },
+    {
+        "title": "1.3| msM„nxZ g„wËKv bgybv fvjfv‡e wgwkªZKiY",
+        "body": " cwi®‹vi cwjw_b kxU wKsev evjwZ‡Z ivLv msM„nxZ g„wËKv bgybvi PvKv¸‡jv cwi®‹vi nv‡Z ¸‡ov K‡i fv‡jvfv‡e †gkv‡Z n‡e|  †gkv‡bvi mgq gvwU‡Z Nvm ev wkKo _vK‡j †d‡j w`‡Z n‡e|  fv‡jv K‡i †gkv‡bv gvwU mgvb 4 fvM K‡i (wPÎ-3P) wecixZ `yÕ†KvY †_‡K `yÕfvM †d‡j w`‡Z n‡e| evKx `yÕfvM gvwU Avevi wgwk‡q GKB c×wZ‡Z Kwg‡q AvbygvwbK 500 MÖvg n‡j cwjw_b e¨v‡M msMÖn Ki‡Z n‡e|  gvwU †fRv wKsev Av`Ö© _vK‡j Qvqvhy³ ¯’v‡b ïwK‡q wb‡Z n‡e| †Kv‡bv Ae¯’vB cÖLi †iŠ‡`ª gvwU ïKv‡bv hv‡e bv|  †fRv gvwUi †¶‡Î gvwUi cwigvY Ggbfv‡e wb‡Z n‡e hv‡Z ïKv‡j gvwU †gvUvgywU 500 MÖvg _v‡K| "
+    },
+    {
+        "title": "1.4| g„wËKv bgybv e¨v‡M †j‡ej ev U¨vM jvMv‡bv",
+        "body": " bgybv msMÖn dg©/U¨vM Aek¨B h_vh_fv‡e c~iY Ki‡Z n‡e| G KvRwU bgybv msMÖ‡ni mv‡_ mv‡_B Ki‡Z n‡e| QK-1 G †`qv Z_¨ m¤^wjZ `ywU †j‡ej ev U¨vM c~iY Ki‡Z n‡e|  msM„nxZ g„wËKv bgybvi e¨vMwUi gyL myZwj w`‡q †eu‡a Ab¨ GKwU cwjw_b e¨v‡M f‡i wb‡Z n‡e|  c~iYK…Z GKwU †j‡ej ev U¨vM `yB cwjw_‡bi gv‡S Giƒcfv‡e ivL‡Z n‡e hv‡Z evwni †_‡K Z_¨¸‡jv cov hvq|  Gevi Ab¨ †j‡ej ev U¨vMwU w`‡q wPÎ-4 Abyhvqx wØZxq cwjw_b e¨vMwU myZwj w`‡q evua‡Z n‡e| A_©vr QK-1 G †`qv Z_¨m¤^wjZ GKwU †j‡ej ev U¨vM jvwM‡q H e¨vMwUi gyL iwk w`‡q eÜ Ki‡Z n‡e| c‡i Ab¨ GKwU cwjw_b e¨v‡M f‡i wØZxq e¨v‡Mi gyL eÜ Ki‡Z n‡e (wPÎ-4)|"
+    },
+    {
+        "title": "1.5| †j‡ej ev U¨v‡Mi bgybv QK-1",
+        "body": "wPÎ-4: bgybvmn cwjw_b e¨vM 35 GPS wiwWs †bqvi Rb¨ (KvwiMwi Ávbm¤úbœ e¨w³ ev g„wËKv weÁvbx KZ©…K bgybv msMÖ‡ni mgq) Aek¨B GKwU GPS meter wb‡Z n‡e Ges A¶vsk I `ÖvwNgvs‡ki gvb d‡g©i h_v¯’v‡b wjwce× Ki‡Z n‡e| bgybv cix¶vMv‡i Rgv †`qvi mgq bgybv dg©wU Aek¨B Rgv w`‡Z n‡e|"
+    },
+    {
+        "title": "1.6| ¯úU †U÷ ev wdì †U÷: bgybv msMÖn Kivi mgq pH kit, Munsen Colour Chart mv‡_ wb‡Z",
+        "body": " n‡e| Colour, pH, Texture BZ¨vw` c¨vivwgUvimg~n ¯ú‡UB cix¶v Kiv hv‡e Ges djvdj †iKW© Ki‡Z n‡e (KvwiMwi Ávbm¤úbœ e¨w³ ev g„wËKv weÁvbx KZ©…K bgybv msMÖ‡ni mgq)|"
+    },
+    {
+        "title": "1.7| g„wËKv bgybv M‡elYvMv‡i †cÖiY I KiYxq",
+        "body": " msM„nxZ g„wËKv bgybvi cywó Dcv`v‡bi wfwË‡Z mvi mycvwik Rvb‡Z cÖ‡qvRbxq we‡køl‡Yi Rb¨ wbKU¯’ M‡elYvMv‡i (GmAviwWAvB-Gi AvÂwjK/†K›`Öxq M‡elYvMvi, weª, evwi, webv A_ev †Kv‡bv we‡klvwqZ g„wËKv cix¶vMvi) wb‡R A_ev Kv‡iv gva¨‡g bgybv †cŠu‡Q w`‡Z n‡e|  M‡elYvMv‡i cix¶v †k‡l djvdjmn mvi mycvwik †R‡b mycvwik Abyhvqx mvi cÖ‡qvM Ki‡Z n‡e|  mieivnK…Z mvi mycvwik KvW©wU msi¶Y Ki‡Z n‡e|"
+    },
+    {
+        "title": "1.8| gvwU we‡køl‡Y cÖvß Z_¨ msi¶Y",
+        "body": " GAP ev¯ÍevwqZ GjvKv n‡Z msM„nxZ gvwU cix¶v msµvšÍ mKj DcvË wbw`©ó †iwR÷v‡i cÖwZwU bgybvi wecix‡Z cÖvß mKj Z_¨vw` wjwce× K‡i msi¶Y Ki‡Z n‡e|  msM„nxZ g„wËKv bgybv mywbw`©ó cix¶vMv‡i cix¶v Ki‡Z n‡e|  cÖwZwU bgybvi wecix‡Z cÖvß mvi mycvwikgvjv m¤^wjZ mvi mycvwik KvW© (Fertilizer Recommendation Card)-Gi wcÖ›U Kwc †jwg‡bU K‡i msi¶Y Ki‡Z n‡e|"
+    },
+    {
+        "title": "1.9| gvwU cix¶vi c¨vivwgUvi I gvbgvÎv",
+        "body": "K)  †fŠZ c¨vivwgUvi: Av`Ö©Zv, eybU, wb®‹vkb Ges f‚wgiƒc L) mviwY 1: GAP ev¯Íevq‡b gvwU cix¶vi wbwgË c¨vivwgUvimg~‡ni ivmvqwbK gvbgvÎv (cÖ‡qvRbvbymv‡i cixÿv Ki‡Z n‡e)| 36 STV-Gi gvb gvwU cixÿvi we‡eP¨ gvb gvÎvi D”P gv‡bi Kg n‡j mvi cÖ‡qvM Ki‡Z n‡e [†Uwej-1 Gi Kjvg (4)] gvwU cix¶vi gvbwfwËK Kvw•LZ djb gvÎv Abzhvqx mvi mycvwik gvwU cix¶vi djvd‡ji wfwË‡Z Ômvi mycvwikgvjv nvZeB-2024Õ A_ev ÔFertilizer Recommendation Guide-2024Õ n‡Z cÖ`Ë m~Î e¨envi K‡i mvi mycvwik Kiv hv‡e| M) mviwY 2: GAP ev¯Íevq‡b gvwU cix¶vi wbwgË c¨vivwgUvimg~‡ni fvix avZ‡ei gvbgvÎv"
+    },
+    {
+        "title": "1.10| GAP ev¯Íevq‡b g„wËKv m¤úwK©Z we‡eP¨ welqvejx",
+        "body": " gvwU¯’ cywó Dcv`v‡bi mwVK gvb Rvbvi Rb¨ wewb‡`©k Abyhvqx mwVK Dcv‡q gvwUi bgybv msMÖn Ges we‡kølY Ki‡Z n‡e|  dmj Drcv`‡bi cÖwZwU †¶‡Î gvwUi Drcv`bkxjZv, mvi, †m‡Pi cvwbmn mvwe©K e¨e¯’vcbv Ges †h D‡Ï‡k¨ dmj Pvl Kiv n‡”Q Zvi Ici wbf©i K‡iB dm‡ji KvswLZ djb gvÎv wba©viY Ki‡Z n‡e|  ˆRe I ˆRe Drm †_‡K cÖvß cywó Dcv`v‡bi cwigvY wba©viY K‡i mwVK gvÎvq mvi cÖ‡qv‡Mi fvixavZ‡ei gvbgvÎv 37 gva¨‡g dmj Drcv`‡b gvwUi ¯^v¯’¨ fv‡jv _vK‡e Ges dm‡ji KvswLZ gvb Ges djbI cvIqv hv‡e| G‡¶‡Î cywói Drm, cÖ‡qv‡Mi nvi, c×wZ Ges cÖ‡qv‡Mi mgq h_vh_fv‡e wjwce×  Ki‡Z n‡e| KvswLZ dmj Drcv`b wbwðZK‡í cwigvYgZ ˆRe I A‰Remvi cÖ‡qvM  Ki‡Z n‡e|  ¯’vbxqfv‡e Drcvw`Z Ges mnRjf¨ ˆRe mvi †hgb: K‡¤úv÷, fvwg©K‡¤úv÷, Lvgvi RvZ mvi BZ¨vw`i e¨envi e„w×i gva¨‡g ivmvqwbK mv‡ii e¨envi Kgv‡Z n‡e|  dm‡ji cÖK…Z Ae¯’v Ges Mv‡Qi e„w× ch©vq we‡ePbv K‡i me©`v mvi mycvwikgvjv AbymiY Ki‡Z n‡e|  WvjRvZxq dmj evZv‡mi bvB‡Uªv‡Rb ms‡kølY K‡i| Kv‡RB WvjRvZxq dm‡ji gva¨‡g meyR mvi ˆZwi K‡i gvwU‡Z fvjfv‡e wgwk‡q w`‡j gvwU bvB‡Uªv‡Rb mg„× n‡e Ges gvwUi Ee©iv kw³ e„w×i gva¨‡g KvswLZ djb w`‡Z m¶g n‡e|  gvwU‡Z cwiwgZ gvÎvq ˆRe c`v_© wbwðZK‡í cÖwZwU dm‡ji Drcv`‡bi mgq dm‡ji cÖK…wZ Abzhvqx gvwU‡Z fvj gv‡bi Dchy³ ˆRemvi cÖ‡qvM Ki‡Z n‡e| 38 2| cvwbi bgybv we‡kølY GAP ev¯Íevq‡bi Rb¨ cvwbi `yB ai‡bi DrmB cÖ‡qvRb| †mPKvh© I c¨vK nvD‡R e¨eüZ cvwbi †¶‡Î wfbœ gvÎv c¨vivwgUvimg~‡ni gvbgvÎvq AšÍfy©³ n‡e| c¨vK nvD‡R e¨eüZ cvwb my‡cq cvwbi gvbgvÎv Abyhvqx n‡Z n‡e hv cÖwZ‡e`‡b D‡jøL Kiv n‡q‡Q (†Uwej-3)| cvwb cix¶vi Rb¨ bgybv msMÖn GKwU ¸iæZ¡c~Y© welq hvi Øviv cvwbi ¸YMZ gvb wbf©i K‡i|"
+    },
+    {
+        "title": "2.1| cvwbi bgybv msMÖ‡ni c×wZ",
+        "body": "K) †mPKv‡h© e¨eüZ cvwbi bgybv msMÖ‡ni c×wZ  bgybv msMÖ‡ni Rb¨ 1/2 wjUvi mvB‡Ri cøvw÷‡Ki †evZj (ïay cvwbi †evZj) e¨envi Ki‡Z n‡e| bgybv cvwb msMÖ‡ni Av‡M Dr‡mi cvwb w`‡q †evZj fvj K‡i ay‡q wb‡Z n‡e| bgybv msMÖ‡ni mgq †evZjwU ax‡i ax‡i cvwb Øviv m¤ú~Y©iƒ‡c c~Y© K‡i †evZ‡ji gyL wQwc Øviv Ggbfv‡e eÜ Ki‡Z n‡e hv‡Z †evZ‡ji wfZi †Kv‡bv evZvm ev ey`ey` bv _v‡K|  bjK‚‡ci cvwb msMÖ‡ni mgq bjK‚cwU wKQy¶Y Pvjv‡bvi ci bgybv msMÖn Ki‡Z n‡e| n¯ÍPvwjZ bjK‚‡ci †ejvq wKQy¶Y bjK‚c †P‡c Dc‡ii cvwb †d‡j w`‡q bgybv msMÖn Ki‡Z n‡e| f‚-cwi¯’ cvwbi †¶‡Î Dr‡mi Zxi n‡Z wKQzUv `~‡i Ges Dr‡mi DcwifvM I Zj‡`‡ki ga¨eZ©x ¯’vb n‡Z bgybv msMÖn Ki‡Z n‡e|  cÖwZwU Dr‡mi bgybv cvwb 2wU †evZ‡j f‡i Zb¥‡a¨ GKwU †evZ‡j cwigvYgZ †evZ‡ji mvBR Abyhvqx (nvB‡WÖv‡K¬vwiK GwmW/bvBwUªK GwmW) wgwkÖZ Ki‡Z n‡e (GwmW wgwkÖZ †evZj wPwýZ K‡i w`‡Z n‡e)| GwmW wgwkÖZ cvwb Øviv ïay Av‡m©wbK Ges Avqibmn Ab¨vb¨ Heavy metals †U‡÷i Rb¨ cÖ‡hvR¨ n‡e|  cÖwZwU †evZ‡ji Mv‡q wb‡gœv³ Q‡K bgybvi Z_¨vw` msµvšÍ †j‡ej jvMv‡Z n‡e| †j‡e‡ji Z_¨vw` cwi®‹vi IqvUvi cÖæd gvK©vi w`‡q wjL‡Z n‡e|"
+    },
+    {
+        "title": "2.2| †m‡Pi cvwb cix¶vi cÖvß Z_¨ msi¶Y I cÖwZ‡e`b †cÖiY",
+        "body": " GAP ev¯ÍevwqZ GjvKv n‡Z msM„nxZ bgybv cvwbi Rb¨ GKwU c„_K †iwRóv‡i cÖwZwU bgybv †evZ‡ji †j‡e‡j ewY©Z Z_¨ wj‡L ivL‡Z n‡e|  msM„nxZ bgybv cvwb mywbw`©ó cix¶vMv‡i cix¶v Ki‡Z n‡e|  cvwb cix¶v msµvšÍ mKj DcvË wbw`©ó †iwRóv‡i cÖwZwU bgybvi wecix‡Z cÖvß mKj Z_¨vw` wjwce× K‡i msi¶Y Ki‡Z n‡e| L) c¨vK nvD‡R e¨eüZ cvwbi bgybv msMÖn bgybv msMÖn †evZj: †ev‡ivwmwj‡KU Møvm †evZj wKsev cwj †UUªv †d¬v‡iv Bw_wjb (PTFE) †evZj A_ev nvB‡WbwmwU cwj Bw_wjb (HDPE) †evZ‡j bgybv cvwb msMÖn Ki‡Z n‡e| Giƒc †evZj cvwbi mwnZ 39 wewµqvnxb, mn‡R fv‡½ bv, †Uc Lvq bv Ges eûw`b e¨envi Dc‡hvMx n‡Z n‡e| †evZjwU bgybv msMÖ‡ni c~‡e©B Ultrapure Water w`‡q a~‡q wb‡Z n‡e AZtci †÷wijvBR Ki‡Z n‡e| †÷wijvBR Kivi ci †evZ‡ji gyLwU bgybv msMÖ‡ni c~e© ch©šÍ †Lvjv hv‡e bv| †evZj †j‡ewjs: bgybv msMÖ‡ni c~‡e© †evZj Gi Mv‡q IqvUvi cÖæd gvK©vi w`‡q wb‡¤œv³ welq¸‡jv wjL‡Z n‡e"
+    },
+    {
+        "title": "2.3| bgybv msMÖn dg©",
+        "body": "bgybv msMÖn dg©wU Aek¨B h_vh_fv‡e c~iY Ki‡Z n‡e| G KvRwU bgybv msMÖ‡ni mv‡_ mv‡_B Ki‡Z n‡e| GPS wiwWs †bIqvi Rb¨ Aek¨B GKwU GPS Meter wb‡Z n‡e Ges A¶vsk I `ªvwNgvsk-Gi gvb d‡g©i h_v¯’v‡b wjwce× Ki‡Z n‡e| bgybv cix¶vMv‡i Rgv †`Iqvi mv‡_ bgybv dg©wU Aek¨B Rgv w`‡Z n‡e| ¯úU †U÷ ev wdì †U÷: bgybv msMÖn Kivi mgq Portable Meter (enb‡hvM¨ wgUvi) mv‡_ wb‡Z n‡e| Temperature, Colour, Taste, Odour, Turbidity, pH, Electric Conductivity (EC), Total Dissolved Solids (TDS), Salinity c¨vivwgUvimg~n ¯ú‡UB cix¶v Kiv hv‡e Ges djvdj †iKW© Ki‡Z n‡e|"
+    },
+    {
+        "title": "2.4| cvwb cix¶vi gvbgvÎv",
+        "body": "K) †fŠZ gvbgvÎv: ZvcgvÎv, is, ¯^v`, MÜ I UviwewWwU L) †Uwej 3: GAP ev¯Íevq‡b cvwb cix¶vi wbwgË †mPKvh©/c¨vK nvD‡R e¨env‡ii Rb¨ c¨vivwgUvimg~n (cÖ‡qvRbvbymv‡i cixÿv Ki‡Z n‡e) 40 *†mvwWqvg (Na)=40 meq/L; 920 mg/L ** g¨vM‡bwkqvg (Mg)= 60.76 mg/L *** K¨vjwkqvg (Ca)= 400.78 mg/L **** †K¬vivBW (Chloride) mgy`ª DcK‚jxq Gi Rb¨ c¨vK nvD‡Ri gvbgvÎv 1000 Z_¨m~Î: 1. Water Quality Report, Bangladesh Agricultural Development Corporation (BADC), July 2021 2. Water Quality for Agriculture, FAO Irrigation and Drainage, Paper 29 3. cwi‡ek msi¶Y wewagvjv 2023, evsjv‡`k †M‡RU; cwi‡ek, eb I Rjevqy gš¿Yvjq; ZvwiL: 17 dvêyb, 1429 e½vã/2 gvP© 2023 wLÖóvã KvwiMwi KwgwUmg~n gvV/dvg© ch©v‡q GAP Uªvqvj ev¯Íevq‡b gvwU cix¶vi wbwgË c¨vivwgUvi wba©vi‡Yi KvwiMwi KwgwU (†R¨ôZvi µgvbymv‡i bq) E evsjv‡`k K…wl M‡elYv KvDwÝj evsjv‡`k K…wl M‡elYv KvDwÝj evsjv‡`k K…wl M‡elYv KvDwÝj evsjv‡`k K…wl M‡elYv KvDwÝj g„wËKv m¤ú` Dbœqb BÝwUwUDU evsjv‡`k avb M‡elYv Bbw÷wUDU evsjv‡`k K…wl M‡elYv Bbw÷wUDU cÖ‡dmi W. †gvt e³xqvi †nv‡mb m`m¨ cwiPvjK cÖvK…wZK m¤ú` e¨e¯’vcbv wefvM Aet 41 gvV/dvg© ch©v‡q GAP Uªvqvj ev¯Íevq‡b cvwb cix¶vi wbwgË c¨vivwgUvi wba©vi‡Yi KvwiMwi KwgwU (†R¨ôZvi µgvbymv‡i bq) E E evsjv‡`k K…wl M‡elYv KvDwÝj evsjv‡`k K…wl M‡elYv KvDwÝj evsjv‡`k K…wl M‡elYv Bbw÷wUDU evsjv‡`k K…wl M‡elYv KvDwÝj evsjv‡`k avb M‡elYv Bbw÷wUDU evsjv‡`k K…wl Dbœqb K‡c©v‡ikb evsjv‡`k K…wl M‡elYv KvDwÝj evsjv‡`k avb M‡elYv Bbw÷wUDU Aet"
+    }
+]

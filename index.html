@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAP Brinjal | Professional Training Portal</title>
+  <meta name="description"
+    content="Interactive Good Agricultural Practices (GAP) training for Brinjal cultivation in Bangladesh. Pure Unicode content extracted from official protocols.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="app-container">
+    <button class="mobile-menu-btn" id="mobile-toggle" type="button" aria-label="Toggle mobile menu">
+      <i data-lucide="menu"></i>
+    </button>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-stack">
+          <img src="extracted_assets/branding/logo_1.png" alt="BARC" class="mini-logo">
+          <img src="extracted_assets/branding/logo_2.png" alt="DAE" class="mini-logo">
+        </div>
+        <h1 class="brand-title">GAP Brinjal</h1>
+        <button id="lang-toggle" class="lang-btn">
+          <i data-lucide="languages"></i>
+          <span id="lang-text" data-translate="toggle_lang">English</span>
+        </button>
+      </div>
+
+      <nav class="nav-menu">
+        <div class="nav-item active" data-section="dashboard">
+          <i data-lucide="layout-dashboard"></i>
+          <span>Dashboard</span>
+        </div>
+        <div class="nav-item" data-section="training">
+          <i data-lucide="book-open"></i>
+          <span>Modules</span>
+        </div>
+        <div class="nav-item" data-section="schedule">
+          <i data-lucide="calendar"></i>
+          <span>Cultivation Plan</span>
+        </div>
+        <div class="nav-item" data-section="records">
+          <i data-lucide="clipboard-list"></i>
+          <span>Farm Logs</span>
+        </div>
+        <div class="nav-item" data-section="quiz">
+          <i data-lucide="award"></i>
+          <span>Assessment</span>
+        </div>
+        <div class="nav-item" data-section="resources">
+          <i data-lucide="library"></i>
+          <span>Resources</span>
+        </div>
+        <div class="nav-item" data-section="gallery">
+          <i data-lucide="image"></i>
+          <span>Visual Library</span>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="progress-info">
+          <div class="progress-header">
+            <span>Overall Progress</span>
+            <span id="progress-percent">0%</span>
+          </div>
+          <div class="progress-track">
+            <div id="progress-bar" class="progress-fill"></div>
+          </div>
+        </div>
+        <div class="version-info">
+          v2.5.0 • Last Sync: Jan 2026
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-header">
+        <h2 id="page-title">Dashboard</h2>
+        <div class="user-meta">
+          <div class="badge">Session Active</div>
+        </div>
+      </header>
+
+      <div id="dashboard" class="section active">
+        <div class="hero-card">
+          <img src="extracted_assets/branding/cover.jpeg" alt="Brinjal Cultivation" class="hero-img">
+          <div class="hero-overlay">
+            <h3 id="hero-title">বেগুন চাষের উত্তম কৃষি চর্চা (GAP)</h3>
+            <p id="hero-desc">Master the Bangladesh GAP protocol for premium yield and export quality brinjal.</p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Total Lessons</span>
+            <span class="stat-value" id="total-lessons-count">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Completed</span>
+            <span class="stat-value" id="completed-lessons-count">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Farm Records</span>
+            <span class="stat-value" id="total-records-count">0</span>
+          </div>
+        </div>
+
+        <div class="recent-activity">
+          <h3 id="quick-access-title">Quick Access</h3>
+          <div class="quick-links">
+            <button id="start-learning-btn" class="btn btn-primary" onclick="navigate('training')">Start
+              Learning</button>
+            <button id="log-activity-btn" class="btn btn-secondary" onclick="navigate('records')">Log Activity</button>
+          </div>
+        </div>
+
+        <div class="recent-activity mt-3">
+          <h3 id="learn-title">What you will learn</h3>
+          <div class="guide-grid" id="learn-container">
+            <!-- Dynamic Content -->
+          </div>
+        </div>
+
+        <div class="recent-activity mt-3">
+          <h3 id="guide-title">User Guide</h3>
+          <div class="guide-grid" id="guide-container">
+            <!-- Dynamic Content -->
+          </div>
+        </div>
+
+      </div>
+
+      <div id="training" class="section">
+        <div class="search-bar-container">
+          <div class="search-input">
+            <i data-lucide="search"></i>
+            <input type="text" id="lesson-search"
+              placeholder="Search lessons (e.g. পোকাসমূহ, Fertilizer, Harvesting)...">
+          </div>
+          <div id="quick-faq" class="quick-faq-chips">
+            <!-- FAQ chips will be rendered here -->
+          </div>
+          <div id="faq-display" class="faq-card-display">
+            <div class="card">
+              <div class="card-header">
+                <h4 id="faq-item-q">Question</h4>
+                <button class="btn btn-sm btn-secondary" onclick="copyFaq()" title="Copy Answer"><i data-lucide="copy"></i></button>
+              </div>
+              <p id="faq-item-a"></p>
+            </div>
+          </div>
+          <div class="tabs-container" id="category-tabs">
+            <!-- Dynamic Category Tabs -->
+          </div>
+        </div>
+        <div class="module-grid" id="module-container">
+          <!-- Lessons loaded dynamically -->
+        </div>
+      </div>
+
+      <div id="schedule" class="section">
+        <div class="card timeline-card">
+          <div id="timeline-container"></div>
+        </div>
+      </div>
+
+      <div id="records" class="section">
+        <div class="records-grid">
+          <div class="card">
+            <h3 id="add-log-title">Add Farm Log</h3>
+            <form id="record-form">
+              <div class="form-group">
+                <label for="log-date" id="label-date">Date</label>
+                <input type="date" id="log-date" required>
+              </div>
+              <div class="form-group">
+                <label for="log-category" id="label-category">Category</label>
+                <select id="log-category">
+                  <option value="Land Preparation">Land Preparation (জমি তৈরি)</option>
+                  <option value="Fertilizer Application">Fertilizer Application (সার প্রয়োগ)</option>
+                  <option value="Irrigation">Irrigation (সেচ)</option>
+                  <option value="Pest Management">Pest Management (বালাই ব্যবস্থাপনা)</option>
+                  <option value="Harvesting">Harvesting (ফসল সংগ্রহ)</option>
+                  <option value="Waste Management">Waste Management (বর্জ্য ব্যবস্থাপনা)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="log-desc" id="label-desc">Description</label>
+                <textarea id="log-desc" placeholder="Details of activity performed..." required></textarea>
+              </div>
+              <button type="submit" id="save-record-btn" class="btn btn-primary">Save Record</button>
+            </form>
+          </div>
+          <div class="card">
+            <div class="log-history-header">
+              <h3 id="log-history-title">Log History</h3>
+              <button id="export-btn" class="btn btn-secondary btn-sm">Export Summary</button>
+            </div>
+            <div id="logs-list"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="quiz" class="section">
+        <div class="quiz-container">
+          <div id="quiz-start-view" class="card text-center">
+            <i data-lucide="graduation-cap"></i>
+            <h3 id="quiz-title">GAP Knowledge Check</h3>
+            <p id="quiz-desc">Test your understanding of the Bangladesh Good Agricultural Practices for Brinjal.</p>
+            <button id="start-quiz-btn" class="btn btn-primary" onclick="startQuiz()">Start Quiz</button>
+          </div>
+          <div id="quiz-question-view" class="card">
+            <div class="quiz-header">
+              <span id="quiz-progress">Question 1 of 5</span>
+              <span id="quiz-timer"></span>
+            </div>
+            <h3 id="question-text" class="Bengali-text"></h3>
+            <div id="options-container" class="options-grid"></div>
+          </div>
+          <div id="quiz-result-view" class="card text-center">
+            <h3 id="result-title">Quiz Completed!</h3>
+            <div class="result-score" id="result-score">0/0</div>
+            <p id="result-text"></p>
+            <button class="btn btn-primary" onclick="resetQuiz()">Try Again</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="resources" class="section">
+        <div class="card">
+          <h3 id="resources-title">Official GAP Documents</h3>
+          <p id="resources-desc">Access official protocols and manuals
+            for Good
+            Agricultural Practices in Bangladesh.</p>
+          <div class="resource-list">
+            <div class="resource-item">
+              <div>
+                <i data-lucide="file-text"></i>
+                <div>
+                  <div>Bangladesh GAP Protocol for Brinjal</div>
+                  <div>PDF manual • 3.7 MB</div>
+                </div>
+              </div>
+              <a href="Brinjal .pdf" download class="btn btn-secondary btn-sm">Download</a>
+            </div>
+            <div class="resource-item">
+              <div>
+                <i data-lucide="external-link"></i>
+                <div>
+                  <div>BARC Official Website</div>
+                  <div>External Link • barc.gov.bd</div>
+                </div>
+              </div>
+              <a href="http://www.barc.gov.bd" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="gallery" class="section">
+        <div class="gallery-grid" id="image-gallery">
+          <!-- Images populated by JS -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Lesson Content Modal -->
+  <div id="lesson-modal" class="modal">
+    <div class="modal-content card">
+      <div class="modal-header">
+        <h2 id="modal-title"></h2>
+        <button class="close-modal" id="close-modal">&times;</button>
+      </div>
+      <div id="modal-body" class="modal-body Bengali-text"></div>
+      <div class="modal-footer">
+        <div class="modal-nav">
+          <button id="prev-lesson-btn" class="btn btn-secondary btn-sm" title="Previous Lesson">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <button id="speak-btn" class="btn btn-secondary btn-sm" title="Read Aloud">
+            <i data-lucide="volume-2"></i>
+          </button>
+          <button id="next-lesson-btn" class="btn btn-secondary btn-sm" title="Next Lesson">
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+        <button id="mark-complete-btn" class="btn btn-primary">Mark as Completed</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
