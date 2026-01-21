@@ -98,10 +98,13 @@
 
       <div id="dashboard" class="section active">
         <div class="hero-card">
-          <video class="hero-img" autoplay loop playsinline poster="extracted_assets/branding/logo_1.png">
+          <video id="hero-video" class="hero-img" autoplay loop playsinline poster="extracted_assets/branding/logo_1.png">
             <source src="extracted_assets/branding/cover.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
+          <button id="play-pause-btn" class="play-pause-btn" type="button" aria-label="Play/Pause Video">
+            <i data-lucide="play"></i>
+          </button>
           <div class="hero-overlay">
             <h3 id="hero-title">বেগুন চাষের উত্তম কৃষি চর্চা (GAP)</h3>
             <p id="hero-desc">Master the Bangladesh GAP protocol for premium yield and export quality brinjal.</p>

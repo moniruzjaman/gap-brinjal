@@ -238,6 +238,35 @@ body {
   transform: scale(1.05);
 }
 
+.play-pause-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hero-card:hover .play-pause-btn {
+  opacity: 1;
+}
+
+/* Full screen video aspect ratio fix */
+.hero-img:fullscreen {
+  object-fit: contain;
+  background: #000;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
