@@ -3,12 +3,12 @@
 const SUPABASE_URL = 'https://dpgsiiapjdrxszrbiyxl.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_secret_S5UxlOp2KtstC02PLjDqtw_QavuhQf9';
 
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Test Supabase connection
 async function testSupabaseConnection() {
     try {
-        const { data, error } = await supabase.from('completed_lessons').select('count').limit(1);
+        const { data, error } = await supabaseClient.from('completed_lessons').select('count').limit(1);
         if (error && error.code !== 'PGRST116') { // PGRST116 is no rows, which is expected
             console.error('Supabase connection error:', error);
             return false;
@@ -25,7 +25,7 @@ async function testSupabaseConnection() {
 const db = {
     async saveCompletedLesson(lessonId) {
         if (!currentUser) return;
-        const { error } = await supabase
+        const { error } = await supabaseClient
             .from('completed_lessons')
             .upsert({ user_id: currentUser.id, lesson_id: lessonId, completed_at: new Date() });
         if (error) console.error('Error saving lesson:', error);
@@ -33,7 +33,7 @@ const db = {
 
     async removeCompletedLesson(lessonId) {
         if (!currentUser) return;
-        const { error } = await supabase
+        const { error } = await supabaseClient
             .from('completed_lessons')
             .delete()
             .match({ user_id: currentUser.id, lesson_id: lessonId });
@@ -42,7 +42,7 @@ const db = {
 
     async getCompletedLessons() {
         if (!currentUser) return [];
-        const { data, error } = await supabase
+        const { data, error } = await supabaseClient
             .from('completed_lessons')
             .select('lesson_id')
             .eq('user_id', currentUser.id);
@@ -55,7 +55,7 @@ const db = {
 
     async saveFarmRecord(record) {
         if (!currentUser) return;
-        const { error } = await supabase
+        const { error } = await supabaseClient
             .from('farm_records')
             .insert({
                 user_id: currentUser.id,
@@ -68,7 +68,7 @@ const db = {
 
     async getFarmRecords() {
         if (!currentUser) return [];
-        const { data, error } = await supabase
+        const { data, error } = await supabaseClient
             .from('farm_records')
             .select('*')
             .eq('user_id', currentUser.id)

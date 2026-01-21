@@ -17,7 +17,6 @@ async function initAuth() {
     }
 
     // Check for existing session
-    const { data: { session }, error } = await supabase.auth.getSession();
     if (session) {
         currentUser = session.user;
         updateUIForAuth();
@@ -25,7 +24,7 @@ async function initAuth() {
     }
 
     // Listen for auth changes
-    supabase.auth.onAuthStateChange(async (event, session) => {
+    supabaseClient.auth.onAuthStateChange(async (event, session) => {
         if (event === 'SIGNED_IN') {
             currentUser = session.user;
             updateUIForAuth();
@@ -70,7 +69,7 @@ authForm.onsubmit = async (e) => {
     const email = document.getElementById('auth-email').value;
 
     try {
-        const { error } = await supabase.auth.signInWithOtp({
+        const { error } = await supabaseClient.auth.signInWithOtp({
             email: email,
             options: {
                 emailRedirectTo: window.location.origin
@@ -86,7 +85,7 @@ authForm.onsubmit = async (e) => {
 
 // Logout
 async function handleLogout() {
-    const { error } = await supabase.auth.signOut();
+    const { error } = await supabaseClient.auth.signOut();
     if (error) showToast(`Logout error: ${error.message}`);
 }
 
