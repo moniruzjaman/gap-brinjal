@@ -17,6 +17,7 @@ async function initAuth() {
     }
 
     // Check for existing session
+    const { data: { session }, error } = await supabaseClient.auth.getSession();
     if (session) {
         currentUser = session.user;
         updateUIForAuth();
