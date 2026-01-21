@@ -167,6 +167,11 @@ body {
   margin: 0 auto;
 }
 
+#dashboard .main-content {
+  padding: 2rem 0;
+  max-width: 100%;
+}
+
 .top-header {
   display: flex;
   justify-content: space-between;

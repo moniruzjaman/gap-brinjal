@@ -229,6 +229,25 @@ async function init() {
             });
         });
 
+        // Enable video autoplay and sound on user interaction
+        const heroVideo = document.querySelector('.hero-img');
+        if (heroVideo) {
+            // Try autoplay first
+            heroVideo.addEventListener('canplaythrough', () => {
+                heroVideo.play().catch(() => {
+                    // Autoplay blocked, enable sound on click
+                    heroVideo.muted = true; // Temporarily mute to try again
+                    heroVideo.play().catch(() => {
+                        // Still blocked, add click handler
+                        heroVideo.addEventListener('click', () => {
+                            heroVideo.muted = false;
+                            heroVideo.play();
+                        });
+                    });
+                });
+            });
+        }
+
         showToast(TRANSLATIONS[currentLanguage].welcome);
         lucide.createIcons();
     } catch (err) {
