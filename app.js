@@ -1112,5 +1112,125 @@ openLesson = function (id) {
     originalOpenLesson(id);
 };
 
+// PDF Viewer Variables
+let pdfDoc = null;
+let currentPage = 1;
+let totalPages = 0;
+const canvas = document.getElementById('pdf-canvas');
+const ctx = canvas.getContext('2d');
+
+// PDF Viewer Functions
+async function loadPDF(url) {
+    try {
+        const loadingTask = pdfjsLib.getDocument(url);
+        pdfDoc = await loadingTask.promise;
+        totalPages = pdfDoc.numPages;
+        currentPage = 1;
+        renderPage(currentPage);
+        updatePageInfo();
+        updateNavigationButtons();
+    } catch (error) {
+        console.error('Error loading PDF:', error);
+        showToast(currentLanguage === 'bn' ? 'PDF লোড করতে ব্যর্থ হয়েছে' : 'Failed to load PDF');
+    }
+}
+
+async function renderPage(pageNum) {
+    try {
+        const page = await pdfDoc.getPage(pageNum);
+
+        // Calculate scale to fit canvas width
+        const viewport = page.getViewport({ scale: 1 });
+        const containerWidth = canvas.parentElement.offsetWidth - 40; // Account for padding
+        const scale = containerWidth / viewport.width;
+        const scaledViewport = page.getViewport({ scale });
+
+        canvas.height = scaledViewport.height;
+        canvas.width = scaledViewport.width;
+
+        const renderContext = {
+            canvasContext: ctx,
+            viewport: scaledViewport
+        };
+
+        await page.render(renderContext).promise;
+    } catch (error) {
+        console.error('Error rendering page:', error);
+        showToast(currentLanguage === 'bn' ? 'পৃষ্ঠা রেন্ডার করতে ব্যর্থ হয়েছে' : 'Failed to render page');
+    }
+}
+
+function updatePageInfo() {
+    const pageInfo = document.getElementById('page-info');
+    if (pageInfo) {
+        pageInfo.textContent = `${currentPage} / ${totalPages}`;
+    }
+}
+
+function updateNavigationButtons() {
+    const prevBtn = document.getElementById('prev-slide');
+    const nextBtn = document.getElementById('next-slide');
+
+    if (prevBtn) {
+        prevBtn.disabled = currentPage <= 1;
+    }
+    if (nextBtn) {
+        nextBtn.disabled = currentPage >= totalPages;
+    }
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage);
+        updatePageInfo();
+        updateNavigationButtons();
+    }
+}
+
+function nextPage() {
+    if (currentPage < totalPages) {
+        currentPage++;
+        renderPage(currentPage);
+        updatePageInfo();
+        updateNavigationButtons();
+    }
+}
+
+function initPDFViewer() {
+    const pdfSelect = document.getElementById('pdf-select');
+    const prevBtn = document.getElementById('prev-slide');
+    const nextBtn = document.getElementById('next-slide');
+
+    if (pdfSelect) {
+        pdfSelect.addEventListener('change', (e) => {
+            const selectedPdf = e.target.value;
+            if (selectedPdf) {
+                loadPDF(selectedPdf);
+            }
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', prevPage);
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', nextPage);
+    }
+
+    // Load default PDF if available
+    if (pdfSelect && pdfSelect.options.length > 0) {
+        const firstOption = pdfSelect.options[0];
+        if (firstOption.value) {
+            loadPDF(firstOption.value);
+        }
+    }
+}
+
+// Configure PDF.js worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
 // Initialize
 init();
+initPDFViewer();

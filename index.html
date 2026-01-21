@@ -15,6 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="icon" type="image/png" href="extracted_assets/branding/logo_1.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js"></script>
 </head>
 
 <body>
@@ -64,6 +66,10 @@
           <i data-lucide="image"></i>
           <span>Visual Library</span>
         </div>
+        <div class="nav-item" data-section="slideshow">
+          <i data-lucide="presentation"></i>
+          <span>Presentations</span>
+        </div>
       </nav>
 
       <div class="sidebar-footer">
@@ -98,7 +104,7 @@
 
       <div id="dashboard" class="section active">
         <div class="hero-card">
-          <video id="hero-video" class="hero-img" autoplay loop playsinline poster="extracted_assets/branding/logo_1.png">
+          <video id="hero-video" class="hero-img" autoplay loop muted poster="extracted_assets/branding/logo_1.png">
             <source src="extracted_assets/branding/cover.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -283,6 +289,28 @@
       <div id="gallery" class="section">
         <div class="gallery-grid" id="image-gallery">
           <!-- Images populated by JS -->
+        </div>
+      </div>
+
+      <div id="slideshow" class="section">
+        <div class="card">
+          <h3 id="slideshow-title">Slide Presentations</h3>
+          <div id="pdf-selector">
+            <label for="pdf-select">Select PDF</label>
+            <select id="pdf-select">
+              <option value="extracted_assets/pdfs/GAP_Papaya_Success_Guide.pdf">GAP Success Guide</option>
+              <option value="extracted_assets/pdfs/Papaya_GAP_Certification_Blueprint.pdf">Certification Blueprint</option>
+              <option value="extracted_assets/pdfs/Safe_Papaya_GAP_Protocol.pdf">Safe Protocol</option>
+            </select>
+          </div>
+          <div id="slide-container">
+            <canvas id="pdf-canvas"></canvas>
+          </div>
+          <div class="slide-controls">
+            <button id="prev-slide" class="btn btn-secondary" type="button" aria-label="Previous slide"><i data-lucide="chevron-left"></i></button>
+            <span id="page-info">1 / 1</span>
+            <button id="next-slide" class="btn btn-secondary" type="button" aria-label="Next slide"><i data-lucide="chevron-right"></i></button>
+          </div>
         </div>
       </div>
     </main>

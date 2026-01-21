@@ -14,5 +14,8 @@
     "training"
   ],
   "author": "AgriWisdomBD",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "pdfjs-dist": "^3.4.120"
+  }
 }
