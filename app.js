@@ -912,34 +912,138 @@ function renderDashboardExtras() {
     }
 }
 
-const GALLERY_LABELS = {
-    "page_17_img_0.jpeg": { bn: "ডগা ও ফল ছিদ্রকারী পোকা", en: "Fruit & Shoot Borer" },
-    "page_17_img_1.jpeg": { bn: "জেসিড", en: "Jassids" },
-    "page_18_img_0.jpeg": { bn: "সাদা মাছি", en: "Whitefly" },
-    "page_18_img_1.jpeg": { bn: "জাব পোকা", en: "Aphids" },
-    "page_19_img_0.jpeg": { bn: "থ্রিপস", en: "Thrips" },
-    "page_19_img_3.jpeg": { bn: "লাল মাকড়", en: "Red Spider Mite" },
-    "page_20_img_0.jpeg": { bn: "এপিলাকনা বিটল", en: "Epilachna Beetle" },
-    "page_21_img_0.jpeg": { bn: "ব্যাকটেরিয়াল উইল্ট", en: "Bacterial Wilt" },
-    "page_22_img_0.jpeg": { bn: "ফোমোপসিস ব্লাইট", en: "Phomopsis Blight" },
-    "page_23_img_0.jpeg": { bn: "ক্ষুদ্রাকৃতি পাতা রোগ", en: "Little Leaf" },
-    "page_24_img_0.jpeg": { bn: "শিকড় গিটঁ রোগ", en: "Root Knot Nematode" },
-    "page_25_img_0.jpeg": { bn: "গোড়া পঁচা রোগ", en: "Dumping Off" },
-    "page_26_img_0.jpeg": { bn: "মোজাইক ভাইরাস", en: "Mosaic Virus" },
-    "page_27_img_0.jpeg": { bn: "সারকোস্পোরা পাতার দাগ", en: "Cercospora Leaf Spot" },
-    "page_28_img_0.jpeg": { bn: "সমন্বিত বালাই ব্যবস্থাপনা", en: "Integrated Pest Management (IPM)" }
-};
+const GALLERY_IMAGES = [
+    "Brinjal_৯৭৮-৯৮৪-৩৬-০০৪১-৭_1.png",
+    "Brinjal_Brinjal_ (ঘ)(ঙ)(চ) - Row 1 Col 1_37.jpeg",
+    "Brinjal_Brinjal_ (ঘ)(ঙ)(চ) - Row 1 Col 2_38.jpeg",
+    "Brinjal_Brinjal_ (ঘ)(ঙ)(চ) - Row 2 Col 1_39.jpeg",
+    "Brinjal_Brinjal_ (ঘ)(ঙ)(চ) - Row 2 Col 2_40.jpeg",
+    "Brinjal_Brinjal_ (ঘ)(ঙ)(চ) - Row 2 Col 3_41.jpeg",
+    "Brinjal_Brinjal_ (ঘ)(ঙ)(চ) - Row 3 Col 1_42.jpeg",
+    "Brinjal_Brinjal_ (ঘ)(ঙ)(চ) - Row 3 Col 2_43.jpeg",
+    "Brinjal_Brinjal_ (ঘ)(ঙ)(চ) - Row 3 Col 3_44.jpeg",
+    "Brinjal_Brinjal_ ৯৭৮-৯৮৪-৩৬-০০৪১-৭_1.png",
+    "Brinjal_Brinjal_ ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি _10.jpeg",
+    "Brinjal_Brinjal_ ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি _11.jpeg",
+    "Brinjal_Brinjal_ ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি _12.jpeg",
+    "Brinjal_Brinjal_ ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি _13.jpeg",
+    "Brinjal_Brinjal_ ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি _14.jpeg",
+    "Brinjal_Brinjal_ ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি _15.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ অলটারনারিয়া পাতায় দাগ রোগের লক্ষণ_34.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ অলটারনারিয়া পাতায় দাগ রোগের লক্ষণ_35.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ কাটালে পোকা - Row 1 Col 1_22.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ কাটালে পোকা - Row 1 Col 2_23.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ কাটালে পোকা - Row 2 Col 1_24.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ ক্ষুদ্র পাতা_গুচ্ছ পাতা_তুলসি লাগা_36.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ ফোমোপসিস ব্লাইট_ফল ওকাÐ পঁচা রোগ_33.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ বেগুনের গোড়া পচা রোগের লক্ষণ_32.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ বেগুনের ঢলে পড়া রোগের লক্ষণ - Bot_30.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ বেগুনের ঢলে পড়া রোগের লক্ষণ - Top_29.jpeg",
+    "Brinjal_Brinjal_ চিত্র_ শিকড় গিট রোগের লক্ষণ_31.jpeg",
+    "Brinjal_Brinjal_ চিত্র-৪_ নমুনাসহ পলিথিন ব্যাগ_45.png",
+    "Brinjal_Brinjal_ ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটো_25.jpeg",
+    "Brinjal_Brinjal_ ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটো_26.jpeg",
+    "Brinjal_Brinjal_ ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটো_27.jpeg",
+    "Brinjal_Brinjal_ ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটো_28.jpeg",
+    "Brinjal_Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (_16.jpeg",
+    "Brinjal_Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (_17.jpeg",
+    "Brinjal_Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (_18.jpeg",
+    "Brinjal_Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (_19.jpeg",
+    "Brinjal_Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (_20.jpeg",
+    "Brinjal_Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (_21.jpeg",
+    "Brinjal_red mite_25.jpeg",
+    "Brinjal_red mitr_26.jpeg",
+    "Brinjal_ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি ফলে ডিম প_10.jpeg",
+    "Brinjal_ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি ফলে ডিম প_11.jpeg",
+    "Brinjal_ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি ফলে ডিম প_12.jpeg",
+    "Brinjal_ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি ফলে ডিম প_13.jpeg",
+    "Brinjal_ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি ফলে ডিম প_14.jpeg",
+    "Brinjal_ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি ফলে ডিম প_15.jpeg",
+    "Brinjal_চিত্র_ ক্ষুদ্র পাতা_গুচ্ছ পাতা_তুলসি লাগা রোগের ল_36.jpeg",
+    "Brinjal_চিত্র_ ফোমোপসিস ব্লাইট_ফল ওকাÐ পঁচা রোগের লক্ষণ_33.jpeg",
+    "Brinjal_চিত্র_ বেগুনের গোড়া পচা রোগের লক্ষণ_32.jpeg",
+    "Brinjal_চিত্র_ শিকড় গিট রোগের লক্ষণ_31.jpeg",
+    "Brinjal_চিত্র-৪_ নমুনাসহ পলিথিন ব্যাগ_45.png",
+    "Brinjal_ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটোনিয়া, স্ক_27.jpeg",
+    "Brinjal_ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটোনিয়া, স্ক_28.jpeg",
+    "Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_16.jpeg",
+    "Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_17.jpeg",
+    "Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_18.jpeg",
+    "Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_19.jpeg",
+    "Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_20.jpeg",
+    "Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_21.jpeg",
+    "Brinjal/Brinjal_header.jpeg",
+    "Brinjal/Brinjal_safe.jpeg",
+    "Brinjal_ (ঘ)(ঙ)(চ)/",
+    "Brinjal_ GAP প্রশিক্ষণ/",
+    "Brinjal_ GAP প্রশিক্ষণ/Brinjal_Brinjal_ GAP প্রশিক্ষণ_0.jpeg",
+    "Brinjal_ GAP প্রশিক্ষণ/Brinjal_Brinjal_ GAP প্রশিক্ষণ_46.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ_4.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ_5.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ_6.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ_7.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ_8.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ_9.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপরের দিকে _4.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপরের দিকে _5.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপরের দিকে _6.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপরের দিকে _7.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপরের দিকে _8.jpeg",
+    "Brinjal_ ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপ/Brinjal_ক্স আক্রান্ত বেগুনের পাতা কিনারা বরাবর উপরের দিকে _9.jpeg",
+    "Brinjal_ ক্স পূর্ণাঙ্গ থি্রপস কচি পাতা, ফুল ও কচি/",
+    "Brinjal_ ঘড় খধনবষ/",
+    "Brinjal_ চিত্র_ অলটারনারিয়া পাতায় দাগ রোগের লক্ষণ/",
+    "Brinjal_ চিত্র_ অলটারনারিয়া পাতায় দাগ রোগের লক্ষণ/Brinjal_চিত্র_ অলটারনারিয়া পাতায় দাগ রোগের লক্ষণ - Bottom_35.jpeg",
+    "Brinjal_ চিত্র_ অলটারনারিয়া পাতায় দাগ রোগের লক্ষণ/Brinjal_চিত্র_ অলটারনারিয়া পাতায় দাগ রোগের লক্ষণ - Top_34.jpeg",
+    "Brinjal_ চিত্র_ কাটালে পোকা/",
+    "Brinjal_ চিত্র_ কাটালে পোকা/Brinjal_চিত্র_ কাটালে পোকা - Row 1 Col 1_22.jpeg",
+    "Brinjal_ চিত্র_ কাটালে পোকা/Brinjal_চিত্র_ কাটালে পোকা - Row 1 Col 2_23.jpeg",
+    "Brinjal_ চিত্র_ কাটালে পোকা/Brinjal_চিত্র_ কাটালে পোকা - Row 2 Col 1_24.jpeg",
+    "Brinjal_ চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর/",
+    "Brinjal_ চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর/Brinjal_Brinjal_ চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর_2.jpeg",
+    "Brinjal_ চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর/Brinjal_Brinjal_ চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর_3.jpeg",
+    "Brinjal_ চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর/Brinjal_চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর্তৃক আক্র_2.jpeg",
+    "Brinjal_ চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর/Brinjal_চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর্তৃক আক্র_3.jpeg",
+    "Brinjal_ চিত্র_ বেগুনের ঢলে পড়া রোগের লক্ষণ/",
+    "Brinjal_ চিত্র_ বেগুনের ঢলে পড়া রোগের লক্ষণ/Brinjal_চিত্র_ বেগুনের ঢলে পড়া রোগের লক্ষণ - Bottom_30.jpeg",
+    "Brinjal_ চিত্র_ বেগুনের ঢলে পড়া রোগের লক্ষণ/Brinjal_চিত্র_ বেগুনের ঢলে পড়া রোগের লক্ষণ - Top_29.jpeg",
+    "Brinjal_ ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটো/",
+    "Brinjal_ ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটো/Brinjal_ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটোনিয়া, স্ক_27.jpeg",
+    "Brinjal_ ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটো/Brinjal_ফাইটোপথোরা, পিথিয়াম, ফিউজারিয়াম, রাইজোকটোনিয়া, স্ক_28.jpeg",
+    "Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (/",
+    "Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (/Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_16.jpeg",
+    "Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (/Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_17.jpeg",
+    "Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (/Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_18.jpeg",
+    "Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (/Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_19.jpeg",
+    "Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (/Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_20.jpeg",
+    "Brinjal_ বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (/Brinjal_বেগুনের শোষক পোকাসমূহের দমন ব্যবস্থাপনা (গধহধমবসবহ_21.jpeg",
+    "soil sample collection/",
+    "soil sample collection/Brinjal_(ঘ)(ঙ)(চ) - Row 1 Col 1_37.jpeg",
+    "soil sample collection/Brinjal_(ঘ)(ঙ)(চ) - Row 1 Col 2_38.jpeg",
+    "soil sample collection/Brinjal_(ঘ)(ঙ)(চ) - Row 2 Col 1_39.jpeg",
+    "soil sample collection/Brinjal_(ঘ)(ঙ)(চ) - Row 2 Col 2_40.jpeg",
+    "soil sample collection/Brinjal_(ঘ)(ঙ)(চ) - Row 2 Col 3_41.jpeg",
+    "soil sample collection/Brinjal_(ঘ)(ঙ)(চ) - Row 3 Col 1_42.jpeg",
+    "soil sample collection/Brinjal_(ঘ)(ঙ)(চ) - Row 3 Col 2_43.jpeg",
+    "soil sample collection/Brinjal_(ঘ)(ঙ)(চ) - Row 3 Col 3_44.jpeg",
+    "চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর্তৃক আক্র/",
+    "চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর্তৃক আক্র/Brinjal_চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর্তৃক আক্র_2.jpeg",
+    "চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর্তৃক আক্র/Brinjal_চিত্র_ বেগুনের ডগা ও ফল ছিদ্রকারী পোকা কর্তৃক আক্র_3.jpeg"
+];
 
 function renderGallery() {
     const galleryContainer = document.getElementById('image-gallery');
-    const imageFiles = Object.keys(GALLERY_LABELS);
 
-    galleryContainer.innerHTML = imageFiles.map(img => `
-        <div class="gallery-item" onclick="viewImage('extracted_assets/images/${img}')" title="${GALLERY_LABELS[img][currentLanguage]}">
-            <img src="extracted_assets/images/${img}" alt="GAP Visual Aid">
-            <div class="gallery-caption">${GALLERY_LABELS[img][currentLanguage]}</div>
-        </div>
-    `).join('');
+    galleryContainer.innerHTML = GALLERY_IMAGES.map(img => {
+        const label = img.split('/').pop().replace(/\.(jpeg|png)$/i, '').replace(/_/g, ' ');
+        return `
+            <div class="gallery-item" onclick="viewImage('extracted_assets/images/${img}')" title="${label}">
+                <img src="extracted_assets/images/${img}" alt="GAP Visual Aid">
+                <div class="gallery-caption">${label}</div>
+            </div>
+        `;
+    }).join('');
 }
 
 function viewImage(src) {
