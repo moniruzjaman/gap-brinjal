@@ -7,12 +7,11 @@ let farmRecords = [];
 
 // Constants
 const CATEGORIES = {
-    "1": { bn: "ভূমিকা (Introduction)", en: "Introduction" },
-    "2": { bn: "পদ্ধতি (Procedure)", en: "Procedure" },
-    "3": { bn: "অনুমোদিত পদ্ধতি (Recommended)", en: "Recommended" },
-    "4": { bn: "উপসংহার (Conclusion)", en: "Conclusion" },
-    "5": { bn: "তথ্যসূত্র (References)", en: "References" },
-    "6": { bn: "পরিশিষ্ট (Annex)", en: "Annex" }
+    "1": { bn: "সেসন ১: ভূমিকা ও GAP ধারণা", en: "Session 1: Introduction and GAP Concept" },
+    "2": { bn: "সেসন ২: নিরাপদ খাদ্য ও পরিবেশ ব্যবস্থাপনা", en: "Session 2: Safe Food and Environmental Management" },
+    "3": { bn: "সেসন ৩: শ্রমিক কল্যাণ ও পণ্যমান", en: "Session 3: Worker Welfare and Product Quality" },
+    "4": { bn: "সেসন ৪: পরিকল্পনা ও ঝুঁকি ব্যবস্থাপনা", en: "Session 4: Planning and Risk Management" },
+    "5": { bn: "সেসন ৫: ডকুমেন্টেশন ও সার্টিফিকেশন", en: "Session 5: Documentation and Certification" }
 };
 
 const TRANSLATIONS = {
@@ -56,11 +55,11 @@ const TRANSLATIONS = {
         learn_title: "আপনি যা শিখবেন",
         guide_title: "ব্যবহারকারী নির্দেশিকা",
         learn_items: [
-            "বাংলাদেশ GAP প্রোটোকলের মূল নীতিসমূহ",
-            "বেগুনের উন্নত জাত ও চারা উৎপাদন প্রযুক্তি",
-            "সঠিক সার ব্যবস্থাপনা ও সেচ পদ্ধতি",
-            "সমন্বিত বালাই ব্যবস্থাপনা (IPM) কৌশল",
-            "ফসল সংগ্রহোত্তর সঠিক যত্ন ও রেকর্ড সংরক্ষণ"
+            "GAP প্রোটোকলের ভূমিকা ও প্রয়োজনীয়তা",
+            "নিরাপদ খাদ্য ও পরিবেশ ব্যবস্থাপনা",
+            "শ্রমিক কল্যাণ ও পণ্যমান নিশ্চিতকরণ",
+            "পরিকল্পনা ও ঝুঁকি ব্যবস্থাপনা",
+            "ডকুমেন্টেশন ও সার্টিফিকেশন প্রক্রিয়া"
         ],
         guide_items: [
             "মডিউল বিভাগ থেকে আপনার পছন্দের পাঠ নির্বাচন করুন",
@@ -109,11 +108,11 @@ const TRANSLATIONS = {
         learn_title: "What you will learn",
         guide_title: "User Guide",
         learn_items: [
-            "Core principles of Bangladesh GAP protocol",
-            "Advanced brinjal varieties and seedling tech",
-            "Balanced fertilizer & irrigation management",
-            "Integrated Pest Management (IPM) tactics",
-            "Post-harvest handling & record keeping"
+            "Introduction and importance of GAP protocol",
+            "Safe food and environmental management",
+            "Worker welfare and product quality assurance",
+            "Planning and risk management",
+            "Documentation and certification process"
         ],
         guide_items: [
             "Select lessons from the Modules section",
@@ -177,8 +176,24 @@ async function init() {
                     }
                 }
 
-                let catId = titles.bn.split('.')[0].trim();
-                let mappedCat = catId.replace(/[১-৬]/g, d => BN_TO_EN[d] || d);
+                let titleParts = titles.bn.split('.');
+                let mainCat = titleParts[0].trim();
+                let subCat = titleParts[1] ? titleParts[1].trim() : '';
+
+                let mappedCat;
+                if (mainCat === '১' || mainCat === '২') {
+                    mappedCat = '1'; // Session 1
+                } else if (mainCat === '৩' && (subCat === '১' || subCat === '২')) {
+                    mappedCat = '2'; // Session 2
+                } else if (mainCat === '৩' && (subCat === '১২' || subCat === '১৩' || subCat === '১৪')) {
+                    mappedCat = '3'; // Session 3
+                } else if (mainCat === '৩' && (subCat >= '৩' && subCat <= '১১')) {
+                    mappedCat = '4'; // Session 4
+                } else if (mainCat === '৩' && (subCat >= '১৫' && subCat <= '২২') || mainCat === '৪' || mainCat === '৫' || mainCat === '৬') {
+                    mappedCat = '5'; // Session 5
+                } else {
+                    mappedCat = '1'; // Default to session 1
+                }
 
                 return {
                     id: l.id || `lesson-${i}`,
