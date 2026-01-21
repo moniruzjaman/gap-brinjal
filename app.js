@@ -123,6 +123,15 @@ const TRANSLATIONS = {
     }
 };
 
+// Debounce utility function
+function debounce(func, delay) {
+    let timeoutId;
+    return function(...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => func.apply(this, args), delay);
+    };
+}
+
 let currentLanguage = localStorage.getItem('gap_lang') || 'bn';
 
 // UI Elements
@@ -137,6 +146,8 @@ const markCompleteBtn = document.getElementById('mark-complete-btn');
 
 let currentActiveCategory = 'All';
 let currentSearchQuery = '';
+let lessonPage = 0;
+const itemsPerPage = 20;
 
 const BN_TO_EN = { '১': '1', '২': '2', '৩': '3', '৪': '4', '৫': '5', '৬': '6', '৭': '7', '৮': '8', '৯': '9', '০': '0' };
 
@@ -362,12 +373,25 @@ function translateUI() {
 document.getElementById('lang-toggle').onclick = () => {
     currentLanguage = currentLanguage === 'bn' ? 'en' : 'bn';
     localStorage.setItem('gap_lang', currentLanguage);
-    translateUI();
+    translateUI();  // Immediate, as it updates visible UI
     renderTabs();
-    renderModules();
-    updateDashboardStats(); // Refresh stats titles if needed
-    if (currentlyOpenLessonId) {
-        openLesson(currentlyOpenLessonId); // Refresh modal content if open
+    // Defer heavy rendering to next tick
+    if (typeof requestIdleCallback !== 'undefined') {
+        requestIdleCallback(() => {
+            renderModules();
+            updateDashboardStats();
+            if (currentlyOpenLessonId) {
+                openLesson(currentlyOpenLessonId);
+            }
+        });
+    } else {
+        setTimeout(() => {
+            renderModules();
+            updateDashboardStats();
+            if (currentlyOpenLessonId) {
+                openLesson(currentlyOpenLessonId);
+            }
+        }, 0);
     }
 };
 
@@ -402,22 +426,23 @@ function setCategory(cat) {
     currentActiveCategory = cat;
     currentSearchQuery = '';
     searchInput.value = '';
+    lessonPage = 0;
     renderTabs();
     renderModules();
 }
 
 // Search Logic
-searchInput.addEventListener('input', (e) => {
+searchInput.addEventListener('input', debounce((e) => {
     currentSearchQuery = e.target.value.toLowerCase();
+    lessonPage = 0;
     if (currentSearchQuery) {
         activeFaqIndex = null;
         document.getElementById('faq-display').style.display = 'none';
         renderFaqChips();
     }
     renderModules();
-});
+}, 300));  // 300ms delay
 
-// Render Modules
 // Render Modules
 function renderModules() {
     let filtered = allLessons;
@@ -433,9 +458,15 @@ function renderModules() {
         );
     }
 
+    // Pagination
+    const totalItems = filtered.length;
+    const start = lessonPage * itemsPerPage;
+    const end = start + itemsPerPage;
+    const paginatedFiltered = filtered.slice(start, end);
+
     // Grouping Logic for Section Navigation
     const groups = {};
-    filtered.forEach(l => {
+    paginatedFiltered.forEach(l => {
         const catObj = CATEGORIES[l.category];
         const catName = catObj ? catObj[currentLanguage] : `Section ${l.category}`;
         if (!groups[catName]) groups[catName] = [];
@@ -461,8 +492,26 @@ function renderModules() {
         `;
     }
 
-    moduleContainer.innerHTML = html || `<p style="text-align:center; padding: 2rem; color: var(--text-muted);">${currentLanguage === 'bn' ? 'আপনার অনুসন্ধানের সাথে মেলে এমন কোনো পাঠ পাওয়া যায়নি।' : 'No lessons found matching your criteria.'}</p>`;
+    // Pagination controls
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    let paginationHtml = '';
+    if (totalPages > 1) {
+        paginationHtml = `
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 1rem; gap: 0.5rem;">
+                <button id="prev-page-btn" class="btn btn-secondary btn-sm" onclick="changePage(${lessonPage - 1})" ${lessonPage === 0 ? 'disabled' : ''}>Previous</button>
+                <span>Page ${lessonPage + 1} of ${totalPages}</span>
+                <button id="next-page-btn" class="btn btn-secondary btn-sm" onclick="changePage(${lessonPage + 1})" ${lessonPage >= totalPages - 1 ? 'disabled' : ''}>Next</button>
+            </div>
+        `;
+    }
+
+    moduleContainer.innerHTML = html + paginationHtml || `<p style="text-align:center; padding: 2rem; color: var(--text-muted);">${currentLanguage === 'bn' ? 'আপনার অনুসন্ধানের সাথে মেলে এমন কোনো পাঠ পাওয়া যায়নি।' : 'No lessons found matching your criteria.'}</p>`;
     lucide.createIcons();
+}
+
+function changePage(page) {
+    lessonPage = page;
+    renderModules();
 }
 
 // Modal Logic
