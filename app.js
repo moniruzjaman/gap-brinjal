@@ -483,7 +483,7 @@ function renderModules() {
                     ${lessons.map(l => `
                         <div class="card module-card ${completedLessons.includes(l.id) ? 'completed' : ''}" onclick="openLesson('${l.id}')">
                           <div class="card-title"><i data-lucide="book" style="width:18px"></i> ${l.title[currentLanguage]}</div>
-                          <p style="font-size: 0.85rem; color: var(--text-muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" class="Bengali-text">
+                          <p style="font-size: 0.85rem; color: var(--text-muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;" class="Bengali-text">
                             ${l.body[currentLanguage]}
                           </p>
                         </div>
@@ -669,6 +669,13 @@ function navigate(sectionId) {
     targetSection.classList.add('active');
     targetNav.classList.add('active');
     pageTitle.textContent = targetNav.querySelector('span').textContent;
+
+    // Toggle PDF viewing class for fixed controls
+    if (sectionId === 'slideshow') {
+        document.body.classList.add('pdf-viewing');
+    } else {
+        document.body.classList.remove('pdf-viewing');
+    }
 }
 
 navItems.forEach(item => {
