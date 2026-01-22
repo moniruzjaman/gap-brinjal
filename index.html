@@ -14,7 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="icon" type="image/png" href="extracted_assets/branding/logo_1.png">
+  <link rel="icon" type="image/png" href="extracted_assets/branding/logo_2.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js"></script>
 </head>
@@ -111,6 +111,15 @@
           <button id="play-pause-btn" class="play-pause-btn" type="button" aria-label="Play/Pause Video">
             <i data-lucide="play"></i>
           </button>
+          <button id="volume-btn" class="video-control-btn" type="button" aria-label="Toggle Volume">
+            <i data-lucide="volume-2"></i>
+          </button>
+          <button id="fullscreen-btn" class="video-control-btn" type="button" aria-label="Toggle Fullscreen">
+            <i data-lucide="maximize"></i>
+          </button>
+          <div class="video-progress-container">
+            <input type="range" id="video-progress" class="video-progress" min="0" max="100" value="0" step="0.1" title="Video progress">
+          </div>
           <div class="hero-overlay">
             <h3 id="hero-title">বেগুন চাষের উত্তম কৃষি চর্চা (GAP)</h3>
             <p id="hero-desc">Master the Bangladesh GAP protocol for premium yield and export quality brinjal.</p>
@@ -163,6 +172,7 @@
             <i data-lucide="search"></i>
             <input type="text" id="lesson-search"
               placeholder="Search lessons (e.g. পোকাসমূহ, Fertilizer, Harvesting)...">
+            <button id="search-btn" class="btn btn-secondary btn-sm" type="button">Search</button>
           </div>
           <div id="quick-faq" class="quick-faq-chips">
             <!-- FAQ chips will be rendered here -->
@@ -244,6 +254,7 @@
             </div>
             <h3 id="question-text" class="Bengali-text"></h3>
             <div id="options-container" class="options-grid"></div>
+            <button id="next-question-btn" type="button" class="btn btn-primary">Next Question</button>
           </div>
           <div id="quiz-result-view" class="card text-center">
             <h3 id="result-title">Quiz Completed!</h3>
@@ -333,6 +344,7 @@
               <option value="extracted_assets/pdfs/Safe_Papaya_GAP_Protocol.pdf">Safe Protocol</option>
             </select>
           </div>
+          <div id="pdf-loading">Loading PDF...</div>
           <div id="slide-container">
             <canvas id="pdf-canvas"></canvas>
           </div>

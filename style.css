@@ -223,7 +223,9 @@ body {
 /* Dashboard Styles */
 .hero-card {
   position: relative;
-  height: 300px;
+  height: 50vh;
+  min-height: 300px;
+  max-height: 500px;
   border-radius: 24px;
   overflow: hidden;
   margin-bottom: 2rem;
@@ -262,6 +264,77 @@ body {
 
 .hero-card:hover .play-pause-btn {
   opacity: 1;
+}
+
+.video-control-btn {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#volume-btn {
+  left: 20px;
+}
+
+#fullscreen-btn {
+  left: 70px;
+}
+
+.hero-card:hover .video-control-btn {
+  opacity: 1;
+}
+
+.video-progress-container {
+  position: absolute;
+  bottom: 30px;
+  left: 120px;
+  right: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hero-card:hover .video-progress-container {
+  opacity: 1;
+}
+
+.video-progress {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.video-progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.video-progress::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: none;
 }
 
 /* Full screen video aspect ratio fix */
@@ -962,7 +1035,9 @@ i[data-lucide="graduation-cap"] {
   }
 
   .hero-card {
-    height: 200px;
+    height: 40vh;
+    min-height: 200px;
+    max-height: 300px;
   }
 
   .hero-overlay h3 {
@@ -1010,7 +1085,9 @@ i[data-lucide="graduation-cap"] {
   }
 
   .hero-card {
-    height: 150px;
+    height: 30vh;
+    min-height: 150px;
+    max-height: 250px;
   }
 
   .gallery-grid {
@@ -1221,4 +1298,16 @@ i[data-lucide="copy"] {
   font-weight: 600;
   color: var(--text-primary);
   font-family: 'Times New Roman', serif;
+}
+
+/* Quiz next button styles */
+#next-question-btn {
+  display: none;
+  margin-top: 1rem;
+}
+
+#pdf-loading {
+  display: none;
+  text-align: center;
+  padding: 1rem;
 }

@@ -243,8 +243,11 @@ async function init() {
         // Enable video autoplay and sound on user interaction
         const heroVideo = document.getElementById('hero-video');
         const playPauseBtn = document.getElementById('play-pause-btn');
+        const volumeBtn = document.getElementById('volume-btn');
+        const fullscreenBtn = document.getElementById('fullscreen-btn');
+        const videoProgress = document.getElementById('video-progress');
         if (heroVideo && playPauseBtn) {
-            // Function to update button icon
+            // Function to update button icons
             const updatePlayPauseIcon = () => {
                 const icon = playPauseBtn.querySelector('i');
                 if (heroVideo.paused) {
@@ -253,6 +256,23 @@ async function init() {
                     icon.setAttribute('data-lucide', 'pause');
                 }
                 lucide.createIcons();
+            };
+
+            const updateVolumeIcon = () => {
+                const icon = volumeBtn.querySelector('i');
+                if (heroVideo.muted || heroVideo.volume === 0) {
+                    icon.setAttribute('data-lucide', 'volume-x');
+                } else {
+                    icon.setAttribute('data-lucide', 'volume-2');
+                }
+                lucide.createIcons();
+            };
+
+            const updateProgress = () => {
+                if (heroVideo.duration) {
+                    const percent = (heroVideo.currentTime / heroVideo.duration) * 100;
+                    videoProgress.value = percent;
+                }
             };
 
             // Try autoplay first
@@ -266,10 +286,13 @@ async function init() {
                             heroVideo.muted = false;
                             heroVideo.play();
                             updatePlayPauseIcon();
+                            updateVolumeIcon();
                         });
                     });
                 });
                 updatePlayPauseIcon();
+                updateVolumeIcon();
+                updateProgress();
             });
 
             // Play/pause button handler
@@ -284,9 +307,39 @@ async function init() {
                 updatePlayPauseIcon();
             });
 
+            // Volume button handler
+            volumeBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                heroVideo.muted = !heroVideo.muted;
+                updateVolumeIcon();
+            });
+
+            // Fullscreen button handler
+            fullscreenBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (heroVideo.requestFullscreen) {
+                    heroVideo.requestFullscreen();
+                } else if (heroVideo.webkitRequestFullscreen) {
+                    heroVideo.webkitRequestFullscreen();
+                } else if (heroVideo.msRequestFullscreen) {
+                    heroVideo.msRequestFullscreen();
+                }
+            });
+
+            // Progress bar update
+            heroVideo.addEventListener('timeupdate', updateProgress);
+            heroVideo.addEventListener('loadedmetadata', updateProgress);
+
+            // Progress bar seek
+            videoProgress.addEventListener('input', (e) => {
+                const seekTime = (e.target.value / 100) * heroVideo.duration;
+                heroVideo.currentTime = seekTime;
+            });
+
             // Update icon on video play/pause events
             heroVideo.addEventListener('play', updatePlayPauseIcon);
             heroVideo.addEventListener('pause', updatePlayPauseIcon);
+            heroVideo.addEventListener('volumechange', updateVolumeIcon);
         }
 
         showToast(TRANSLATIONS[currentLanguage].welcome);
@@ -297,6 +350,7 @@ async function init() {
 }
 
 function translateUI() {
+    console.time('translateUI');
     const t = TRANSLATIONS[currentLanguage];
 
     // Sidebar
@@ -369,30 +423,28 @@ function translateUI() {
     renderDashboardExtras();
 
     renderFaqChips();
+    console.timeEnd('translateUI');
 }
 
 document.getElementById('lang-toggle').onclick = () => {
+    console.time('lang-toggle-total');
     currentLanguage = currentLanguage === 'bn' ? 'en' : 'bn';
     localStorage.setItem('gap_lang', currentLanguage);
     translateUI();  // Immediate, as it updates visible UI
     renderTabs();
     // Defer heavy rendering to next tick
+    const deferredCallback = () => {
+        renderModules();
+        updateDashboardStats();
+        if (currentlyOpenLessonId) {
+            openLesson(currentlyOpenLessonId);
+        }
+        console.timeEnd('lang-toggle-total');
+    };
     if (typeof requestIdleCallback !== 'undefined') {
-        requestIdleCallback(() => {
-            renderModules();
-            updateDashboardStats();
-            if (currentlyOpenLessonId) {
-                openLesson(currentlyOpenLessonId);
-            }
-        });
+        requestIdleCallback(deferredCallback);
     } else {
-        setTimeout(() => {
-            renderModules();
-            updateDashboardStats();
-            if (currentlyOpenLessonId) {
-                openLesson(currentlyOpenLessonId);
-            }
-        }, 0);
+        setTimeout(deferredCallback, 0);
     }
 };
 
@@ -433,8 +485,8 @@ function setCategory(cat) {
 }
 
 // Search Logic
-searchInput.addEventListener('input', debounce((e) => {
-    currentSearchQuery = e.target.value.toLowerCase();
+document.getElementById('search-btn').addEventListener('click', () => {
+    currentSearchQuery = searchInput.value.toLowerCase();
     lessonPage = 0;
     if (currentSearchQuery) {
         activeFaqIndex = null;
@@ -442,10 +494,12 @@ searchInput.addEventListener('input', debounce((e) => {
         renderFaqChips();
     }
     renderModules();
-}, 300));  // 300ms delay
+});
 
 // Render Modules
 function renderModules() {
+    console.time('renderModules');
+    console.time('filter');
     let filtered = allLessons;
 
     if (currentActiveCategory !== 'All') {
@@ -458,12 +512,15 @@ function renderModules() {
             l.body[currentLanguage].toLowerCase().includes(currentSearchQuery.toLowerCase())
         );
     }
+    console.timeEnd('filter');
 
     // Pagination
+    console.time('pagination');
     const totalItems = filtered.length;
     const start = lessonPage * itemsPerPage;
     const end = start + itemsPerPage;
     const paginatedFiltered = filtered.slice(start, end);
+    console.timeEnd('pagination');
 
     // Grouping Logic for Section Navigation
     const groups = {};
@@ -474,6 +531,7 @@ function renderModules() {
         groups[catName].push(l);
     });
 
+    console.time('html-build');
     let html = '';
     for (const [section, lessons] of Object.entries(groups)) {
         html += `
@@ -492,6 +550,7 @@ function renderModules() {
             </div>
         `;
     }
+    console.timeEnd('html-build');
 
     // Pagination controls
     const totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -506,8 +565,16 @@ function renderModules() {
         `;
     }
 
+    console.time('innerHTML');
     moduleContainer.innerHTML = html + paginationHtml || `<p style="text-align:center; padding: 2rem; color: var(--text-muted);">${currentLanguage === 'bn' ? 'আপনার অনুসন্ধানের সাথে মেলে এমন কোনো পাঠ পাওয়া যায়নি।' : 'No lessons found matching your criteria.'}</p>`;
-    lucide.createIcons();
+    console.timeEnd('innerHTML');
+    // Defer SVG icon rendering to avoid blocking UI
+    requestIdleCallback(() => {
+        console.time('lucide-createIcons');
+        lucide.createIcons();
+        console.timeEnd('lucide-createIcons');
+    }, { timeout: 50 });
+    console.timeEnd('renderModules');
 }
 
 function changePage(page) {
@@ -519,6 +586,7 @@ function changePage(page) {
 let currentlyOpenLessonId = null;
 
 function openLesson(id) {
+    console.time('openLesson');
     const lesson = allLessons.find(l => l.id === id);
     if (!lesson) return;
 
@@ -528,10 +596,12 @@ function openLesson(id) {
     currentlyOpenLessonId = id;
     modalTitle.textContent = lesson.title[currentLanguage];
 
+    console.time('body-process');
     modalBody.innerHTML = lesson.body[currentLanguage].split('\n')
         .filter(p => p.trim())
         .map(p => `<p style="margin-bottom: 1rem;">${p.trim()}</p>`)
         .join('');
+    console.timeEnd('body-process');
 
     modal.classList.add('active');
 
@@ -624,6 +694,7 @@ function openLesson(id) {
             window.speechSynthesis.speak(utterance);
         };
     }
+    console.timeEnd('openLesson');
 }
 
 closeModal.onclick = () => {
@@ -660,6 +731,7 @@ const sections = document.querySelectorAll('.section');
 const pageTitle = document.getElementById('page-title');
 
 function navigate(sectionId) {
+    console.time('navigate-' + sectionId);
     sections.forEach(s => s.classList.remove('active'));
     navItems.forEach(n => n.classList.remove('active'));
 
@@ -676,6 +748,21 @@ function navigate(sectionId) {
     } else {
         document.body.classList.remove('pdf-viewing');
     }
+
+    // Call render functions for the section
+    if (sectionId === 'training') {
+        renderModules();
+    } else if (sectionId === 'schedule') {
+        renderSchedule();
+    } else if (sectionId === 'records') {
+        renderLogs();
+        renderFaqChips();
+    } else if (sectionId === 'quiz') {
+        renderQuiz();
+    } else if (sectionId === 'gallery') {
+        renderGallery();
+    }
+    console.timeEnd('navigate-' + sectionId);
 }
 
 navItems.forEach(item => {
@@ -926,6 +1013,7 @@ function startQuiz() {
     document.getElementById('quiz-start-view').style.display = 'none';
     document.getElementById('quiz-result-view').style.display = 'none';
     document.getElementById('quiz-question-view').style.display = 'block';
+    document.getElementById('next-question-btn').style.display = 'none';
     showQuestion();
 }
 
@@ -939,6 +1027,8 @@ function showQuestion() {
     optionsContainer.innerHTML = question.options[currentLanguage].map((opt, i) => `
         <button class="option-btn" onclick="checkAnswer(${i})">${opt}</button>
     `).join('');
+
+    document.getElementById('next-question-btn').style.display = 'none';
 }
 
 function checkAnswer(selectedIndex) {
@@ -955,14 +1045,22 @@ function checkAnswer(selectedIndex) {
         buttons[question.correct].classList.add('correct');
     }
 
-    setTimeout(() => {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < quizQuestions.length) {
+    const nextBtn = document.getElementById('next-question-btn');
+    if (currentQuestionIndex + 1 < quizQuestions.length) {
+        nextBtn.textContent = 'Next Question';
+        nextBtn.onclick = () => {
+            currentQuestionIndex++;
             showQuestion();
-        } else {
+            nextBtn.style.display = 'none';
+        };
+    } else {
+        nextBtn.textContent = 'Finish Quiz';
+        nextBtn.onclick = () => {
             showResult();
-        }
-    }, 1500);
+            nextBtn.style.display = 'none';
+        };
+    }
+    nextBtn.style.display = 'block';
 }
 
 function showResult() {
@@ -1178,17 +1276,27 @@ const ctx = canvas.getContext('2d');
 
 // PDF Viewer Functions
 async function loadPDF(url) {
+    console.time('loadPDF');
+    const loadingDiv = document.getElementById('pdf-loading');
+    loadingDiv.style.display = 'block';
     try {
         const loadingTask = pdfjsLib.getDocument(url);
         pdfDoc = await loadingTask.promise;
         totalPages = pdfDoc.numPages;
         currentPage = 1;
-        renderPage(currentPage);
-        updatePageInfo();
-        updateNavigationButtons();
+        // Defer heavy rendering to avoid blocking UI
+        requestIdleCallback(() => {
+            renderPage(currentPage);
+            updatePageInfo();
+            updateNavigationButtons();
+            loadingDiv.style.display = 'none';
+            console.timeEnd('loadPDF');
+        }, { timeout: 100 });
     } catch (error) {
         console.error('Error loading PDF:', error);
         showToast(currentLanguage === 'bn' ? 'PDF লোড করতে ব্যর্থ হয়েছে' : 'Failed to load PDF');
+        loadingDiv.style.display = 'none';
+        console.timeEnd('loadPDF');
     }
 }
 
