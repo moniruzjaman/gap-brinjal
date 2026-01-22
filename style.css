@@ -983,6 +983,52 @@ i[data-lucide="graduation-cap"] {
   .module-group-grid {
     grid-template-columns: 1fr;
   }
+
+  .module-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 1rem;
+  }
+
+  .modal {
+    padding: 1rem;
+  }
+
+  .sidebar {
+    padding: 1rem 1rem;
+  }
+
+  .hero-card {
+    height: 150px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .hero-overlay h3 {
+    font-size: 1rem;
+  }
+
+  .top-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+  }
 }
 
 .guide-grid {
