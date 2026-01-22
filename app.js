@@ -274,6 +274,7 @@ async function init() {
 
             // Play/pause button handler
             playPauseBtn.addEventListener('click', (e) => {
+                console.log("Play/pause button clicked");
                 e.stopPropagation(); // Prevent triggering other click handlers
                 if (heroVideo.paused) {
                     heroVideo.play();
@@ -1254,6 +1255,7 @@ function initPDFViewer() {
     if (pdfSelect) {
         pdfSelect.addEventListener('change', (e) => {
             const selectedPdf = e.target.value;
+            console.log("PDF select changed to:", selectedPdf);
             if (selectedPdf) {
                 loadPDF(selectedPdf);
             }
