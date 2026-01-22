@@ -1176,6 +1176,7 @@ async function loadPDF(url) {
         pdfDoc = await loadingTask.promise;
         totalPages = pdfDoc.numPages;
         currentPage = 1;
+        console.log("PDF loaded successfully:", url, "Pages:", totalPages);
         renderPage(currentPage);
         updatePageInfo();
         updateNavigationButtons();
@@ -1186,6 +1187,7 @@ async function loadPDF(url) {
 }
 
 async function renderPage(pageNum) {
+    console.log("Rendering PDF page:", pageNum);
     try {
         const page = await pdfDoc.getPage(pageNum);
 
@@ -1270,13 +1272,7 @@ function initPDFViewer() {
         nextBtn.addEventListener('click', nextPage);
     }
 
-    // Load default PDF if available
-    if (pdfSelect && pdfSelect.options.length > 0) {
-        const firstOption = pdfSelect.options[0];
-        if (firstOption.value) {
-            loadPDF(firstOption.value);
-        }
-    }
+    // PDF will load on user selection only
 }
 
 // Configure PDF.js worker
