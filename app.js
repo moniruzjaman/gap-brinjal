@@ -66,7 +66,8 @@ const TRANSLATIONS = {
             "পাঠ শেষে 'সম্পন্ন' হিসেবে চিহ্নিত করে অগ্রগতি যাচাই করুন",
             "ফার্ম লগ বিভাগে আপনার প্রাত্যহিক কার্যকলাপ লিখে রাখুন",
             "কুইজ বিভাগে অংশগ্রহণ করে নিজের জ্ঞান যাচাই করুন"
-        ]
+        ],
+        dashboard_gallery_title: "ভিজ্যুয়াল গ্যালারি"
     },
     en: {
         dashboard: "Dashboard",
@@ -119,14 +120,15 @@ const TRANSLATIONS = {
             "Mark lessons as 'Completed' to track progress",
             "Record daily activities in the Farm Logs section",
             "Take quizzes to validate your GAP knowledge"
-        ]
+        ],
+        dashboard_gallery_title: "Visual Gallery"
     }
 };
 
 // Debounce utility function
 function debounce(func, delay) {
     let timeoutId;
-    return function(...args) {
+    return function (...args) {
         clearTimeout(timeoutId);
         timeoutId = setTimeout(() => func.apply(this, args), delay);
     };
@@ -155,14 +157,34 @@ const BN_TO_EN = { '১': '1', '২': '2', '৩': '3', '৪': '4', '৫': '5', '
 function splitMultilingual(text) {
     if (!text) return { bn: "", en: "" };
 
-    // Regex matches "Bangla Part (English Part)"
-    const match = text.match(/^(.*?)\s*\(([^()]*)\)\s*$/);
+    // More robust regex: matches "Bangla Part (English Part)" where English part contains latin chars
+    // We look for parentheses that contain at least some English characters
+    const match = text.match(/^(.*?)\s*\(\s*([A-Za-z0-9\s.,\-\/&]+)\s*\)\s*$/);
     if (match) {
         return {
             bn: match[1].trim(),
             en: match[2].trim()
         };
     }
+
+    // Fallback: Look for the last set of parentheses with English characters
+    const lastClose = text.lastIndexOf(')');
+    const lastOpen = text.lastIndexOf('(', lastClose);
+
+    if (lastOpen !== -1 && lastClose > lastOpen) {
+        const before = text.substring(0, lastOpen).trim();
+        const inside = text.substring(lastOpen + 1, lastClose).trim();
+        const after = text.substring(lastClose + 1).trim();
+
+        // If content inside looks like English
+        if (/[A-Za-z]/.test(inside)) {
+            return {
+                bn: (before + " " + after).trim(),
+                en: inside
+            };
+        }
+    }
+
     return { bn: text.trim(), en: text.trim() };
 }
 
@@ -243,6 +265,8 @@ async function init() {
         // Enable video autoplay and sound on user interaction
         const heroVideo = document.getElementById('hero-video');
         const playPauseBtn = document.getElementById('play-pause-btn');
+        const rewindBtn = document.getElementById('rewind-btn');
+        const forwardBtn = document.getElementById('forward-btn');
         const volumeBtn = document.getElementById('volume-btn');
         const fullscreenBtn = document.getElementById('fullscreen-btn');
         const videoProgress = document.getElementById('video-progress');
@@ -275,30 +299,27 @@ async function init() {
                 }
             };
 
-            // Try autoplay first
-            heroVideo.addEventListener('canplaythrough', () => {
-                heroVideo.play().catch(() => {
-                    // Autoplay blocked, enable sound on click
-                    heroVideo.muted = true; // Temporarily mute to try again
-                    heroVideo.play().catch(() => {
-                        // Still blocked, add click handler
-                        heroVideo.addEventListener('click', () => {
-                            heroVideo.muted = false;
-                            heroVideo.play();
-                            updatePlayPauseIcon();
-                            updateVolumeIcon();
-                        });
-                    });
-                });
+            // Delayed Autoplay (5s) or immediate on button click
+            let autoplayTimeout = setTimeout(() => {
+                console.log("Triggering delayed autoplay");
+                heroVideo.muted = true; // Most browsers require mute for autoplay
+                heroVideo.play().catch(e => console.log("Delayed autoplay failed:", e));
                 updatePlayPauseIcon();
-                updateVolumeIcon();
-                updateProgress();
+            }, 5000);
+
+            // Handle clicking play button to cancel timeout
+            playPauseBtn.addEventListener('click', () => {
+                clearTimeout(autoplayTimeout);
             });
+
+            updatePlayPauseIcon();
+            updateVolumeIcon();
+            updateProgress();
 
             // Play/pause button handler
             playPauseBtn.addEventListener('click', (e) => {
                 console.log("Play/pause button clicked");
-                e.stopPropagation(); // Prevent triggering other click handlers
+                e.stopPropagation();
                 if (heroVideo.paused) {
                     heroVideo.play();
                 } else {
@@ -306,6 +327,19 @@ async function init() {
                 }
                 updatePlayPauseIcon();
             });
+
+            // Rewind button handler
+            rewindBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                heroVideo.currentTime = Math.max(0, heroVideo.currentTime - 10);
+            });
+
+            // Forward button handler
+            forwardBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                heroVideo.currentTime = Math.min(heroVideo.duration, heroVideo.currentTime + 10);
+            });
+
 
             // Volume button handler
             volumeBtn.addEventListener('click', (e) => {
@@ -342,6 +376,9 @@ async function init() {
             heroVideo.addEventListener('volumechange', updateVolumeIcon);
         }
 
+        renderDashboardGallery();
+        renderFlashCards();
+        initAudioPlayer();
         showToast(TRANSLATIONS[currentLanguage].welcome);
         lucide.createIcons();
     } catch (err) {
@@ -420,6 +457,8 @@ function translateUI() {
 
     document.getElementById('learn-title').textContent = t.learn_title;
     document.getElementById('guide-title').textContent = t.guide_title;
+    const dashGalleryTitle = document.getElementById('dashboard-gallery-title');
+    if (dashGalleryTitle) dashGalleryTitle.textContent = t.dashboard_gallery_title;
     renderDashboardExtras();
 
     renderFaqChips();
@@ -761,6 +800,8 @@ function navigate(sectionId) {
         renderQuiz();
     } else if (sectionId === 'gallery') {
         renderGallery();
+    } else if (sectionId === 'dashboard') {
+        renderDashboardGallery();
     }
     console.timeEnd('navigate-' + sectionId);
 }
@@ -1234,16 +1275,87 @@ const GALLERY_IMAGES = [
 
 function renderGallery() {
     const galleryContainer = document.getElementById('image-gallery');
+    if (!galleryContainer) return;
 
     galleryContainer.innerHTML = GALLERY_IMAGES.map(img => {
-        const label = img.split('/').pop().replace(/\.(jpeg|png)$/i, '').replace(/_/g, ' ');
+        const label = img.split('/').pop().replace(/\.(jpeg|png|jpg)$/i, '').replace(/_/g, ' ');
         return `
             <div class="gallery-item" onclick="viewImage('extracted_assets/images/${img}')" title="${label}">
-                <img src="extracted_assets/images/${img}" alt="GAP Visual Aid">
+                <img src="extracted_assets/images/${img}" alt="GAP Visual Aid" loading="lazy">
                 <div class="gallery-caption">${label}</div>
             </div>
         `;
     }).join('');
+}
+
+function renderDashboardGallery() {
+    const container = document.getElementById('dashboard-gallery');
+    if (!container) return;
+
+    // Use ALL images instead of just a slice
+    const allImages = GALLERY_IMAGES.filter(img => !img.endsWith('/'));
+
+    container.innerHTML = allImages.map(img => {
+        const label = img.split('/').pop().replace(/\.(jpeg|png|jpg)$/i, '').replace(/_/g, ' ');
+        return `
+            <div class="gallery-card" onclick="viewImage('extracted_assets/images/${img}')">
+                <img src="extracted_assets/images/${img}" alt="Gallery image" loading="lazy">
+                <div class="gallery-card-info">
+                    <div class="gallery-card-title">${label}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+const FLASHCARDS_DATA = [
+    { q: { bn: "উত্তম কৃষি চর্চার (GAP) মূল লক্ষ্য কী?", en: "What is the main goal of GAP?" }, a: { bn: "নিরাপদ ও মানসম্মত খাদ্য উৎপাদন নিশ্চিত করা।", en: "Ensuring safe and quality food production." } },
+    { q: { bn: "বেগুন চাষে কোন ধরনের সার ব্যবহার করা উচিত?", en: "What type of fertilizer should be used?" }, a: { bn: "সুষম সার এবং অনুমোদিত জৈব সার।", en: "Balanced fertilizer and approved organic manure." } },
+    { q: { bn: "ফসল সংগ্রহের সময় কী ব্যবহার করা উচিত?", en: "What should be used during harvesting?" }, a: { bn: "পরিষ্কার এবং ধারালো সরঞ্জাম।", en: "Clean and sharp tools." } }
+];
+
+function renderFlashCards() {
+    const container = document.getElementById('flashcard-display');
+    if (!container) return;
+
+    container.innerHTML = FLASHCARDS_DATA.map(card => `
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-front">
+                <p>${card.q[currentLanguage]}</p>
+            </div>
+            <div class="flashcard-back">
+                <p>${card.a[currentLanguage]}</p>
+            </div>
+        </div>
+    `).join('');
+}
+
+let bgAudio = null;
+function initAudioPlayer() {
+    const audioBtn = document.getElementById('audio-toggle-btn');
+    if (!audioBtn) return;
+
+    audioBtn.onclick = () => {
+        if (!bgAudio) {
+            // Placeholder: Replace with actual MP3 path provided by user later
+            bgAudio = new Audio('extracted_assets/branding/background.mp3');
+            bgAudio.loop = true;
+        }
+
+        if (bgAudio.paused) {
+            bgAudio.play().then(() => {
+                audioBtn.innerHTML = '<i data-lucide="music-2"></i>';
+                showToast(currentLanguage === 'bn' ? 'অডিও চালু প্লে করা হচ্ছে' : 'Playing Audio');
+            }).catch(e => {
+                console.log("Audio playback failed:", e);
+                showToast(currentLanguage === 'bn' ? 'অডিও ফাইল পাওয়া যায়নি' : 'Audio file not found');
+            });
+        } else {
+            bgAudio.pause();
+            audioBtn.innerHTML = '<i data-lucide="music"></i>';
+        }
+        lucide.createIcons();
+    };
 }
 
 function viewImage(src) {

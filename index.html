@@ -15,6 +15,7 @@
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="icon" type="image/png" href="extracted_assets/branding/logo_2.png">
+  <link rel="apple-touch-icon" href="extracted_assets/branding/logo_2.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js"></script>
 </head>
@@ -104,25 +105,53 @@
 
       <div id="dashboard" class="section active">
         <div class="hero-card">
-          <video id="hero-video" class="hero-img" autoplay loop muted poster="extracted_assets/branding/logo_1.png">
+          <video id="hero-video" class="hero-img" autoplay loop muted poster="extracted_assets/branding/logo_2.png">
             <source src="extracted_assets/branding/cover.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <button id="play-pause-btn" class="play-pause-btn" type="button" aria-label="Play/Pause Video">
-            <i data-lucide="play"></i>
-          </button>
-          <button id="volume-btn" class="video-control-btn" type="button" aria-label="Toggle Volume">
-            <i data-lucide="volume-2"></i>
-          </button>
-          <button id="fullscreen-btn" class="video-control-btn" type="button" aria-label="Toggle Fullscreen">
-            <i data-lucide="maximize"></i>
-          </button>
+          <div class="video-controls-main">
+            <button id="rewind-btn" class="video-control-btn" type="button" aria-label="Rewind 10s">
+              <i data-lucide="rewind"></i>
+            </button>
+            <button id="play-pause-btn" class="play-pause-btn" type="button" aria-label="Play/Pause Video">
+              <i data-lucide="play"></i>
+            </button>
+            <button id="forward-btn" class="video-control-btn" type="button" aria-label="Forward 10s">
+              <i data-lucide="fast-forward"></i>
+            </button>
+          </div>
+          <div class="video-controls-secondary">
+            <button id="volume-btn" class="video-control-btn" type="button" aria-label="Toggle Volume">
+              <i data-lucide="volume-2"></i>
+            </button>
+            <button id="fullscreen-btn" class="video-control-btn" type="button" aria-label="Toggle Fullscreen">
+              <i data-lucide="maximize"></i>
+            </button>
+            <button id="audio-toggle-btn" class="video-control-btn" type="button" aria-label="Toggle Background Music">
+              <i data-lucide="music"></i>
+            </button>
+          </div>
           <div class="video-progress-container">
-            <input type="range" id="video-progress" class="video-progress" min="0" max="100" value="0" step="0.1" title="Video progress">
+            <input type="range" id="video-progress" class="video-progress" min="0" max="100" value="0" step="0.1"
+              title="Video progress">
           </div>
           <div class="hero-overlay">
             <h3 id="hero-title">বেগুন চাষের উত্তম কৃষি চর্চা (GAP)</h3>
             <p id="hero-desc">Master the Bangladesh GAP protocol for premium yield and export quality brinjal.</p>
+          </div>
+        </div>
+
+        <div class="recent-activity dashboard-gallery-section">
+          <h3 id="dashboard-gallery-title">Visual Gallery</h3>
+          <div class="horizontal-gallery" id="dashboard-gallery">
+            <!-- Dynamic Content -->
+          </div>
+        </div>
+
+        <div class="recent-activity mt-3">
+          <h3 id="flashcard-title">Training Flash Cards</h3>
+          <div class="flashcard-container" id="flashcard-display">
+            <!-- Dynamic Content -->
           </div>
         </div>
 
@@ -163,6 +192,8 @@
             <!-- Dynamic Content -->
           </div>
         </div>
+
+
 
       </div>
 
@@ -280,7 +311,8 @@
                   <div>PDF manual • 15.9 MB</div>
                 </div>
               </div>
-              <a href="extracted_assets/pdfs/Brinjal_IPM_Protocol.pdf" download class="btn btn-secondary btn-sm">Download</a>
+              <a href="extracted_assets/pdfs/Brinjal_IPM_Protocol.pdf" download
+                class="btn btn-secondary btn-sm">Download</a>
             </div>
             <div class="resource-item">
               <div>
@@ -290,7 +322,8 @@
                   <div>PDF Slide Deck</div>
                 </div>
               </div>
-              <a href="extracted_assets/pdfs/GAP_Papaya_Success_Guide.pdf" download class="btn btn-secondary btn-sm">Download</a>
+              <a href="extracted_assets/pdfs/GAP_Papaya_Success_Guide.pdf" download
+                class="btn btn-secondary btn-sm">Download</a>
             </div>
             <div class="resource-item">
               <div>
@@ -300,7 +333,8 @@
                   <div>PDF Slide Deck</div>
                 </div>
               </div>
-              <a href="extracted_assets/pdfs/Papaya_GAP_Certification_Blueprint.pdf" download class="btn btn-secondary btn-sm">Download</a>
+              <a href="extracted_assets/pdfs/Papaya_GAP_Certification_Blueprint.pdf" download
+                class="btn btn-secondary btn-sm">Download</a>
             </div>
             <div class="resource-item">
               <div>
@@ -310,7 +344,8 @@
                   <div>PDF Slide Deck</div>
                 </div>
               </div>
-              <a href="extracted_assets/pdfs/Safe_Papaya_GAP_Protocol.pdf" download class="btn btn-secondary btn-sm">Download</a>
+              <a href="extracted_assets/pdfs/Safe_Papaya_GAP_Protocol.pdf" download
+                class="btn btn-secondary btn-sm">Download</a>
             </div>
             <div class="resource-item">
               <div>
@@ -340,7 +375,8 @@
             <label for="pdf-select">Select PDF</label>
             <select id="pdf-select">
               <option value="extracted_assets/pdfs/Brinjal_IPM_Protocol.pdf">Brinjal IPM Protocol</option>
-              <option value="extracted_assets/pdfs/Papaya_GAP_Certification_Blueprint.pdf">Certification Blueprint</option>
+              <option value="extracted_assets/pdfs/Papaya_GAP_Certification_Blueprint.pdf">Certification Blueprint
+              </option>
               <option value="extracted_assets/pdfs/Safe_Papaya_GAP_Protocol.pdf">Safe Protocol</option>
             </select>
           </div>
@@ -349,9 +385,11 @@
             <canvas id="pdf-canvas"></canvas>
           </div>
           <div class="slide-controls">
-            <button id="prev-slide" class="btn btn-secondary" type="button" aria-label="Previous slide"><i data-lucide="chevron-left"></i></button>
+            <button id="prev-slide" class="btn btn-secondary" type="button" aria-label="Previous slide"><i
+                data-lucide="chevron-left"></i></button>
             <span id="page-info">1 / 1</span>
-            <button id="next-slide" class="btn btn-secondary" type="button" aria-label="Next slide"><i data-lucide="chevron-right"></i></button>
+            <button id="next-slide" class="btn btn-secondary" type="button" aria-label="Next slide"><i
+                data-lucide="chevron-right"></i></button>
           </div>
         </div>
       </div>
