@@ -67,7 +67,10 @@ const TRANSLATIONS = {
             "ফার্ম লগ বিভাগে আপনার প্রাত্যহিক কার্যকলাপ লিখে রাখুন",
             "কুইজ বিভাগে অংশগ্রহণ করে নিজের জ্ঞান যাচাই করুন"
         ],
-        dashboard_gallery_title: "ভিজ্যুয়াল গ্যালারি"
+        dashboard_gallery_title: "ভিজ্যুয়াল গ্যালারি",
+        podcast_title: "GAP মাল্টিমিডিয়া পডকাস্ট",
+        podcast_desc: "নিরাপদ বেগুন চাষের কৌশল সম্পর্কে বিস্তারিত শুনুন।",
+        unmute_text: "সাউন্ড শুনতে ক্লিক করুন"
     },
     en: {
         dashboard: "Dashboard",
@@ -121,7 +124,10 @@ const TRANSLATIONS = {
             "Record daily activities in the Farm Logs section",
             "Take quizzes to validate your GAP knowledge"
         ],
-        dashboard_gallery_title: "Visual Gallery"
+        dashboard_gallery_title: "Visual Gallery",
+        podcast_title: "GAP Training Podcast",
+        podcast_desc: "Listen to the complete GAP protocol for safe brinjal cultivation.",
+        unmute_text: "Catch Sound - Click to Unmute"
     }
 };
 
@@ -320,6 +326,29 @@ async function init() {
                 clearTimeout(autoplayTimeout);
             });
 
+            // Unmute on anywhere click on hero-card
+            const heroCard = document.querySelector('.hero-card');
+            const unmuteHint = document.getElementById('unmute-hint');
+
+            if (heroCard) {
+                heroCard.addEventListener('click', () => {
+                    if (heroVideo.muted) {
+                        heroVideo.muted = false;
+                        if (unmuteHint) unmuteHint.style.display = 'none';
+                        updateVolumeIcon();
+                    }
+                });
+            }
+
+            // Show/hide unmute hint based on muted state
+            heroVideo.addEventListener('playing', () => {
+                if (heroVideo.muted && unmuteHint) {
+                    unmuteHint.style.display = 'flex';
+                } else if (unmuteHint) {
+                    unmuteHint.style.display = 'none';
+                }
+            });
+
             updatePlayPauseIcon();
             updateVolumeIcon();
             updateProgress();
@@ -386,7 +415,7 @@ async function init() {
 
         renderDashboardGallery();
         loadFlashcards();
-        initAudioPlayer();
+        initPodcastPlayer();
 
         // Start auto-scrolling after contents are rendered
         setTimeout(() => {
@@ -458,6 +487,17 @@ function translateUI() {
     if (statLabels[0]) statLabels[0].textContent = t.total_lessons;
     if (statLabels[1]) statLabels[1].textContent = t.completed;
     if (statLabels[2]) statLabels[2].textContent = t.records;
+
+    // Dashboard Extras
+    const galleryTitle = document.getElementById('dashboard-gallery-title');
+    const podcastTitle = document.getElementById('podcast-title');
+    const podcastDesc = document.getElementById('podcast-desc');
+    const unmuteHint = document.getElementById('unmute-hint');
+
+    if (galleryTitle) galleryTitle.textContent = t.dashboard_gallery_title;
+    if (podcastTitle) podcastTitle.textContent = t.podcast_title;
+    if (podcastDesc) podcastDesc.textContent = t.podcast_desc;
+    if (unmuteHint) unmuteHint.innerHTML = `<i data-lucide="volume-x"></i> ${t.unmute_text}`;
 
     // Search
     searchInput.placeholder = t.search_hint;
@@ -1385,31 +1425,49 @@ function renderFlashCards() {
     }, { passive: false });
 }
 
-let bgAudio = null;
-function initAudioPlayer() {
-    const audioBtn = document.getElementById('audio-toggle-btn');
-    if (!audioBtn) return;
+function initPodcastPlayer() {
+    const playBtn = document.getElementById('podcast-play-btn');
+    const seek = document.getElementById('podcast-seek');
+    const progressBar = document.getElementById('podcast-progress-bar');
+    const timeDisplay = document.getElementById('podcast-time');
 
-    audioBtn.onclick = () => {
-        if (!bgAudio) {
-            // Updated with actual file from branding folder
-            bgAudio = new Audio('extracted_assets/branding/গ্যাপ_প্রোটোকল_মেনে_নিরাপদ_বেগুন_চাষের_কৌশল.m4a');
-            bgAudio.loop = true;
-        }
+    if (!playBtn) return;
 
+    if (!bgAudio) {
+        bgAudio = new Audio('extracted_assets/branding/গ্যাপ_প্রোটোকল_মেনে_নিরাপদ_বেগুন_চাষের_কৌশল.m4a');
+    }
+
+    playBtn.onclick = () => {
         if (bgAudio.paused) {
             bgAudio.play().then(() => {
-                audioBtn.innerHTML = '<i data-lucide="music-2"></i>';
-                showToast(currentLanguage === 'bn' ? 'অডিও চালু প্লে করা হচ্ছে' : 'Playing Audio');
+                playBtn.innerHTML = '<i data-lucide="pause"></i>';
+                showToast(currentLanguage === 'bn' ? 'পডকাস্ট প্লে করা হচ্ছে' : 'Playing Podcast');
             }).catch(e => {
-                console.log("Audio playback failed:", e);
-                showToast(currentLanguage === 'bn' ? 'অডিও ফাইল পাওয়া যায়নি' : 'Audio file not found');
+                console.error("Audio playback failed:", e);
+                showToast(currentLanguage === 'bn' ? 'অডিও ফাইল লোড করতে ব্যর্থ' : 'Failed to load audio');
             });
         } else {
             bgAudio.pause();
-            audioBtn.innerHTML = '<i data-lucide="music"></i>';
+            playBtn.innerHTML = '<i data-lucide="play"></i>';
         }
         lucide.createIcons();
+    };
+
+    bgAudio.ontimeupdate = () => {
+        if (!bgAudio.duration) return;
+        const percent = (bgAudio.currentTime / bgAudio.duration) * 100;
+        seek.value = percent;
+        if (progressBar) progressBar.style.width = percent + '%';
+
+        const mins = Math.floor(bgAudio.currentTime / 60);
+        const secs = Math.floor(bgAudio.currentTime % 60);
+        if (timeDisplay) timeDisplay.textContent = `${mins}:${secs.toString().padStart(2, '0')}`;
+    };
+
+    seek.oninput = () => {
+        if (!bgAudio.duration) return;
+        const time = (seek.value / 100) * bgAudio.duration;
+        bgAudio.currentTime = time;
     };
 }
 

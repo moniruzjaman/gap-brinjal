@@ -427,6 +427,146 @@ body {
   text-overflow: ellipsis;
 }
 
+/* Unmute Hint */
+.unmute-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(142, 68, 173, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: fit-content;
+  margin-top: 1rem;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Podcast Section */
+.podcast-section {
+  margin-bottom: 2.5rem;
+}
+
+.podcast-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9));
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  backdrop-filter: var(--glass);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.podcast-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.podcast-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.podcast-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.podcast-info p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.podcast-player {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.podcast-btn {
+  background: var(--primary);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.podcast-btn:hover {
+  transform: scale(1.1);
+  background: #a55eea;
+}
+
+.podcast-progress-container {
+  flex: 1;
+  position: relative;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.podcast-progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 3px;
+  width: 0%;
+}
+
+.podcast-seek {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.podcast-time {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  min-width: 40px;
+}
+
 /* Flashcards */
 .flashcard-container {
   display: flex;
