@@ -302,8 +302,16 @@ async function init() {
             // Delayed Autoplay (5s) or immediate on button click
             let autoplayTimeout = setTimeout(() => {
                 console.log("Triggering delayed autoplay");
-                heroVideo.muted = true; // Most browsers require mute for autoplay
-                heroVideo.play().catch(e => console.log("Delayed autoplay failed:", e));
+                // Try playing with sound first (some browsers allow if user has interacted)
+                heroVideo.muted = false;
+                heroVideo.play().then(() => {
+                    updateVolumeIcon();
+                }).catch(e => {
+                    console.log("Unmuted autoplay blocked, falling back to muted:", e);
+                    heroVideo.muted = true;
+                    heroVideo.play().catch(err => console.error("Autoplay failed:", err));
+                    updateVolumeIcon();
+                });
                 updatePlayPauseIcon();
             }, 5000);
 
@@ -377,8 +385,14 @@ async function init() {
         }
 
         renderDashboardGallery();
-        renderFlashCards();
+        loadFlashcards();
         initAudioPlayer();
+
+        // Start auto-scrolling after contents are rendered
+        setTimeout(() => {
+            initAutoScroll('dashboard-gallery', 0.5);
+            initAutoScroll('flashcard-display', 0.4);
+        }, 1000);
         showToast(TRANSLATIONS[currentLanguage].welcome);
         lucide.createIcons();
     } catch (err) {
@@ -1277,7 +1291,9 @@ function renderGallery() {
     const galleryContainer = document.getElementById('image-gallery');
     if (!galleryContainer) return;
 
-    galleryContainer.innerHTML = GALLERY_IMAGES.map(img => {
+    const filteredImages = GALLERY_IMAGES.filter(img => !img.endsWith('/'));
+
+    galleryContainer.innerHTML = filteredImages.map(img => {
         const label = img.split('/').pop().replace(/\.(jpeg|png|jpg)$/i, '').replace(/_/g, ' ');
         return `
             <div class="gallery-item" onclick="viewImage('extracted_assets/images/${img}')" title="${label}">
@@ -1306,28 +1322,67 @@ function renderDashboardGallery() {
             </div>
         `;
     }).join('');
+
+    // Enable horizontal scroll with mouse wheel
+    container.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0) {
+            e.preventDefault();
+            container.scrollLeft += e.deltaY;
+        }
+    }, { passive: false });
 }
 
-const FLASHCARDS_DATA = [
-    { q: { bn: "উত্তম কৃষি চর্চার (GAP) মূল লক্ষ্য কী?", en: "What is the main goal of GAP?" }, a: { bn: "নিরাপদ ও মানসম্মত খাদ্য উৎপাদন নিশ্চিত করা।", en: "Ensuring safe and quality food production." } },
-    { q: { bn: "বেগুন চাষে কোন ধরনের সার ব্যবহার করা উচিত?", en: "What type of fertilizer should be used?" }, a: { bn: "সুষম সার এবং অনুমোদিত জৈব সার।", en: "Balanced fertilizer and approved organic manure." } },
-    { q: { bn: "ফসল সংগ্রহের সময় কী ব্যবহার করা উচিত?", en: "What should be used during harvesting?" }, a: { bn: "পরিষ্কার এবং ধারালো সরঞ্জাম।", en: "Clean and sharp tools." } }
-];
+let FLASHCARDS_DATA = [];
+
+async function loadFlashcards() {
+    try {
+        const response = await fetch('extracted_assets/quiz/flashcards.json');
+        const data = await response.json();
+        // Check if data is array or object based on JSON structure
+        const rawCards = Array.isArray(data) ? data : (data.Cards || []);
+
+        FLASHCARDS_DATA = rawCards.map(c => ({
+            q: { bn: c.Front, en: "" }, // CSV is currently BN only
+            a: { bn: c.Back, en: "" }
+        }));
+
+        renderFlashCards();
+    } catch (err) {
+        console.error("Failed to load flashcards:", err);
+        // Fallback to basic set if file fails
+        FLASHCARDS_DATA = [
+            { q: { bn: "উত্তম কৃষি চর্চার (GAP) মূল লক্ষ্য কী?", en: "What is the main goal of GAP?" }, a: { bn: "নিরাপদ ও মানসম্মত খাদ্য উৎপাদন নিশ্চিত করা।", en: "Ensuring safe and quality food production." } }
+        ];
+        renderFlashCards();
+    }
+}
 
 function renderFlashCards() {
     const container = document.getElementById('flashcard-display');
     if (!container) return;
 
-    container.innerHTML = FLASHCARDS_DATA.map(card => `
-        <div class="flashcard" onclick="this.classList.toggle('flipped')">
-            <div class="flashcard-front">
-                <p>${card.q[currentLanguage]}</p>
+    container.innerHTML = FLASHCARDS_DATA.map(card => {
+        const question = card.q[currentLanguage] || card.q.bn;
+        const answer = card.a[currentLanguage] || card.a.bn;
+        return `
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+                <div class="flashcard-front">
+                    <p>${question}</p>
+                </div>
+                <div class="flashcard-back">
+                    <p>${answer}</p>
+                </div>
             </div>
-            <div class="flashcard-back">
-                <p>${card.a[currentLanguage]}</p>
-            </div>
-        </div>
-    `).join('');
+        `;
+    }).join('');
+
+    // Enable horizontal scroll with mouse wheel
+    container.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0) {
+            e.preventDefault();
+            container.scrollLeft += e.deltaY;
+        }
+    }, { passive: false });
 }
 
 let bgAudio = null;
@@ -1337,8 +1392,8 @@ function initAudioPlayer() {
 
     audioBtn.onclick = () => {
         if (!bgAudio) {
-            // Placeholder: Replace with actual MP3 path provided by user later
-            bgAudio = new Audio('extracted_assets/branding/background.mp3');
+            // Updated with actual file from branding folder
+            bgAudio = new Audio('extracted_assets/branding/গ্যাপ_প্রোটোকল_মেনে_নিরাপদ_বেগুন_চাষের_কৌশল.m4a');
             bgAudio.loop = true;
         }
 
@@ -1502,6 +1557,29 @@ function initPDFViewer() {
 
 // Configure PDF.js worker
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+function initAutoScroll(containerId, speed = 1) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    let isPaused = false;
+    container.addEventListener('mouseenter', () => isPaused = true);
+    container.addEventListener('mouseleave', () => isPaused = false);
+    container.addEventListener('touchstart', () => isPaused = true);
+    container.addEventListener('touchend', () => isPaused = false);
+
+    function step() {
+        if (!isPaused) {
+            container.scrollLeft += speed;
+            // Loop back to start if reached end
+            if (container.scrollLeft >= container.scrollWidth - container.clientWidth - 1) {
+                container.scrollLeft = 0;
+            }
+        }
+        requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+}
 
 // Initialize
 init();
