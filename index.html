@@ -83,6 +83,7 @@
             <div id="progress-bar" class="progress-fill"></div>
           </div>
         </div>
+        <div id="user-meta" class="user-meta-sidebar"></div>
         <div class="auth-section">
           <button id="auth-btn" class="btn btn-primary w-full">
             <i data-lucide="log-in"></i>
@@ -96,52 +97,52 @@
     </aside>
 
     <main class="main-content">
-      <header class="top-header">
-        <h2 id="page-title">Dashboard</h2>
-        <div class="user-meta">
-          <div class="badge">Session Active</div>
-        </div>
-      </header>
-
       <div id="dashboard" class="section active">
-        <div class="hero-card">
-          <video id="hero-video" class="hero-img" autoplay loop muted poster="extracted_assets/branding/logo_2.png">
-            <source src="extracted_assets/branding/cover.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="video-controls-main">
-            <button id="rewind-btn" class="video-control-btn" type="button" aria-label="Rewind 10s">
-              <i data-lucide="rewind"></i>
-            </button>
-            <button id="play-pause-btn" class="play-pause-btn" type="button" aria-label="Play/Pause Video">
-              <i data-lucide="play"></i>
-            </button>
-            <button id="forward-btn" class="video-control-btn" type="button" aria-label="Forward 10s">
-              <i data-lucide="fast-forward"></i>
-            </button>
-          </div>
-          <div class="video-controls-secondary">
-            <button id="volume-btn" class="video-control-btn" type="button" aria-label="Toggle Volume">
-              <i data-lucide="volume-2"></i>
-            </button>
-            <button id="fullscreen-btn" class="video-control-btn" type="button" aria-label="Toggle Fullscreen">
-              <i data-lucide="maximize"></i>
-            </button>
-            <button id="audio-toggle-btn" class="video-control-btn" type="button" aria-label="Toggle Background Music">
-              <i data-lucide="music"></i>
-            </button>
-          </div>
-          <div class="video-progress-container">
-            <input type="range" id="video-progress" class="video-progress" min="0" max="100" value="0" step="0.1"
-              title="Video progress">
-          </div>
-          <div class="hero-overlay">
-            <h3 id="hero-title">বেগুন চাষের উত্তম কৃষি চর্চা (GAP)</h3>
-            <p id="hero-desc">Master the Bangladesh GAP protocol for premium yield and export quality brinjal.</p>
+        <div class="video-container-premium">
+          <div class="hero-card">
+            <video id="hero-video" class="hero-img" autoplay loop muted poster="extracted_assets/branding/logo_2.png">
+              <source src="extracted_assets/branding/cover.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             <div id="unmute-hint" class="unmute-hint">
               <i data-lucide="volume-x"></i> Catch Sound - Click to Unmute
             </div>
           </div>
+
+          <div class="video-controls-bar">
+            <div class="v-ctrl-left">
+              <button id="play-pause-btn" class="v-bar-btn main-play" title="Play/Pause">
+                <i data-lucide="play"></i>
+              </button>
+              <button id="rewind-btn" class="v-bar-btn" title="Rewind 10s">
+                <i data-lucide="rewind"></i>
+              </button>
+              <button id="forward-btn" class="v-bar-btn" title="Forward 10s">
+                <i data-lucide="fast-forward"></i>
+              </button>
+            </div>
+
+            <div class="v-ctrl-center">
+              <input type="range" id="video-progress" class="video-bar-progress" min="0" max="100" value="0" step="0.1">
+            </div>
+
+            <div class="v-ctrl-right">
+              <button id="volume-btn" class="v-bar-btn" title="Mute/Unmute">
+                <i data-lucide="volume-2"></i>
+              </button>
+              <button id="fullscreen-btn" class="v-bar-btn" title="Video Fullscreen">
+                <i data-lucide="maximize"></i>
+              </button>
+              <button onclick="toggleFullScreen()" class="v-bar-btn app-full-btn" title="App Fullscreen">
+                <i data-lucide="expand"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-text-standalone">
+          <h3 id="hero-title">বেগুন চাষের উত্তম কৃষি চর্চা (GAP)</h3>
+          <p id="hero-desc">Master the Bangladesh GAP protocol for premium yield and export quality brinjal.</p>
         </div>
 
         <!-- New Dedicated Audio Podcast Section -->

@@ -47,17 +47,23 @@ function updateUIForAuth() {
         authBtnText.textContent = 'Logout';
         authBtn.onclick = handleLogout;
         authBtn.innerHTML = `<i data-lucide="log-out"></i><span id="auth-btn-text">Logout</span>`;
-        document.getElementById('user-meta').innerHTML = `
-            <div class="badge">${currentUser.email}</div>
-            <div class="badge">Session Active</div>
-        `;
+        const userMeta = document.getElementById('user-meta');
+        if (userMeta) {
+            userMeta.innerHTML = `
+                <div class="badge">${currentUser.email}</div>
+                <div class="badge">Session Active</div>
+            `;
+        }
     } else {
         authBtnText.textContent = 'Login';
         authBtn.onclick = () => authModal.classList.add('active');
         authBtn.innerHTML = `<i data-lucide="log-in"></i><span id="auth-btn-text">Login</span>`;
-        document.getElementById('user-meta').innerHTML = `
-            <div class="badge">Session Inactive</div>
-        `;
+        const userMeta = document.getElementById('user-meta');
+        if (userMeta) {
+            userMeta.innerHTML = `
+                <div class="badge">Session Inactive</div>
+            `;
+        }
     }
     lucide.createIcons();
 }

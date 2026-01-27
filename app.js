@@ -4,6 +4,7 @@
 let allLessons = [];
 let completedLessons = [];
 let farmRecords = [];
+let bgAudio = null;
 
 // Constants
 const CATEGORIES = {
@@ -279,7 +280,8 @@ async function init() {
         if (heroVideo && playPauseBtn) {
             // Function to update button icons
             const updatePlayPauseIcon = () => {
-                const icon = playPauseBtn.querySelector('i');
+                const icon = playPauseBtn.querySelector('i, svg');
+                if (!icon) return;
                 if (heroVideo.paused) {
                     icon.setAttribute('data-lucide', 'play');
                 } else {
@@ -289,7 +291,8 @@ async function init() {
             };
 
             const updateVolumeIcon = () => {
-                const icon = volumeBtn.querySelector('i');
+                const icon = volumeBtn.querySelector('i, svg');
+                if (!icon) return;
                 if (heroVideo.muted || heroVideo.volume === 0) {
                     icon.setAttribute('data-lucide', 'volume-x');
                 } else {
@@ -426,6 +429,21 @@ async function init() {
         lucide.createIcons();
     } catch (err) {
         console.error("Failed to process lessons:", err);
+    } finally {
+        // Ensure icons are created even if some logic fails
+        lucide.createIcons();
+    }
+}
+
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+            alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
     }
 }
 
@@ -516,6 +534,7 @@ function translateUI() {
     renderDashboardExtras();
 
     renderFaqChips();
+    lucide.createIcons();
     console.timeEnd('translateUI');
 }
 
@@ -1370,13 +1389,15 @@ function renderDashboardGallery() {
             container.scrollLeft += e.deltaY;
         }
     }, { passive: false });
+
+    lucide.createIcons();
 }
 
 let FLASHCARDS_DATA = [];
 
 async function loadFlashcards() {
     try {
-        const response = await fetch('extracted_assets/quiz/flashcards.json');
+        const response = await fetch('extracted_assets/flashcard/flashcards.json');
         const data = await response.json();
         // Check if data is array or object based on JSON structure
         const rawCards = Array.isArray(data) ? data : (data.Cards || []);
@@ -1423,6 +1444,8 @@ function renderFlashCards() {
             container.scrollLeft += e.deltaY;
         }
     }, { passive: false });
+
+    lucide.createIcons();
 }
 
 function initPodcastPlayer() {
@@ -1472,8 +1495,12 @@ function initPodcastPlayer() {
 }
 
 function viewImage(src) {
+    const label = src.split('/').pop().replace(/\.(jpeg|png|jpg)$/i, '').replace(/_/g, ' ');
     modalTitle.textContent = currentLanguage === 'bn' ? "ভিজ্যুয়াল রেফারেন্স" : "Visual Reference";
-    modalBody.innerHTML = `<img src="${src}" style="width:100%; border-radius:12px; margin-bottom:1rem;">`;
+    modalBody.innerHTML = `
+        <img src="${src}" style="width:100%; border-radius:12px; margin-bottom:1rem; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+        <p style="text-align:center; font-weight:600; font-family:var(--font-bn); font-size:1.1rem; color:var(--secondary);">${label}</p>
+    `;
     modal.classList.add('active');
     markCompleteBtn.style.display = 'none';
 
