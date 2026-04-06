@@ -1,21 +1,21 @@
 {
-  "name": "gap-brinjal",
-  "version": "2.5.0",
-  "description": "Interactive GAP training portal for brinjal cultivation",
-  "main": "index.html",
-  "scripts": {
-    "start": "npx serve -l 8000"
-  },
-  "keywords": [
-    "agriculture",
-    "gap",
-    "brinjal",
-    "bangladesh",
-    "training"
-  ],
-  "author": "AgriWisdomBD",
-  "license": "MIT",
-  "dependencies": {
-    "pdfjs-dist": "^3.4.120"
-  }
+    "name": "gap-brinjal",
+    "version": "2.5.0",
+    "description": "Interactive GAP training portal for brinjal cultivation",
+    "main": "index.html",
+    "scripts": {
+        "start": "npx serve -l 8000"
+    },
+    "keywords": [
+        "agriculture",
+        "gap",
+        "brinjal",
+        "bangladesh",
+        "training"
+    ],
+    "author": "AgriWisdomBD",
+    "license": "MIT",
+    "dependencies": {
+        "pdfjs-dist": "^3.4.120"
+    }
 }

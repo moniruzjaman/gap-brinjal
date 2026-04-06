@@ -262,42 +262,97 @@
         </div>
       </div>
 
-      <div id="records" class="section">
-        <div class="records-grid">
-          <div class="card">
-            <h3 id="add-log-title">Add Farm Log</h3>
-            <form id="record-form">
-              <div class="form-group">
-                <label for="log-date" id="label-date">Date</label>
-                <input type="date" id="log-date" required>
+<div class="app-container">
+    <header>
+      <div>
+        <h1>GAP উৎপাদক রেজিস্টার</h1>
+        <p style="opacity:0.8; margin-top:0.2rem;">বাংলাদেশ কৃষি সম্প্রসারণ অধিদপ্তর (DAE) কর্তৃক প্রণীত</p>
+      </div>
+      <div class="meta">
+        Doc No: BACB-OM-P-E/A-06-PR-1<br>
+        সংস্করণ: ১.০ | তারিখ: ০২-০৬-২০২৫
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <ul class="step-nav" id="stepNav"></ul>
+      </aside>
+
+      <main class="main-content">
+        <form id="gapForm" autocomplete="off">
+          
+          <!-- Section 1 -->
+          <section class="form-step active" data-step="1" data-title="১. উৎপাদকের সাধারণ তথ্য">
+            <h2 class="section-title">১. উৎপাদকের সাধারণ তথ্য</h2>
+            <div class="form-grid">
+              <div class="form-group"><label>উৎপাদক/ফার্মের নাম</label><input type="text" name="p1_name"></div>
+              <div class="form-group"><label>পিতার নাম</label><input type="text" name="p1_father"></div>
+              <div class="form-group"><label>মাতার নাম</label><input type="text" name="p1_mother"></div>
+              <div class="form-group"><label>স্থায়ী ঠিকানা - গ্রাম</label><input type="text" name="p1_perm_village"></div>
+              <div class="form-group"><label>পোস্ট</label><input type="text" name="p1_perm_post"></div>
+              <div class="form-group"><label>উপজেলা</label><input type="text" name="p1_perm_upazila"></div>
+              <div class="form-group"><label>জেলা</label><input type="text" name="p1_perm_district"></div>
+              <div class="form-group"><label>মোবাইল নম্বর</label><input type="tel" name="p1_mobile"></div>
+              <div class="form-group"><label>ই-মেইল (যদি থাকে)</label><input type="email" name="p1_email"></div>
+              <div class="form-group"><label>ওয়েবসাইট (যদি থাকে)</label><input type="text" name="p1_website"></div>
+            </div>
+          </section>
+
+          <!-- Section 2 -->
+          <section class="form-step" data-step="2" data-title="২. খামারের ইতিহাস ও অবস্থান">
+            <h2 class="section-title">২. খামারের ইতিহাস ও অবস্থান</h2>
+            <div class="form-grid">
+              <div class="form-group"><label>খামারের দাগ নং</label><input type="text" name="f2_dag"></div>
+              <div class="form-group"><label>খামারের মৌজা নং</label><input type="text" name="f2_mouza"></div>
+              <div class="form-group"><label>ইউনিয়ন</label><input type="text" name="f2_union"></div>
+              <div class="form-group"><label>উপজেলা</label><input type="text" name="f2_upazila"></div>
+              <div class="form-group"><label>জেলা</label><input type="text" name="f2_district"></div>
+              <div class="form-group"><label>পার্শ্ববর্তী খামারের দূরত্ব</label><input type="text" name="f2_distance"></div>
+              <div class="form-group full">
+                <label>পাশে ইট ভাটা বা পরিবেশের ক্ষতি হয় এমন কোন স্থাপনা আছে কিনা?</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="f2_risk" value="হ্যাঁ"> হ্যাঁ</label>
+                  <label><input type="radio" name="f2_risk" value="না"> না</label>
+                </div>
               </div>
+              <div class="form-group full">
+                <label>খামার ব্যবস্থাপনা পরিকল্পনা (FMP) ও অভ্যন্তরীণ নিয়ন্ত্রক পদ্ধতি (ICS) আছে কিনা?</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="f2_ics" value="হ্যাঁ"> হ্যাঁ</label>
+                  <label><input type="radio" name="f2_ics" value="না"> না</label>
+                </div>
+              </div>
+              <div class="form-group"><label>খামার স্থাপনের বছর</label><input type="number" name="f2_year"></div>
+              <div class="form-group"><label>মৌসুম</label><input type="text" name="f2_season"></div>
               <div class="form-group">
-                <label for="log-category" id="label-category">Category</label>
-                <select id="log-category">
-                  <option value="Land Preparation">Land Preparation (জমি তৈরি)</option>
-                  <option value="Fertilizer Application">Fertilizer Application (সার প্রয়োগ)</option>
-                  <option value="Irrigation">Irrigation (সেচ)</option>
-                  <option value="Pest Management">Pest Management (বালাই ব্যবস্থাপনা)</option>
-                  <option value="Harvesting">Harvesting (ফসল সংগ্রহ)</option>
-                  <option value="Waste Management">Waste Management (বর্জ্য ব্যবস্থাপনা)</option>
+                <label>জমির মালিকানা</label>
+                <select name="f2_owner">
+                  <option value="">-- নির্বাচন করুন --</option>
+                  <option value="নিজ">নিজ</option>
+                  <option value="ভাড়া">ভাড়া</option>
+                  <option value="লিজ">লিজ</option>
                 </select>
               </div>
+              <div class="form-group"><label>জমির আয়তন (শতাংশ)</label><input type="number" name="f2_area"></div>
               <div class="form-group">
-                <label for="log-desc" id="label-desc">Description</label>
-                <textarea id="log-desc" placeholder="Details of activity performed..." required></textarea>
+                <label>মাটির ধরন</label>
+                <select name="f2_soil">
+                  <option value="বেলে">বেলে</option>
+                  <option value="দোআঁশ">দোআঁশ</option>
+                  <option value="দোআঁশ এঁটেল">দোআঁশ এঁটেল</option>
+                  <option value="এঁটেল">এঁটেল</option>
+                </select>
               </div>
-              <button type="submit" id="save-record-btn" class="btn btn-primary">Save Record</button>
-            </form>
-          </div>
-          <div class="card">
-            <div class="log-history-header">
-              <h3 id="log-history-title">Log History</h3>
-              <button id="export-btn" class="btn btn-secondary btn-sm">Export Summary</button>
-            </div>
-            <div id="logs-list"></div>
-          </div>
-        </div>
-      </div>
+              <div class="form-group"><label>ফসল উৎপাদনের ধরন</label>
+                <select name="f2_crop_type">
+                  <option value="এক ফসলী">এক ফসলী</option>
+                  <option value="তিন ফসলী">তিন ফসলী</option>
+                  <option value="চার ফসলী">চার ফসলী</option>
+                </select>
+              </div>
+              <div class="form-group"><label>বর্তমানে কোন ফসল আবাদ হয়েছে</label><input type="text" name="f2_current_crop"></div>
+              <div class="form-group"><label>পূর্বে কোন ফসল আবাদ
 
       <div id="quiz" class="section">
         <div class="quiz-container">
