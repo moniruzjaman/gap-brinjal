@@ -15,7 +15,7 @@ models:
   - uses: ollama/qwen2.5-coder-7b
   - uses: anthropic/claude-4-sonnet
     with:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ollama }}
 
 # MCP Servers that Continue can access
 # https://docs.continue.dev/customization/mcp-tools
